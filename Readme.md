@@ -1,4 +1,4 @@
-# Repository made for learning new things,frameworks,languages
+# Repository made for learning new things/frameworks/languages
 
 Current folders--
 
