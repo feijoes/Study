@@ -5,7 +5,7 @@ Current folders--
 * Angular
     * Eccommerse with angular
 * Node API
-    * Backend with node.js (express\\ database)
+    * Backend with node.js (Check in README for more details )
 * React
     * Project to learn how react works
 
