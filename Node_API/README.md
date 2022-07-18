@@ -4,8 +4,8 @@ Its just simple projects to practise how node works
 
 Learned:
 
----Session
----Conect to databases
----User Authenticacion
----JWT
----WebSockets (in process)
+* Session
+* Conect to databases
+* User Authenticacion
+* JWT
+* WebSockets (in process)
