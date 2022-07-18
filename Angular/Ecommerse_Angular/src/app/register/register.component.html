@@ -1,0 +1,32 @@
+<div class="register">
+  <form [formGroup]="addForm" class="custom-form" method="POST">
+    <h1>Register</h1>
+    <input
+      type="email"
+      name="email"
+      formControlName="email"
+      placeholder="Email"
+      required="required"
+    />
+    <input
+      type="password"
+      name="password"
+      formControlName="password"
+      placeholder="Password"
+      required="required"
+    />
+    <input
+      type="password"
+      name="password2"
+      formControlName="password2"
+      placeholder="Repeat the password"
+      required="required"
+    />
+    <div class="error" *ngIf="addForm.controls['password2'].touched">
+      <div class="aler-danger errormessageadduser" *ngIf="addForm.hasError('mismatchedPasswords')">
+        Passwords do not match
+      </div>
+    </div>
+    <button type="submit" (click)="addUser()">Register</button>
+  </form>
+</div>
