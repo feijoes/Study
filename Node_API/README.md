@@ -8,4 +8,4 @@ Learned:
 * Conect to databases
 * User Authenticacion
 * JWT
-* WebSockets (in process)
+* WebSockets 
