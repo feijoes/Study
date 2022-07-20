@@ -10,6 +10,6 @@ Current folders--
     * Project to learn how react works
 
 **Future Folders**
-- [ ] Fluter
+- [ x ] Fluter (Current leaning)
 - [ ] PHP/Lavarel
 
