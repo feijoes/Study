@@ -10,6 +10,7 @@ Current folders--
     * Project to learn how react works
 
 **Future Folders**
-- [ x ] Fluter (Current leaning)
+- [ x ] Kotlin  (Current leaning)
 - [ ] PHP/Lavarel
 
+https://github.com/feijoes/Study.git
