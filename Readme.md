@@ -8,9 +8,13 @@ Current folders--
     * Backend with node.js (Check in README for more details )
 * React
     * Project to learn how react works
+    * TODO react native
+* Kotlin
+    * Leraning the basics of kotlin
+* Java
+    * Learning the basics of JAVA **(Current learning)**
 
 **Future Folders**
-- [ x ] Kotlin  (Current leaning)
+- [ x ] Kotlin  
 - [ ] PHP/Lavarel
-
-https://github.com/feijoes/Study.git
+- [ ] .Net
