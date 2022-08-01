@@ -12,9 +12,11 @@ Current folders--
 * Kotlin
     * Leraning the basics of kotlin
 * Java
-    * Learning the basics of JAVA **(Current learning)**
+    * Learning the basics of JAVA
+    * Frameworks
+        * SpringBoot  **(Current learning)**
 
 **Future Folders**
-- [ x ] Kotlin  
+- [ ] Kotlin  
 - [ ] PHP/Lavarel
 - [ ] .Net
