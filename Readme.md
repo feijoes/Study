@@ -18,6 +18,6 @@ Current folders--
     * Maven **(Current learning)**
 
 **Future Folders**
-- [ x ] Kotlin  
+- [ ] Kotlin  
 - [ ] PHP/Lavarel
 - [ ] .Net
