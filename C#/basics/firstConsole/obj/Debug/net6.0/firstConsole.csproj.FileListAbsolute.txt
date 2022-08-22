@@ -1,0 +1,15 @@
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\bin\Debug\net6.0\firstConsole.exe
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\bin\Debug\net6.0\firstConsole.deps.json
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\bin\Debug\net6.0\firstConsole.runtimeconfig.json
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\bin\Debug\net6.0\firstConsole.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\bin\Debug\net6.0\firstConsole.pdb
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.csproj.AssemblyReference.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.AssemblyInfoInputs.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.AssemblyInfo.cs
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\refint\firstConsole.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.pdb
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\firstConsole.genruntimeconfig.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\C#\basics\firstConsole\obj\Debug\net6.0\ref\firstConsole.dll

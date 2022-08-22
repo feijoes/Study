@@ -15,9 +15,9 @@ Current folders--
     * Learning the basics of JAVA
     * Frameworks of Java
         * Spring Boot
-    * Maven **(Current learning)**
-
+    * Maven 
+* ASP.NET **(Current learning)**
 **Future Folders**
 - [ ] Kotlin  
 - [ ] PHP/Lavarel
-- [ ] .Net
+- [ x ] .Net
