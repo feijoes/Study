@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\C#\\basics\\firstConsole\\firstConsole.csproj": {}
+    "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\AspNET\\basics\\firstConsole\\firstConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\C#\\basics\\firstConsole\\firstConsole.csproj": {
+    "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\AspNET\\basics\\firstConsole\\firstConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\C#\\basics\\firstConsole\\firstConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\AspNET\\basics\\firstConsole\\firstConsole.csproj",
         "projectName": "firstConsole",
-        "projectPath": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\C#\\basics\\firstConsole\\firstConsole.csproj",
+        "projectPath": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\AspNET\\basics\\firstConsole\\firstConsole.csproj",
         "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\C#\\basics\\firstConsole\\obj\\",
+        "outputPath": "C:\\Users\\Pedro\\OneDrive\\Área de Trabalho\\study\\AspNET\\basics\\firstConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

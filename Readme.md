@@ -1,0 +1,23 @@
+# Repository made for learning new things/frameworks/languages
+
+Current folders--
+
+* Angular
+    * Eccommerse with angular
+* Node API
+    * Backend with node.js (Check in folder README for more details )
+* React
+    * Project to learn how react works
+    * TODO react native
+* Kotlin
+    * Leraning the basics of kotlin
+* Java
+    * Learning the basics of JAVA
+    * Frameworks of Java
+        * Spring Boot
+    * Maven 
+* ASP.NET or C# **(Current learning)** (Check in folder README for more details )
+**Future Folders**
+- [ ] Kotlin  
+- [ ] PHP/Lavarel
+- [ x ] .Net
