@@ -1,0 +1,15 @@
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\bin\Debug\net6.0\Anotations.exe
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\bin\Debug\net6.0\Anotations.deps.json
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\bin\Debug\net6.0\Anotations.runtimeconfig.json
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\bin\Debug\net6.0\Anotations.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\bin\Debug\net6.0\Anotations.pdb
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.csproj.AssemblyReference.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.AssemblyInfoInputs.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.AssemblyInfo.cs
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\refint\Anotations.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.pdb
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\Anotations.genruntimeconfig.cache
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\AspNET\C#\basics\Anotations\obj\Debug\net6.0\ref\Anotations.dll
