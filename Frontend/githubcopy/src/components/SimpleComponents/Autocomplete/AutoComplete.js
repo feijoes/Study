@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import SVG from "../../../static/SVG/Svg"
+import SVG from "../../SimpleComponents/SVG";
 class Autocomplete extends Component {
   static propTypes = {
     suggestions: PropTypes.instanceOf(Array),
@@ -36,7 +36,7 @@ class Autocomplete extends Component {
   onChange = (e) => {
     const { suggestions } = this.props;
     const userInput = e.currentTarget.value;
-   
+
     // Filter our suggestions that don't contain the user's input
     const filteredSuggestions = [
       userInput,
@@ -73,7 +73,7 @@ class Autocomplete extends Component {
 
   onKeyDown = (e) => {
     const { activeSuggestion, filteredSuggestions } = this.state;
-  
+
     // User pressed the enter key
     if (e.keyCode === 13) {
       this.setState({
@@ -116,7 +116,7 @@ class Autocomplete extends Component {
     } = this;
 
     let suggestionsListComponent;
-   
+
     if (showSuggestions) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
@@ -135,8 +135,12 @@ class Autocomplete extends Component {
                   onMouseOver={() => onHover(index)}
                   onClick={onClick}
                 >
-                  {SVG[suggestion.type]}
-                  {suggestion.name}
+                  <SVG
+                    key={index}
+                    type={suggestion.type}
+                    name={index === activeSuggestion && "suggestionSVG"}
+                  />
+                  {suggestion.name || suggestion}
                 </li>
               );
             })}
@@ -154,6 +158,16 @@ class Autocomplete extends Component {
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
         />
         {suggestionsListComponent}
       </Fragment>

@@ -4,16 +4,20 @@ header {
   height: 6.5vh;
   vertical-align: middle;
   white-space: nowrap;
-  
 }
 
-header > *{
-    position: relative;
-    
+header > * {
+  position: relative;
 }
 #githubicon {
   width: 30px;
   padding-left: 23px;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
+}
+path {
+    fill: #8a939d
+}
+.suggestionSVG{
+    fill: white
 }

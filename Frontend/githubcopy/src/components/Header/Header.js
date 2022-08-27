@@ -12,9 +12,7 @@ const Header = () => {
         src={json.githubIcon.image}
         alt={json.githubIcon.alt}
       />
-      <Autocomplete
-        suggestions={autocompletedata}
-      />
+      <Autocomplete suggestions={autocompletedata} />
     </header>
   );
 };

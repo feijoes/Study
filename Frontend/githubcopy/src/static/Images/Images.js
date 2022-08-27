@@ -1,12 +1,12 @@
-import github from "./githubIcon.png"
+import github from "./githubIcon.png";
 
 const data = {
   githubIcon: {
     name: "githubIcon",
     alt: "Logo Github",
     image: github,
-    id : "githubicon"
-  }
-}
+    id: "githubicon",
+  },
+};
 
 export default data;
