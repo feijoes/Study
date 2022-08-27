@@ -1,17 +1,32 @@
 import React from "react";
 import "./Header.css";
-import json from "../../Images";
-
+import json from "../../static/Images/Images";
+import Autocomplete from "../SimpleComponents/Autocomplete/AutoComplete";
+import "../SimpleComponents/Autocomplete/Autocomplete.css";
+ 
 const Header = () => {
   return (
     <header>
-        <img
-          id={json.githubIcon.id}
-          src={json.githubIcon.image}
-          alt={json.githubIcon.alt}
-          className="c"
-        />
-        <input  spellCheck="false" autoComplete="off" aria-label="Search or jump to…" type="text" placeholder="Search or jump to…" data-unscoped-placeholder="Search or jump to…" data-scoped-placeholder="Search or jump to…" autoCapitalize="off" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-controls="jump-to-results"/>
+      <img
+        id={json.githubIcon.id}
+        src={json.githubIcon.image}
+        alt={json.githubIcon.alt}
+        className="c"
+      />
+      <Autocomplete
+        suggestions={[
+          "Alligator",
+          "Bask",
+          "Crocodilian",
+          "Death Roll",
+          "Eggs",
+          "Jaws",
+          "Reptile",
+          "Solitary",
+          "Tail",
+          "Wetlands",
+        ]}
+      />
     </header>
   );
 };

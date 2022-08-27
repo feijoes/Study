@@ -1,4 +1,4 @@
-import github from "./static/githubIcon.png"
+import github from "./githubIcon.png"
 
 const data = {
   githubIcon: {
