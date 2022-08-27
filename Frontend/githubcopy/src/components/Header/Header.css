@@ -1,3 +1,18 @@
-header{
-    background-color: #161b22;
+header {
+  background-color: #161b22;
+  width: 100%;
+  height: 6.5vh;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+}
+header > *{
+    position: relative;
+    
+}
+#githubicon {
+  width: 30px;
+  padding-left: 23px;
+  top: 50%;
+  transform: translateY(-50%); 
 }
