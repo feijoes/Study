@@ -22,14 +22,14 @@ body {
     overflow-y: hidden;
     padding-left: 0;
     width: calc(300px + 1rem);
+    background-color: #0d1117;
   }
   
   .suggestions li {
     padding: 0.5rem;
   }
   
-  .suggestion-active,
-  .suggestions li:hover {
+  .suggestion-active{
     background-color:#1f6feb;
     color: rgb(209, 204, 204);
     cursor: pointer;

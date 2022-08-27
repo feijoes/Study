@@ -3,7 +3,7 @@ import "./Header.css";
 import json from "../../static/Images/Images";
 import Autocomplete from "../SimpleComponents/Autocomplete/AutoComplete";
 import "../SimpleComponents/Autocomplete/Autocomplete.css";
- 
+import autocompletedata from "../../static/data/AutoComplete";
 const Header = () => {
   return (
     <header>
@@ -11,21 +11,9 @@ const Header = () => {
         id={json.githubIcon.id}
         src={json.githubIcon.image}
         alt={json.githubIcon.alt}
-        className="c"
       />
       <Autocomplete
-        suggestions={[
-          "Alligator",
-          "Bask",
-          "Crocodilian",
-          "Death Roll",
-          "Eggs",
-          "Jaws",
-          "Reptile",
-          "Solitary",
-          "Tail",
-          "Wetlands",
-        ]}
+        suggestions={autocompletedata}
       />
     </header>
   );
