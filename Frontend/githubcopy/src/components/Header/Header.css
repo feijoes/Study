@@ -4,6 +4,9 @@ header {
   height: 70px;
   vertical-align: middle;
   white-space: nowrap;
+  position: relative;
+  
+  align-items: center;
 }
 #headertext{
     display: inline;
@@ -14,8 +17,6 @@ header > * {
 #githubicon {
   width: 30px;
   padding-left: 23px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 path {
   fill: #8a939d;
@@ -24,8 +25,6 @@ path {
   fill: white;
 }
 ul {
-  top: 30%;
-  transform: translateY(-50%);
   list-style: none;
   display: inline-block;
 }
@@ -33,6 +32,7 @@ ul {
   list-style: none;
   display: inline-block;
   margin-left: 10px;
+  cursor: pointer;
 }
 .textHeader > p {
   color: white;

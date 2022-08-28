@@ -7,6 +7,8 @@ input {
   padding: 0.5rem;
   background-color: #0d1117;
   width: 300px;
+  border-color: rgba(140, 140, 140,0.4);
+  border-radius: 5%;
 }
 
 input:focus{
@@ -18,8 +20,9 @@ input:focus{
 }
 
 .suggestions {
-  border: 1px solid #999;
+  border: 1px solid rgba(148, 148, 148,0.5);
   border-top-width: 0;
+  border-radius: 5%;
   list-style: none;
   margin-top: 0;
   overflow-y: hidden;
@@ -27,7 +30,9 @@ input:focus{
   width: calc(300px + 1rem);
   background-color: #0d1117;
 }
-
+.suggestions >li> svg{
+  margin-right: 10px;
+}
 .suggestions li {
   padding: 0.5rem;
 }
