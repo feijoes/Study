@@ -1,0 +1,20 @@
+.sidecontainer {
+    background-color: #0d1117;
+    width: 29.5vw;
+    height: 98vh;
+    border-right: 1px solid #ced0d3;
+    border-bottom: 0.5px solid #ced0d3;
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+}
+.sidebar{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.up{
+    font-size: .80em;
+    justify-content: space-between;
+}
