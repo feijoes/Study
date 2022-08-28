@@ -161,7 +161,7 @@ class Autocomplete extends Component {
           placeholder="Search or jump to…"
           data-unscoped-placeholder="Search or jump to…"
           data-scoped-placeholder="Search or jump to…"
-          autocapitalize="off"
+          autoCapitalize="off"
           role="combobox"
           aria-haspopup="listbox"
           aria-expanded="false"
