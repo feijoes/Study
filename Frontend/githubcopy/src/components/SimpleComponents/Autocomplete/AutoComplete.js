@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-
+import SVG from "../../SimpleComponents/SVG";
 class Autocomplete extends Component {
   static propTypes = {
-    suggestions: PropTypes.instanceOf(Array)
+    suggestions: PropTypes.instanceOf(Array),
   };
 
   static defaultProps = {
-    suggestions: []
+    suggestions: [],
   };
 
   constructor(props) {
@@ -21,40 +21,57 @@ class Autocomplete extends Component {
       // Whether or not the suggestion list is shown
       showSuggestions: true,
       // What the user has entered
-      userInput: ""
+      userInput: "",
     };
   }
-
-  onChange = e => {
+  onHover = (index) => {
+    const { filteredSuggestions } = this.state;
+    this.setState({
+      activeSuggestion: index,
+      filteredSuggestions,
+      showSuggestions: true,
+      userInput: this.state.userInput,
+    });
+  };
+  onChange = (e) => {
     const { suggestions } = this.props;
     const userInput = e.currentTarget.value;
 
     // Filter our suggestions that don't contain the user's input
-    const filteredSuggestions = [userInput,...suggestions.filter(
-      suggestion =>
-        suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
-    )]
-    
+    const filteredSuggestions = [
+      userInput,
+      ...suggestions.filter(
+        (suggestion) =>
+          suggestion.name.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+      ),
+    ];
+
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions,
       showSuggestions: true,
-      userInput: e.currentTarget.value
+      userInput: e.currentTarget.value,
     });
   };
-
-  onClick = e => {
+  onLeave = (e) => {
+    this.setState({
+      activeSuggestion: 0,
+      filteredSuggestions: [],
+      showSuggestions: false,
+      userInput: this.state.userInput,
+    });
+  };
+  onClick = (e) => {
     const { suggestions } = this.props;
-    console.log(suggestions)
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: suggestions,
       showSuggestions: true,
-      userInput: e.currentTarget.innerText
+      userInput: this.state.userInput || e.currentTarget.innerText,
     });
   };
 
-  onKeyDown = e => {
+  onKeyDown = (e) => {
     const { activeSuggestion, filteredSuggestions } = this.state;
 
     // User pressed the enter key
@@ -62,7 +79,7 @@ class Autocomplete extends Component {
       this.setState({
         activeSuggestion: 1,
         showSuggestions: false,
-        userInput: filteredSuggestions[activeSuggestion]
+        userInput: filteredSuggestions[activeSuggestion].name,
       });
     }
     // User pressed the up arrow
@@ -75,7 +92,7 @@ class Autocomplete extends Component {
     }
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      if (activeSuggestion - 1 === filteredSuggestions.length) {
+      if (activeSuggestion + 1 === filteredSuggestions.length) {
         return;
       }
 
@@ -88,12 +105,14 @@ class Autocomplete extends Component {
       onChange,
       onClick,
       onKeyDown,
+      onLeave,
+      onHover,
       state: {
         activeSuggestion,
         filteredSuggestions,
         showSuggestions,
-        userInput
-      }
+        userInput,
+      },
     } = this;
 
     let suggestionsListComponent;
@@ -109,20 +128,23 @@ class Autocomplete extends Component {
               if (index === activeSuggestion) {
                 className = "suggestion-active";
               }
-
               return (
-                <li className={className} key={suggestion} onClick={onClick}>
-                  {suggestion}
+                <li
+                  className={className}
+                  key={suggestion.name}
+                  onMouseOver={() => onHover(index)}
+                  onClick={onClick}
+                >
+                  <SVG
+                    key={index}
+                    type={suggestion.type}
+                    name={index === activeSuggestion && "suggestionSVG"}
+                  />
+                  {suggestion.name || suggestion}
                 </li>
               );
             })}
           </ul>
-        );
-      } else {
-        suggestionsListComponent = (
-          <div className="no-suggestions">
-            <em>No suggestions, you're on your own!</em>
-          </div>
         );
       }
     }
@@ -131,10 +153,21 @@ class Autocomplete extends Component {
       <Fragment>
         <input
           type="text"
-          onClick={onClick}
+          onFocus={onClick}
+          onBlur={onLeave}
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autoCapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
         />
         {suggestionsListComponent}
       </Fragment>

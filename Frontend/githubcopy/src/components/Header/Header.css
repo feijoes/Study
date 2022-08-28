@@ -1,18 +1,42 @@
 header {
   background-color: #161b22;
   width: 100%;
-  height: 6.5vh;
+  height: 70px;
   vertical-align: middle;
   white-space: nowrap;
+  position: relative;
   
+  align-items: center;
 }
-header > *{
-    position: relative;
-    
+#headertext{
+    display: inline;
+}
+header > * {
+  position: relative;
 }
 #githubicon {
   width: 30px;
   padding-left: 23px;
-  top: 50%;
-  transform: translateY(-50%); 
+}
+path {
+  fill: #8a939d;
+}
+.suggestionSVG {
+  fill: white;
+}
+ul {
+  list-style: none;
+  display: inline-block;
+}
+.textHeader {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.textHeader > p {
+  color: white;
+}
+.textHeader > p:hover {
+  color: #bab5a8;
 }
