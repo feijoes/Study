@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import json from "../../static/Images/Images";
 import Autocomplete from "../SimpleComponents/Autocomplete/AutoComplete";
-import "../SimpleComponents/Autocomplete/Autocomplete.css";
+import "../SimpleComponents/Autocomplete/Autocomplete.module.css";
 import autocompletedata from "../../static/data/AutoComplete";
 import ProfileIcon from "../SimpleComponents/ProfileIcon/ProfileIcon";
 const Header = () => {

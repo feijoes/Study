@@ -15,6 +15,9 @@
 }
 
 .up{
+    padding-left: 2rem;
+    padding-right: 3rem;
+    display:flex;
     font-size: .80em;
     justify-content: space-between;
 }
