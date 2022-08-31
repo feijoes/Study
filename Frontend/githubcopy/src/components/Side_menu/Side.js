@@ -6,9 +6,10 @@ const Side = () => {
     <aside className={side.sidecontainer}>
       <div className={side.sidebar}>
         <h2 className={side.up}>
+        
           Recent Repositories
           <a className={side.newrepo} href="/#">
-         
+            <SVG type={'Repository'} />
             New
           </a>
         </h2>

@@ -12,12 +12,22 @@
     margin-top: 2rem;
     text-align: center;
     width: 100%;
+    
+    padding-left:2%;
+    
+    
 }
 
 .up{
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
     display:flex;
     font-size: .80em;
     justify-content: space-between;
+}
+.newrepo{
+    background-color: green;
+    width: 60px;
+    display: flex;
+    
 }
