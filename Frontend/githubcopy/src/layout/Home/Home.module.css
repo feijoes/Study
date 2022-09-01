@@ -1,8 +1,9 @@
-.homeContainer{
-    display: flex;
-    height: 100%;
+.homeContainer {
+  display: flex;
+  height: 100%;
 }
 
-.container{
-    width: 100%;
+.container {
+  width: 100%;
+  background-color: black;
 }

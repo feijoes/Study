@@ -12,7 +12,14 @@ const data = {
     alt: "Logo profile picture",
     image: IconFeijoes,
     id: "IconFeijoes",
+  },
+  ProfileIconMoura:{
+    name: "IconMoura",
+    alt: "Logo profile picture",
+    image: '',
+    id: "IconMoura",
   }
+
 };
 
 export default data;
