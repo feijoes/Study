@@ -16,11 +16,13 @@ Current folders--
     * Frameworks of Java
         * Spring Boot
     * Maven 
-* ASP.NET or C# (Check in folder README for more details )
-* Frontend **(Current learning)** (Check in folder README for more details )
+* ASP.NET or C# (Check in folder README for more details )  **(Current learning)**
+* Frontend (Check in folder README for more details )
     * Github copy
 
 Frontend folder is proyects to practice my frontend skills, not react, css,...
+
+
 **Future Folders**
 - [ ] Kotlin  
 - [ ] PHP/Lavarel
