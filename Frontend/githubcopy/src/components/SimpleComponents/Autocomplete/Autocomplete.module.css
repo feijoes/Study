@@ -1,19 +1,4 @@
-body {
-  font-family: sans-serif;
-}
 
-input {
-  border: 1px solid #999;
-  padding: 0.5rem;
-  background-color: #0d1117;
-  width: 300px;
-  border-color: rgba(140, 140, 140,0.4);
-  border-radius: 5%;
-}
-
-input:focus{
-  outline: none;
-}
 .no-suggestions {
   color: #999;
   padding: 0.5rem;
@@ -26,7 +11,7 @@ input:focus{
   list-style: none;
   margin-top: 0;
   overflow-y: hidden;
-  padding-left: 0;
+  padding-left: 100px;
   width: calc(300px + 1rem);
   background-color: #0d1117;
 }

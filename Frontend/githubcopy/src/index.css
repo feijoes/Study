@@ -6,11 +6,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0d1117;
+
 }
+
 * {
   color: #ced0d3;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+input {
+  
+  border: 1px solid #999;
+  padding: 0.5rem;
+  background-color: #000000;
+  width: 300px;
+  border-color: rgba(140, 140, 140,0.4);
+  border-radius: 6px;
+}
+
+input:focus{
+  outline: none;
+} 
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline 1px;
 }

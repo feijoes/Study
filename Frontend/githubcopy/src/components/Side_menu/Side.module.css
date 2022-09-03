@@ -1,0 +1,54 @@
+.sidecontainer {
+  background-color: #0d1117;
+  width: 29.5vw;
+  height: 98vh;
+  border-right: 1px solid #ced0d3;
+  border-bottom: 0.5px solid #ced0d3;
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
+}
+.sidebar {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+
+  padding-left: 2%;
+}
+
+.up {
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+.newrepo {
+  background-color: green;
+  width: 60px;
+  border-radius: 5px;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.joaq {
+  padding-right: 100px;
+}
+.list {
+  margin-left: 10px;
+}
+.line {
+  border-top: 1px solid #8c8b8b;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  width: 80%;
+}
+.text {
+  padding-left: 10%;
+}
+.text2 {
+  padding-left: 10%;
+  font-size: 13px;
+}
