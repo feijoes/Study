@@ -1,0 +1,57 @@
+.main {
+  float: right;
+
+  width: 23rem;
+  height: 100%;
+}
+.log {
+  margin-top: 30px;
+  font-size: small;
+}
+.lis {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 100px;
+}
+.svgdiv {
+  position: relative;
+}
+.svg {
+  position: absolute;
+  left: -9px;
+  top: -8px;
+}
+.item {
+  display: flex;
+  border-left: 1px solid;
+}
+.text {
+  text-align: left;
+  padding: 8px 2rem;
+}
+.h {
+  margin: 0;
+}
+.link {
+  font-size: 14px;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline 1px;
+  color: #3e67b9;
+}
+.repositories {
+    margin-top: 10px;
+}
+.mini{
+    margin:0;
+    margin-right: 14px;
+    font-size:14px;
+}
+.circul{
+    width:12px;
+    height:12px;
+    margin-right:6px;
+    border-radius: 50%;
+}

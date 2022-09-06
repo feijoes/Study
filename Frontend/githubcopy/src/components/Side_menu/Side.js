@@ -27,8 +27,8 @@ const Side = () => {
       <ul>
         {[
           ["feijoes/Yu-Gi-Oh", "https://github.com/feijoes/Yu-Gi-Oh"],
-          ["moura-code/bookshare", "https://github.com/feijoes/Yu-Gi-Oh"],
-          ["moura-code/minesweeper", "https://github.com/feijoes/Yu-Gi-Oh"],
+          ["moura-code/bookshare", "https://github.com/moura-code/bookshare"],
+          ["moura-code/minesweeper", "https://github.com/moura-code/minesweeper"],
         ].map((text) => {
           return (
             <li key={text[0]}>
