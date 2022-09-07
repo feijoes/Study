@@ -6,8 +6,8 @@ import { AuthDto } from './dto'
 export class AuthController {
   constructor(private authService: AuthService) {}
   @Post('signup')
-  signup(@Body('email') email: String, @Body('password') password: String) {
-    return this.authService.sigup()
+  signup(@Body() dto: AuthDto) {
+    return this.authService.sigup(dto)
   }
   @Post('sigin')
   sigin() {

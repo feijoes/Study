@@ -15,9 +15,24 @@ model User {
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 
-  email String
+  email String @unique
   hash String
 
   firstName String?
   lastName String?
+
+  posts Post[]
+  @@map("users")
+}
+
+model Post{
+  id Int @id @default(autoincrement())
+  createAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+
+  title String
+  description String?
+  link String
+  userId Int
+  user User @relation(fields: [userId], references: [id])
 }
