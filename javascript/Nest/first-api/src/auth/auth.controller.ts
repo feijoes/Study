@@ -10,7 +10,7 @@ export class AuthController {
     return this.authService.sigup(dto)
   }
   @Post('sigin')
-  sigin() {
-    return this.authService.sigin()
+  sigin(@Body() dto: AuthDto) {
+    return this.authService.sigin(dto)
   }
 }
