@@ -15,6 +15,6 @@ export const signToken = async (
     secret: secret,
   })
   return {
-    access_token: token
+    access_token: token,
   }
 }
