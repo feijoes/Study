@@ -18,7 +18,10 @@ Current folders--
     * Frameworks of Java
         * Spring Boot
     * Maven 
-* ASP.NET or C# (Check in folder README for more details )  **(Current learning)**
+* dotNET (Check in folder README for more details ) 
+    * C# learning the basics
+    * AspNet Core learning
+    * Microservices **(Current learning)**
 * Frontend (Check in folder README for more details )
     * Github copy
 
