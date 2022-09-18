@@ -10,7 +10,7 @@ Current folders--
     * React
         * Project to learn how react works
         * TODO react native
-    * Nestjs **(Current learning)** 
+    * Nestjs 
 * Kotlin
     * Leraning the basics of kotlin
 * Java
