@@ -24,7 +24,7 @@ namespace PlatformService.Data
             return _context.Platforms.FirstOrDefault(p => p.Id == id) ;
         }
 
-        IEnumerable<Platform> IPlatformRepo.GetPlatforms()
+        IEnumerable<Platform> IPlatformRepo.GetAllPlatforms()
         {
             return _context.Platforms.ToList();
         }
