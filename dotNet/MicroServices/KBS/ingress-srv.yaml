@@ -1,5 +1,3 @@
-28 lines (26 sloc)  666 Bytes
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
