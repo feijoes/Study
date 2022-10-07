@@ -62,3 +62,4 @@ C:\Users\Pedro\OneDrive\Área de Trabalho\study\dotNet\MicroServices\PlatformSer
 C:\Users\Pedro\OneDrive\Área de Trabalho\study\dotNet\MicroServices\PlatformService\obj\Debug\net6.0\PlatformService.pdb
 C:\Users\Pedro\OneDrive\Área de Trabalho\study\dotNet\MicroServices\PlatformService\obj\Debug\net6.0\PlatformService.genruntimeconfig.cache
 C:\Users\Pedro\OneDrive\Área de Trabalho\study\dotNet\MicroServices\PlatformService\obj\Debug\net6.0\ref\PlatformService.dll
+C:\Users\Pedro\OneDrive\Área de Trabalho\study\dotNet\MicroServices\PlatformService\bin\Debug\net6.0\appsettings.Production.json

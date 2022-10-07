@@ -19,6 +19,7 @@ namespace PlatformService.Controllers
             _repository = repo;
             _mapper = mapper;
             _commandDataClient = commandDataClient;
+            
         }
         [HttpGet]
         public ActionResult<IEnumerable<PlatformRepo>> GetPlatforms()
