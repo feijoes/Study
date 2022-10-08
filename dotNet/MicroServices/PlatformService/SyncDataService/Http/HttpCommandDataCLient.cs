@@ -1,7 +1,7 @@
 using System.Text;
 using PlatformService.Dtos;
 using System.Text.Json;
-using Microsoft.Extensions.Configuration;
+
 namespace PlatformService.SyncDataService.Http
 {
     public class HttpCommandDataClient: ICommandDataClient
