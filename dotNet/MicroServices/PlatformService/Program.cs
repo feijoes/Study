@@ -14,19 +14,19 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//var app = builder.Build();
-
-//if (app.Environment.IsProduction())
-//{
-    Console.WriteLine("---> Using SqlSeerver Db");
-  builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseSqlServer("PlatformsConn"));
-//}
-// else
-// {
-//     Console.WriteLine("---> Using InMen Database");
-//     builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseInMemoryDatabase("InMem"));
-// }
 var app = builder.Build();
+
+if (app.Environment.IsProduction())
+{
+    Console.WriteLine("---> Using SqlSeerver Db");
+    builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseSqlServer("PlatformsConn"));
+}
+else
+{
+    Console.WriteLine("---> Using InMen Database");
+    builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseInMemoryDatabase("InMem"));
+}
+app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -39,6 +39,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// PrepDb.PrepPopulation(app,app.Environment.IsProduction());
+PrepDb.PrepPopulation(app,app.Environment.IsProduction());
 
 app.Run();
