@@ -1,4 +1,5 @@
 using CommandsService.Models;
+using CommandsService.SyncDataServices.Grpc;
 namespace CommandsService.Data
 {
     public static class PrepDb
