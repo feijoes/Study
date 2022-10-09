@@ -11,6 +11,7 @@ Current folders--
         * Project to learn how react works
         * TODO react native
     * Nestjs 
+        * Simple api to undertand how nest works
 * Kotlin
     * Leraning the basics of kotlin
 * Java
@@ -21,7 +22,9 @@ Current folders--
 * dotNET (Check in folder README for more details ) 
     * C# learning the basics
     * AspNet Core learning
-    * Microservices **(Current learning)**
+    * Microservices 
+* flutter **(Current learning)**
+
 * Frontend (Check in folder README for more details )
     * Github copy
 
@@ -29,6 +32,5 @@ Frontend folder is proyects to practice my frontend skills, not react, css,...
 
 
 **Future Folders**
-- [ x ] Kotlin  
 - [ ] PHP/Lavarel
-- [ x ] .Net
+
