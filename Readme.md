@@ -12,6 +12,10 @@ Current folders--
         * TODO react native
     * Nestjs 
         * Simple api to undertand how nest works
+    * Deno **(Current learning)**
+    * WebPack
+        * Demo app to learning how it works
+
 * Kotlin
     * Leraning the basics of kotlin
 * Java
@@ -23,8 +27,7 @@ Current folders--
     * C# learning the basics
     * AspNet Core learning
     * Microservices 
-* flutter **(Current learning)**
-
+* flutter 
 * Frontend (Check in folder README for more details )
     * Github copy
 
