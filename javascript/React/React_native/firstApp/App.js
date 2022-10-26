@@ -1,31 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text,SafeAreaView,Image,TouchableOpacity   } from 'react-native';
+
+import {
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  Image,
+  TouchableNativeFeedback,
+  Button,
+  Alert,
+  Platform,
+  StatusBar
+} from "react-native";
 
 export default function App() {
-  const handlePress = ()=> console.log("Test")
+  console.log()
+  const handlePress = (e) => console.log("you are sooo pogers");
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>Buratti is gay</Text>
-      <StatusBar style="auto" />
-      <TouchableOpacity  onPress={handlePress}>
-        <Image onPress={handlePress} style={styles.stretch} source={require("./assets/poggersImage.png")} />
-      </TouchableOpacity >
+      <Image
+        style={styles.stretch}
+        source={require("./assets/poggersImage.png")}
+      />
+      
+      <Button title="CUM" onPress={()=>Alert.prompt("test")} />
     </SafeAreaView>
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "white",
+    paddingTop:  Platform.OS === "android" ? StatusBar.currentHeight:0,
+   
   },
   stretch: {
     width: 200,
     height: 200,
-    resizeMode: 'stretch',
-    
+    padding: 100,
+    resizeMode: "stretch",
   },
 });
