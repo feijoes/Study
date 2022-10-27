@@ -9,20 +9,23 @@ import {
   Platform,
   StatusBar,
   View,
+  Dimensions
 } from "react-native";
+import { useDimensions,useDeviceOrientation } from "@react-native-community/hooks";
 
 export default function App() {
-  console.log();
-  const handlePress = (e) => console.log("you are sooo pogers");
+  
+  
   return (
     <SafeAreaView style={styles.container}>
-      <Image
-        style={styles.stretch}
-        source={require("./assets/poggersImage.png")}
-      />
       <View style={styles.view}>
-
+        <Image
+          style={styles.stretch}
+          source={require("./assets/poggersImage.png")}
+        />
       </View>
+      
+  
     </SafeAreaView>
   );
 }
@@ -36,11 +39,12 @@ const styles = StyleSheet.create({
   stretch: {
     width: 200,
     height: 200,
-    padding: 100,
+    padding: 10,
     resizeMode: "stretch",
   },
   view:{
     backgroundColor: "red",
-    width:150,
+    width:"100%",
+    height: useDeviceOrientation().landscape ? "100%": "30%",
   }
 });
