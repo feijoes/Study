@@ -1,4 +1,3 @@
-
 import {
   StyleSheet,
   Text,
@@ -8,11 +7,12 @@ import {
   Button,
   Alert,
   Platform,
-  StatusBar
+  StatusBar,
+  View,
 } from "react-native";
 
 export default function App() {
-  console.log()
+  console.log();
   const handlePress = (e) => console.log("you are sooo pogers");
   return (
     <SafeAreaView style={styles.container}>
@@ -20,8 +20,9 @@ export default function App() {
         style={styles.stretch}
         source={require("./assets/poggersImage.png")}
       />
-      
-      <Button title="CUM" onPress={()=>Alert.prompt("test")} />
+      <View style={styles.view}>
+
+      </View>
     </SafeAreaView>
   );
 }
@@ -30,8 +31,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    paddingTop:  Platform.OS === "android" ? StatusBar.currentHeight:0,
-   
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   stretch: {
     width: 200,
@@ -39,4 +39,8 @@ const styles = StyleSheet.create({
     padding: 100,
     resizeMode: "stretch",
   },
+  view:{
+    backgroundColor: "red",
+    width:150,
+  }
 });
