@@ -1,50 +1,24 @@
-import {
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  Image,
-  TouchableNativeFeedback,
-  Button,
-  Alert,
-  Platform,
-  StatusBar,
-  View,
-  Dimensions
-} from "react-native";
-import { useDimensions,useDeviceOrientation } from "@react-native-community/hooks";
+import { View, Text } from "react-native";
 
 export default function App() {
-  
-  
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.view}>
-        <Image
-          style={styles.stretch}
-          source={require("./assets/poggersImage.png")}
-        />
-      </View>
-      
-  
-    </SafeAreaView>
+    <View
+      style={{
+        backgroundColor: "white",
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        flexWrap:"wrap"
+      }}
+    >
+      <View
+        style={{ backgroundColor: "dodgerblue", width: 100, height: 100 }}
+      />
+      <View style={{ backgroundColor: "tomato", width: 100, height: 100 }} />
+      <View style={{ backgroundColor: "gold", width: 100, height: 100 }} />
+      <View style={{ backgroundColor: "grey", width: 100, height: 100 }} />
+      <View style={{ backgroundColor: "greenyellow", width: 100, height: 100 }} />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-  stretch: {
-    width: 200,
-    height: 200,
-    padding: 10,
-    resizeMode: "stretch",
-  },
-  view:{
-    backgroundColor: "red",
-    width:"100%",
-    height: useDeviceOrientation().landscape ? "100%": "30%",
-  }
-});
