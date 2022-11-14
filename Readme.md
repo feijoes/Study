@@ -12,7 +12,6 @@ Current folders--
         * TODO react native
     * Nestjs 
         * Simple api to undertand how nest works
-    * Deno **(Current learning)**
     * WebPack
         * Demo app to learning how it works
 
