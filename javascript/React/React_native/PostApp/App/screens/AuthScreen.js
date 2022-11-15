@@ -7,14 +7,23 @@ import {
   TextInput,
   Platform,
 } from "react-native";
-const API_URL =
-  Platform.OS === "ios" ? "http://localhost:5000" : "http://10.0.2.2:5000";
+const API_URL =Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
 
-export const AuthScreen = ()=> {
+export const AuthScreen = () => {
   const [fields, setFields] = useState({});
   const [isLogin, setIsLogin] = useState(true);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
+
+  const SendData = async ()=>{
+    console.log(API_URL)
+    const request = await fetch(API_URL + "/routes/users/" + isLogin? "register": "login")
+    const response = await request.json()
+    
+    
+
+  }
+
   const onChangeHandler = (e, name) => {
     console.log(e, name);
     let newFields = fields;
@@ -57,10 +66,7 @@ export const AuthScreen = ()=> {
           <Text style={[styles.message, { color: isError ? "red" : "green" }]}>
             {message ? getMessage() : null}
           </Text>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => {console.log(fields);setIsError(true);setMessage("DONE")}}
-          >
+          <TouchableOpacity style={styles.button} onPress={SendData}>
             <Text style={styles.buttonText}>Done</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonAlt} onPress={changelogin}>
@@ -72,7 +78,7 @@ export const AuthScreen = ()=> {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   image: {

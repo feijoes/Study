@@ -10,7 +10,7 @@ router.get('/protected', passport.authenticate('jwt', { session:false }),(req, r
 });
 
 router.post('/login', (req, res, next)=>{
-    User.findOne({ username : req.body.username })
+    User.findOne({ email : req.body.email })
         .then((user)=>{
 
             if (!user){
@@ -38,6 +38,7 @@ router.post('/register', (req, res, next)=>{
   
     const user = {
         usename: req.body.usename,
+        email: req.body.email,
         hash:hash,
         salt: salt,
     }

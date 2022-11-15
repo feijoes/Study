@@ -25,11 +25,7 @@ app.use((_, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use("/routes",require('./routes'));
 
-app.use(require('./routes'));
-app.get("/",(req, res)=>{
-    return "this is the backend test"
-})
 
 app.listen(5000);
