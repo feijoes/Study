@@ -37,7 +37,7 @@ router.post('/register', (req, res, next)=>{
     const {salt, hash} = saltHash
   
     const user = {
-        usename: req.body.usename,
+        username: req.body.username,
         email: req.body.email,
         hash:hash,
         salt: salt,

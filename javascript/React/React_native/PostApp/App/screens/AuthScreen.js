@@ -7,33 +7,55 @@ import {
   TextInput,
   Platform,
 } from "react-native";
-const API_URL =Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
+import axios from "axios";
+
+const API_URL =
+  Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
 
 export const AuthScreen = () => {
-  const [fields, setFields] = useState({});
+  const [inputs, setInputs] = useState({});
   const [isLogin, setIsLogin] = useState(true);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
 
-  const SendData = async ()=>{
-    console.log(API_URL)
-    const request = await fetch(API_URL + "/routes/users/" + isLogin? "register": "login")
-    const response = await request.json()
-    
-    
+  const SendData = async () => {
+    if (!(inputs.name && inputs.email && inputs.password)) {
+      setIsError(true);
+      setMessage("Complete all forms");
+      return;
+    }
+    if (!inputs.confirmPassword === inputs.password) {
+      setIsError(true);
+      setMessage("Passwords Must Be The Same");
+      return;
+    } else {
+      const body = !isLogin
+        ? {
+            username: inputs.name,
+            email: inputs.email,
+            password: inputs.password,
+          }
+        : {
+            username: inputs.name,
+            password: inputs.password,
+          };
 
-  }
+      const request = await axios.post(
+        `${API_URL}"routes/users/${isLogin ? "login" : "register"}`,
+        body,
+        { withCredentials: true }
+      );
+      const response = await request.json();
+      console.log(response);
+      setInputs({});
+    }
+  };
 
-  const onChangeHandler = (e, name) => {
-    console.log(e, name);
-    let newFields = fields;
-    fields[name] = e;
-    setFields(newFields);
+  const onChangeHandler = (value, name) => {
+    setInputs((values) => ({ ...values, [name]: value }));
+    console.log(inputs);
   };
-  const getMessage = () => {
-    const status = isError ? `Error: ` : `Success: `;
-    return status + message;
-  };
+
   const changelogin = () => {
     setIsLogin(!isLogin);
     setMessage("");
@@ -47,25 +69,42 @@ export const AuthScreen = () => {
             style={styles.input}
             placeholder="Email"
             autoCapitalize="none"
-            onChangeText={(e) => onChangeHandler(e, "Email")}
+            name="email"
+            value={inputs.email || ""}
+            onChangeText={(e) => onChangeHandler(e, "email")}
           ></TextInput>
           {!isLogin && (
             <TextInput
               style={styles.input}
               placeholder="Name"
-              name="Name"
-              onChangeText={(e) => onChangeHandler(e, "Name")}
+              name="name"
+              value={inputs.name || ""}
+              onChangeText={(e) => onChangeHandler(e, "confirmPassword")}
             ></TextInput>
           )}
           <TextInput
             secureTextEntry={true}
             style={styles.input}
             placeholder="Password"
-            onChangeText={(e) => onChangeHandler(e, "Password")}
+            name="password"
+            value={inputs.password || ""}
+            onChangeText={(e) => onChangeHandler(e, "password")}
           ></TextInput>
-          <Text style={[styles.message, { color: isError ? "red" : "green" }]}>
-            {message ? getMessage() : null}
-          </Text>
+          <TextInput
+            secureTextEntry={true}
+            style={styles.input}
+            placeholder="Confirm Password"
+            value={inputs.confirmPassword || ""}
+            name="confirmPassword"
+            onChangeText={(e) => onChangeHandler(e, "confirmPassword")}
+          ></TextInput>
+          {message && (
+            <Text
+              style={[styles.message, { color: isError ? "red" : "green" }]}
+            >
+              {message}
+            </Text>
+          )}
           <TouchableOpacity style={styles.button} onPress={SendData}>
             <Text style={styles.buttonText}>Done</Text>
           </TouchableOpacity>
@@ -130,7 +169,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: "center",
     alignItems: "center",
-    marginVertical: 5,
+    marginVertical: 3,
   },
   buttonText: {
     color: "white",
@@ -155,5 +194,7 @@ const styles = StyleSheet.create({
   message: {
     fontSize: 16,
     marginVertical: "5%",
+    height: "100%",
+    width: "80%",
   },
 });

@@ -1,0 +1,3 @@
+"cd C:\Users\Pedro\AppData\Local\Android\Sdk\emulator"
+
+".\emulator -avd Pixel_3a_API_31 -no-snapshot-load"
