@@ -33,7 +33,7 @@ router.post('/login', (req, res, next)=>{
 
 router.post('/register', (req, res, next)=>{
     const saltHash = passwordUtils.genPassword(req.body.password);
-    
+    console.log(req.body)
     const {salt, hash} = saltHash
   
     const user = {

@@ -8,6 +8,7 @@ import {
   Platform,
 } from "react-native";
 import axios from "axios";
+import { useKeyboard } from "../components";
 
 const API_URL =
   Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
@@ -17,14 +18,22 @@ export const AuthScreen = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
+  const isKeyboardOpen = useKeyboard();
 
   const SendData = async () => {
-    if (!(inputs.name && inputs.email && inputs.password)) {
+    if (!isLogin)
+      if (!inputs.name) {
+        setIsError(true);
+        setMessage("Complete all forms");
+        return;
+      }
+    if (!(inputs.email && inputs.password)) {
       setIsError(true);
       setMessage("Complete all forms");
       return;
     }
-    if (!inputs.confirmPassword === inputs.password) {
+    console.log(`${API_URL}"routes/users/${isLogin ? "login" : "register"}`);
+    if (inputs.confirmPassword != inputs.password) {
       setIsError(true);
       setMessage("Passwords Must Be The Same");
       return;
@@ -53,7 +62,6 @@ export const AuthScreen = () => {
 
   const onChangeHandler = (value, name) => {
     setInputs((values) => ({ ...values, [name]: value }));
-    console.log(inputs);
   };
 
   const changelogin = () => {
@@ -79,7 +87,7 @@ export const AuthScreen = () => {
               placeholder="Name"
               name="name"
               value={inputs.name || ""}
-              onChangeText={(e) => onChangeHandler(e, "confirmPassword")}
+              onChangeText={(e) => onChangeHandler(e, "name")}
             ></TextInput>
           )}
           <TextInput
@@ -105,7 +113,11 @@ export const AuthScreen = () => {
               {message}
             </Text>
           )}
-          <TouchableOpacity style={styles.button} onPress={SendData}>
+
+          <TouchableOpacity
+            style={[styles.button, { marginTop: isKeyboardOpen ? "7%" :50 }]}
+            onPress={SendData}
+          >
             <Text style={styles.buttonText}>Done</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonAlt} onPress={changelogin}>
@@ -129,7 +141,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "rgba(255, 255, 255, 0.4)",
     width: "80%",
-    marginTop: "40%",
+    marginTop: "37%",
     borderRadius: 20,
     maxHeight: 380,
     paddingBottom: "30%",
@@ -139,20 +151,19 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginLeft: "10%",
     marginTop: "5%",
-    marginBottom: "30%",
+    marginBottom: "45%",
     color: "black",
   },
   form: {
     flex: 1,
     justifyContent: "space-between",
-    paddingBottom: "5%",
+    paddingBottom: "10%",
   },
   inputs: {
     width: "100%",
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: "10%",
   },
   input: {
     width: "80%",
@@ -169,7 +180,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: "center",
     alignItems: "center",
-    marginVertical: 3,
+    marginVertical: 5,
   },
   buttonText: {
     color: "white",
@@ -193,8 +204,9 @@ const styles = StyleSheet.create({
   },
   message: {
     fontSize: 16,
-    marginVertical: "5%",
-    height: "100%",
+    marginVertical: "1%",
+    paddingTop: 10,
+    height: 30,
     width: "80%",
   },
 });
