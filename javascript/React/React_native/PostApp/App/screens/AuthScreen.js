@@ -7,7 +7,7 @@ import {
   TextInput,
   Platform,
 } from "react-native";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { useKeyboard } from "../components";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -67,6 +67,7 @@ export const AuthScreen = () => {
           }
           
           AsyncStorage.setItem('Token', request.data.token)
+          
         })
         .catch((error) => {
           console.log(error);

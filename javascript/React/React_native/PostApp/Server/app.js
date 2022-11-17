@@ -5,7 +5,7 @@ const passport = require('passport')
 
 require('dotenv').config();
 require('./config/database');
-require('./models/user');
+require('./models');
 require('./config/passport')(passport);
 
 

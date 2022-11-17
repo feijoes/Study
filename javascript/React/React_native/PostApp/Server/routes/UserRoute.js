@@ -8,6 +8,7 @@ router.get(
   "/protected",
   passport.authenticate("jwt", { session: false }),
   (req, res, next) => {
+
     res.status(200).json({ success: true, msg: "You are login" });
   }
 );
@@ -16,7 +17,7 @@ router.post("/login", (req, res, next) => {
   User.findOne({ email: req.body.email })
     .then((user) => {
       if (!user) {
-        res.status(401).json({ success: false, msg: "Could not find user " });
+        res.status(401).json({ success: false, msg: "Could not find user" });
       }
 
       const isValid = utils.validPassword(
