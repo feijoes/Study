@@ -1,53 +1,30 @@
-const mongoose = require('mongoose');
-const router = require('express').Router();   
-const Post = mongoose.model('posts');
+const mongoose = require("mongoose");
+const router = require("express").Router();
+const Post = mongoose.model("posts");
 
+router.post("/", (req, res, next) => {});
 
+router.patch("/", (req, res, next) => {
+  const saltHash = utils.genPassword(req.body.password);
 
-router.post('/', (req, res, next)=>{
+  const { salt, hash } = saltHash;
 
-    User.findOne({ email : req.body.email })
-        .then((user)=>{
-            if (!user){
-                res.status(401).json({ success:false, msg: "Could not find user "})
-            }
+  const user = {
+    username: req.body.username,
+    email: req.body.email,
+    hash: hash,
+    salt: salt,
+  };
 
-            const isValid = utils.validPassword(req.body.password, user.hash , user.salt)
+  const newUser = new Post(user);
+  newUser
+    .save()
+    .then((user) => {
+      const { token, expires } = utils.issueJWT(user);
 
-            if (isValid){
-                
-                const { token, expires } = utils.issueJWT(user)
-
-                res.status(200).json({ success: true, user:user, token: token, expires: expires })
-            }
-            else res.status(401).json({ success: false, msg: "Invalid password" })
-        })
-        .catch(( err )=> next( err ))
-
-});
-
-router.post('/update', (req, res, next)=>{
-    const saltHash = utils.genPassword(req.body.password);
-    console.log(req.body)
-    const {salt, hash} = saltHash
-  
-    const user = {
-        username: req.body.username,
-        email: req.body.email,
-        hash:hash,
-        salt: salt,
-    }
-
-    const newUser = new User(user)
-    newUser.save().then((user)=>{
-
-        const {token, expires} = utils.issueJWT(user);
-
-        res.json({ success:true , user:user, token:token, expires:expires });
+      res.json({ success: true, user: user, token: token, expires: expires });
     })
-    .catch(err => next(err))
-
+    .catch((err) => next(err));
 });
-
 
 module.exports = router;
