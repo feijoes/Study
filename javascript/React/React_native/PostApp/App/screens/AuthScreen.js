@@ -20,7 +20,7 @@ export const AuthScreen = () => {
   const [isError, setIsError] = useState(false);
   const isKeyboardOpen = useKeyboard();
 
-  const SendData = async () => {
+  const SendData =  () => {
     if (!isLogin)
       if (!inputs.name) {
         setIsError(true);
@@ -32,7 +32,6 @@ export const AuthScreen = () => {
       setMessage("Complete all forms");
       return;
     }
-    console.log(`${API_URL}"routes/users/${isLogin ? "login" : "register"}`);
     if (inputs.confirmPassword != inputs.password) {
       setIsError(true);
       setMessage("Passwords Must Be The Same");
@@ -45,17 +44,33 @@ export const AuthScreen = () => {
             password: inputs.password,
           }
         : {
-            username: inputs.name,
+            email: inputs.email,
             password: inputs.password,
           };
 
-      const request = await axios.post(
-        `${API_URL}"routes/users/${isLogin ? "login" : "register"}`,
+      axios.post(
+        `${API_URL}routes/users/${isLogin ? "login" : "register"}`,
         body,
-        { withCredentials: true }
-      );
-      const response = await request.json();
-      console.log(response);
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+        }
+      ).then((request)=>{
+        console.log(request.data)
+        if (request.data.success) {
+          setIsError(false);
+          setMessage("You Are Login");
+        }
+      }).catch((error)=>{
+        setIsError(true);
+        setMessage(error.response.data.msg);
+      })
+       
+        
+      
+
       setInputs({});
     }
   };
@@ -68,6 +83,7 @@ export const AuthScreen = () => {
     setIsLogin(!isLogin);
     setMessage("");
   };
+
   return (
     <View style={styles.card}>
       <Text style={styles.heading}>{isLogin ? "Login" : "Signup"}</Text>
@@ -115,7 +131,7 @@ export const AuthScreen = () => {
           )}
 
           <TouchableOpacity
-            style={[styles.button, { marginTop: isKeyboardOpen ? "7%" :50 }]}
+            style={[styles.button, { marginTop: isKeyboardOpen ? "7%" : 50 }]}
             onPress={SendData}
           >
             <Text style={styles.buttonText}>Done</Text>
@@ -205,8 +221,9 @@ const styles = StyleSheet.create({
   message: {
     fontSize: 16,
     marginVertical: "1%",
-    paddingTop: 10,
+    marginBottom: -10,
     height: 30,
     width: "80%",
+    paddingTop: 10,
   },
 });

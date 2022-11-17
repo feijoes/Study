@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const User = require('mongoose').model('User');
+const User = require('mongoose').model('users');
 const JwtStategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const pathToKey = path.join(__dirname, '..', 'id_rsa_pub.pem');
