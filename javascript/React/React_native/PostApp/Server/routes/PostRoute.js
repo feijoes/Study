@@ -1,15 +1,10 @@
 const mongoose = require('mongoose');
 const router = require('express').Router();   
-const User = mongoose.model('users');
-const passport = require('passport');
-const utils = require('../lib/utils');
+const Post = mongoose.model('posts');
 
 
-router.get('/protected',passport.authenticate('jwt', { session:false }),(req, res, next) => {
-    res.status(200).json({ success:true, msg: "You are login" })
-});
 
-router.post('/login', (req, res, next)=>{
+router.post('/', (req, res, next)=>{
 
     User.findOne({ email : req.body.email })
         .then((user)=>{
@@ -31,7 +26,7 @@ router.post('/login', (req, res, next)=>{
 
 });
 
-router.post('/register', (req, res, next)=>{
+router.post('/update', (req, res, next)=>{
     const saltHash = utils.genPassword(req.body.password);
     console.log(req.body)
     const {salt, hash} = saltHash
@@ -53,5 +48,6 @@ router.post('/register', (req, res, next)=>{
     .catch(err => next(err))
 
 });
+
 
 module.exports = router;

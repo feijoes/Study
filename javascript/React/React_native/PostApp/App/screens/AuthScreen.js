@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import axios from "axios";
 import { useKeyboard } from "../components";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const API_URL =
   Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
@@ -20,7 +21,7 @@ export const AuthScreen = () => {
   const [isError, setIsError] = useState(false);
   const isKeyboardOpen = useKeyboard();
 
-  const SendData =  () => {
+  const SendData = () => {
     if (!isLogin)
       if (!inputs.name) {
         setIsError(true);
@@ -48,28 +49,30 @@ export const AuthScreen = () => {
             password: inputs.password,
           };
 
-      axios.post(
-        `${API_URL}routes/users/${isLogin ? "login" : "register"}`,
-        body,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        }
-      ).then((request)=>{
-        console.log(request.data)
-        if (request.data.success) {
-          setIsError(false);
-          setMessage("You Are Login");
-        }
-      }).catch((error)=>{
-        setIsError(true);
-        setMessage(error.response.data.msg);
-      })
-       
-        
-      
+      axios
+        .post(
+          `${API_URL}routes/users/${isLogin ? "login" : "register"}`,
+          body,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+            withCredentials: true,
+          }
+        )
+        .then((request) => {
+          if (request.data.success) {
+            setIsError(false);
+            setMessage("You Are Login");
+          }
+          
+          AsyncStorage.setItem('Token', request.data.token)
+        })
+        .catch((error) => {
+          console.log(error);
+          setIsError(true);
+          setMessage(error.response.data.msg);
+        });
 
       setInputs({});
     }
