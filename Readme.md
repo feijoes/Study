@@ -9,7 +9,11 @@ Current folders--
         * Backend with node.js (Check in folder README for more details )
     * React
         * Project to learn how react works
-        * TODO react native
+        * React native projects
+            * FirstProject
+               * Learning how react-native works
+            * PostApp
+               * More details in [Project README](./javascript/React/React_native/PostApp/README.md)
     * Nestjs 
         * Simple api to undertand how nest works
     * WebPack
