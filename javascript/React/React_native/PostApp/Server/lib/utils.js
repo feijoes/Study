@@ -24,7 +24,7 @@ function genPassword(password) {
 function issueJWT(user) {
   const _id = user._id;
 
-  const expiresIn = '1d';
+  const expiresIn = '7d';
 
   const payload = {
     sub: _id,

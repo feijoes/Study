@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   TextInput,
   Platform,
+  RefreshControl,
 } from "react-native";
 import axios from "axios";
 import { useKeyboard } from "../components";
@@ -14,11 +15,12 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const API_URL =
   Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
 
-export const AuthScreen = () => {
+export const AuthScreen = ({setIsUserLogin}) => {
   const [inputs, setInputs] = useState({});
   const [isLogin, setIsLogin] = useState(true);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
+  const [isRefresh, setRefresh] = useState(false);
   const isKeyboardOpen = useKeyboard();
 
   const SendData = () => {
@@ -65,9 +67,9 @@ export const AuthScreen = () => {
             setIsError(false);
             setMessage("You Are Login");
           }
-          
-          AsyncStorage.setItem('Token', request.data.token)
-          
+
+          AsyncStorage.setItem("Token", request.data.token);
+          setIsUserLogin(true)
         })
         .catch((error) => {
           console.log(error);
@@ -80,6 +82,7 @@ export const AuthScreen = () => {
   };
 
   const onChangeHandler = (value, name) => {
+    setRefresh(true)
     setInputs((values) => ({ ...values, [name]: value }));
   };
 
@@ -90,6 +93,7 @@ export const AuthScreen = () => {
 
   return (
     <View style={styles.card}>
+      <RefreshControl refreshing={isRefresh} onRefresh={()=>console.log(1)} />
       <Text style={styles.heading}>{isLogin ? "Login" : "Signup"}</Text>
       <View style={styles.form}>
         <View style={styles.inputs}>

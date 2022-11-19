@@ -1,21 +1,27 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { StyleSheet, View, Text } from "react-native";
-import { AuthScreen } from "./screens/";
+import { StyleSheet, View } from "react-native";
+import { AuthScreen,Home } from "./screens/";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 
 export default function App() {
- 
   React.useEffect(() => {
     // Fetch the token from storage then navigate to our appropriate place
+    
     const get = async () => {
       let userToken;
 
       try {
         userToken = await AsyncStorage.getItem("Token");
-        console.log(userToken)
-        if (userToken) setIsUserLogin(true);
+
+        if (userToken != null) {
+     
+          setIsUserLogin(true);
+        } else {
+          
+          setIsUserLogin(false);
+        }
       } catch (e) {
         console.log(e);
       }
@@ -23,10 +29,17 @@ export default function App() {
 
     get();
   }, []);
+
   [userIsLogin, setIsUserLogin] = useState(false);
+  const [view, setView]= useState(null)
+  React.useEffect(() => {
+    // Fetch the token from storage then navigate to our appropriate place
+    setView(userIsLogin ? <Home />: <AuthScreen setIsUserLogin={setIsUserLogin}/>);
+  }, [userIsLogin]);
+
   return (
     <View style={styles.container}>
-      {userIsLogin ? <Text>YOU ARE LOGIn</Text> : <AuthScreen />}
+      {view}
       <StatusBar style="auto" />
     </View>
   );
