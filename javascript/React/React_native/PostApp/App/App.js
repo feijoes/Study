@@ -34,7 +34,7 @@ export default function App() {
   const [view, setView]= useState(null)
   React.useEffect(() => {
     // Fetch the token from storage then navigate to our appropriate place
-    setView(userIsLogin ? <Home />: <AuthScreen setIsUserLogin={setIsUserLogin}/>);
+    setView(userIsLogin ? <Home setIsUserLogin={setIsUserLogin} />: <AuthScreen setIsUserLogin={setIsUserLogin}/>);
   }, [userIsLogin]);
 
   return (
@@ -50,5 +50,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
+    
   },
 });
