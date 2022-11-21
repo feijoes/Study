@@ -7,8 +7,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   React.useEffect(() => {
+
+
     // Fetch the token from storage then navigate to our appropriate place
-    
     const get = async () => {
       let userToken;
 
