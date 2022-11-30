@@ -39,7 +39,7 @@ export default function App() {
   }, [userIsLogin]);
 
   return (
-    <View style={styles.container}>
+    <View style={userIsLogin? styles.container2 : styles.container}>
       {view}
       <StatusBar style="auto" />
     </View>
@@ -51,6 +51,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    
   },
+  container2: {
+    flex: 1,
+    backgroundColor: "#fff",
+  }
 });

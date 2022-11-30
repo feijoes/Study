@@ -72,10 +72,10 @@ export const AuthScreen = ({setIsUserLogin}) => {
           setIsUserLogin(true)
         })
         .catch((error) => {
-          console.log(error);
+          console.log(1);
           setIsError(true);
-          setMessage(error.response.data.msg);
-        });
+          setMessage(error?.response?.data?.msg || "Error in connection to the server");
+        })
 
       setInputs({});
     }
