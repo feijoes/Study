@@ -11,7 +11,7 @@ export default function CreatePost() {
         </View>
       </View>
       <View style={styles.messageOrange}>
-        <Text style={styles.messageContent}></Text>
+        <Text style={styles.messageContent}>Post 2</Text>
         <View >
           <Text>Test</Text>
         </View>
@@ -43,7 +43,7 @@ messageOrange :{
   marginBottom: 10,
   marginLeft: "80%",
   padding: 10,
-  backgroundColor: "#f8e896",
+  backgroundColor: "green",
   width: 200,
   height: 50,
   textAlign: "left",
