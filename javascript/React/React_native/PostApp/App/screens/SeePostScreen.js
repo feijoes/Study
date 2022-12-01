@@ -3,7 +3,7 @@ import React from 'react'
 
 const SeePostScreen = () => {
   return (
-    <View style={{ flex: 1,width: 1000,height:1000, alignItems: 'center', justifyContent: 'center', backgroundColor: "red"}}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text
                 onPress={() => alert('This is the POST screen.')}
                 style={{ fontSize: 26, fontWeight: 'bold' }}>Home Screen</Text>
