@@ -24,7 +24,8 @@ the blue ones are from the user and orange are others users
  
 Create one
 
-<img src="https://user-images.githubusercontent.com/74252371/205460481-c13c4e67-73bb-4eab-a3bf-11bd99fbe34a.png" width="400" />
+<img src="https://user-images.githubusercontent.com/74252371/205460701-d6407446-3c3e-436d-bcaa-33f5590c575c.png" width="400" />
 
 
 Its very simple app, just a project to improve my css/react-native skills
+
