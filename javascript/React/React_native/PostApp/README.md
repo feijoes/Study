@@ -21,3 +21,10 @@ One screen where you can see the comments
 the blue ones are from the user and orange are others users
 
  <img src="https://user-images.githubusercontent.com/74252371/205454055-7ae1fb55-0d9a-4773-9944-56df7c54ef03.png" width="400"/>
+ 
+Create one
+
+<img src="https://user-images.githubusercontent.com/74252371/205460481-c13c4e67-73bb-4eab-a3bf-11bd99fbe34a.png" width="400" />
+
+
+Its very simple app, just a project to improve my css/react-native skills
