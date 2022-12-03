@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const PostSchema = new mongoose.Schema({
-    Id : Number,
+    Id : String,
     user: String,
     body: String,
     time : { type : Date, default: Date.now }

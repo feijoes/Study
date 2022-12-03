@@ -19,8 +19,10 @@ const Post = ({ POST }) => {
     get();
   }, []);
 
-  const isUser = POST.username === user;
+  const isUser = POST.user === user;
+ 
   return (
+
     <>
       <View
         style={[
@@ -30,11 +32,11 @@ const Post = ({ POST }) => {
       >
         <Text style={styles.messageContent}>{POST.body}</Text>
         <View style={[styles.messageTime, isUser ? { right: 5 } : { left: 6 }]}>
-          <Text style={{ fontSize: 9.5, fontWeight: "330",marginBottom: 3 }}>{POST.time}</Text>
+          <Text style={{ fontSize: 9.5, fontWeight: "330",marginBottom: 3 }}>{POST.time.slice(0,10)}</Text>
         </View>
         <View style={[styles.messageTime, !isUser ? { right: 5 } : { left: 5 }]}>
           <Text style={{ fontSize: 12, fontWeight: "400", marginRight: 4,marginBottom: 3 }}>
-            {POST.username}
+            {POST.user}
           </Text>
         </View>
       </View>
