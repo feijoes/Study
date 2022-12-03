@@ -28,7 +28,7 @@ export default function Logout({setIsUserLogin}) {
           <Icon.Button
             name="logout"
             size={30}
-            backgroundColor="#fff"
+            backgroundColor="white"
             iconStyle={{ color: "black" }}
           />
         </TouchableNativeFeedback>

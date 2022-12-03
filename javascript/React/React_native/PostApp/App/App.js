@@ -31,11 +31,12 @@ export default function App() {
     get();
   }, []);
 
-  [userIsLogin, setIsUserLogin] = useState(false);
+  const [userIsLogin, setIsUserLogin] = useState(false);
+  
   const [view, setView]= useState(null)
   React.useEffect(() => {
     // Fetch the token from storage then navigate to our appropriate place
-    setView(userIsLogin ? <Home setIsUserLogin={setIsUserLogin} />: <AuthScreen setIsUserLogin={setIsUserLogin}/>);
+    setView(userIsLogin ? <Home setIsUserLogin={setIsUserLogin} />: <AuthScreen setIsUserLogin={setIsUserLogin} />);
   }, [userIsLogin]);
 
   return (

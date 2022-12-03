@@ -15,7 +15,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const API_URL =
   Platform.OS === "ios" ? "http://localhost:5000/" : "http://10.0.2.2:5000/";
 
-export const AuthScreen = ({setIsUserLogin}) => {
+export const AuthScreen = ({setIsUserLogin,setUser}) => {
   const [inputs, setInputs] = useState({});
   const [isLogin, setIsLogin] = useState(true);
   const [message, setMessage] = useState("");
@@ -62,19 +62,22 @@ export const AuthScreen = ({setIsUserLogin}) => {
             withCredentials: true,
           }
         )
-        .then((request) => {
+        .then(async (request) => {
+          
           if (request.data.success) {
             setIsError(false);
             setMessage("You Are Login");
+      
+            AsyncStorage.setItem("Token", request.data.token);
+            await AsyncStorage.setItem("User", request.data.user.username);
+            setIsUserLogin(true)
           }
 
-          AsyncStorage.setItem("Token", request.data.token);
-          setIsUserLogin(true)
+    
         })
         .catch((error) => {
-          console.log(1);
           setIsError(true);
-          setMessage(error?.response?.data?.msg || "Error in connection to the server");
+          setMessage(error?.response?.data?.msg || "Error in connectin to the server");
         })
 
       setInputs({});

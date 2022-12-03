@@ -1,23 +1,19 @@
-
 import * as React from "react";
 import SeePostScreen from "./SeePostScreen";
 import CreatePost from "./CreatePost";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {Logout} from "../components"
+import { Logout } from "../components";
 const Tab = createBottomTabNavigator();
 const homeName = "Posts";
 const detailsName = "Create Post";
 
-
-const ScreensContainer = ({setIsUserLogin}) => {
-  
-
+const ScreensContainer = ({ setIsUserLogin }) => {
   return (
     <>
       <NavigationContainer>
-      <Logout />
+        <Logout setIsUserLogin={setIsUserLogin} />
         <Tab.Navigator
           initialRouteName={homeName}
           screenOptions={({ route }) => ({
@@ -29,7 +25,7 @@ const ScreensContainer = ({setIsUserLogin}) => {
                 iconName = focused ? "home" : "home-outline";
               } else if (rn === detailsName) {
                 iconName = focused ? "create" : "create-outline";
-              } 
+              }
 
               // You can return any component that you like here!
               return <Ionicons name={iconName} size={size} color={color} />;
@@ -47,8 +43,8 @@ const ScreensContainer = ({setIsUserLogin}) => {
               null,
             ],
           })}
-        >  
-          <Tab.Screen name={homeName} component={SeePostScreen} /> 
+        >
+          <Tab.Screen name={homeName} component={SeePostScreen} />
           <Tab.Screen name={detailsName} component={CreatePost} />
         </Tab.Navigator>
       </NavigationContainer>
@@ -57,4 +53,3 @@ const ScreensContainer = ({setIsUserLogin}) => {
 };
 
 export default ScreensContainer;
-
