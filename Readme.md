@@ -31,8 +31,11 @@ Current folders--
     * AspNet Core learning
     * Microservices 
 * flutter 
+    * learning dart
 * Frontend (Check in folder README for more details )
     * Github copy
+* Python
+    * FastAPI
 
 Frontend folder is proyects to practice my frontend skills, not react, css,...
 
