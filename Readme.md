@@ -1,5 +1,9 @@
 # Repository made for learning new things/frameworks/languages
 
+Some folders are anotations for understand the frameworks/language
+
+or other are simple project that a don't think are big/important enough for create a new repo
+
 Current folders--
 
 * JavaScript
@@ -36,7 +40,7 @@ Current folders--
     * Github copy
 * Python
     * FastAPI
-
+* Rust
 Frontend folder is proyects to practice my frontend skills, not react, css,...
 
 
