@@ -99,8 +99,41 @@ fn main() -> () {
     /// st6 dont exist anymore but st7 exist
     let st8 = st6+ " and "+ &st7;
 
-    println!("st8: {}",st8)
+    println!("st8: {}",st8);
 
-    
+    /// learaning "enum" and "impl"
+
+    enum Day{
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+
+    impl Day {
+        fn is_weekend(&self)->bool{
+            match  self {
+                Day::Saturday | Day::Sunday => true,
+                _ => false
+            }
+        }
+    }
+
+    let today: Day  = Day::Monday;
+
+    println!("Is today the weekend {}",today.is_weekend());
+
+    /// Vectors
+    let vec1: Vec<i32> = Vec::new();
+    let mut vec2: Vec<i32> = vec![1,2,3,4];
+    vec2.push(5);
+    let second =  &vec2[1];
+    match vec2.get(1) {
+        Some(second)=>println!("it is 2"),
+        None => println!("it is not 2"),
+    }
 }
 
