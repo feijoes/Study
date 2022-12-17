@@ -7,3 +7,6 @@ class Produto(models.Model):
     score = models.IntegerField()
     image = models.CharField(max_length=100)
     
+    def __str__(self) -> str:
+        return self.name
+    
