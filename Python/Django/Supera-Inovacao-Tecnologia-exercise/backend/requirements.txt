@@ -3,3 +3,4 @@ django
 djangorestframework
 django-cors-headers
 psycopg2
+django-rest-knox
