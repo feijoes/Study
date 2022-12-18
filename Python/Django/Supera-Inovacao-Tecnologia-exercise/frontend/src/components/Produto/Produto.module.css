@@ -1,0 +1,53 @@
+
+.productImage{
+    width:120px;
+    height:120px;
+    padding-right:20px;
+}
+
+.productList li .productImage img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.productImformation h4{
+    font-size:20px;
+}
+
+.productImformation .specification{
+    margin-bottom:7px;
+}
+.productImformation .specification span{
+    font-size:10px;
+    
+    color:#000;
+    font-weight:500;
+}
+.productImformation span{
+    font-weight:800;
+    color:red;
+}
+
+.product{
+    display:flex;
+}
+
+.productImformation{
+    margin-top:15px;
+    margin-left:20px;
+}
+
+.specification{
+    display:flex;
+    margin-top:5px;
+}
+
+.specification .line{
+    height: 10px;
+    width: 1px;
+    background-color: #00000026;
+    display: flex;
+    margin-left:10px;
+    margin-right:10px;
+}

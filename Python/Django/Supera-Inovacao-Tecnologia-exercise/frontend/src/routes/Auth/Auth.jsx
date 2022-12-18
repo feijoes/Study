@@ -12,7 +12,7 @@ const Auth = () => {
   const [email, setEmail] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [Type, setType] = useState(false);
-  const { cookies, setAuth, LOGIN_URL, isLogin } = useContext(AuthContext);
+  const { cookies, setAuth, API_URL, isLogin } = useContext(AuthContext);
   const [success, setSuccess] = useState(false)
 
   const handleSubmit = async (e) => {
@@ -20,14 +20,14 @@ const Auth = () => {
     try {
       const response = Type
         ? await axios.post(
-            LOGIN_URL + "register/",
+            API_URL + "register/",
             JSON.stringify({ username: user, email: email, password: pwd }),
             {
               headers: { "Content-Type": "application/json" },
             }
           )
         : await axios.post(
-            LOGIN_URL + "login/",
+            API_URL + "login/",
             JSON.stringify({ username: user, password: pwd }),
             {
               headers: { "Content-Type": "application/json" },
@@ -117,11 +117,12 @@ const Auth = () => {
               value={pwd}
               required
             />
-            <button>Sign In</button>
+            <button>Confirm</button>
           </form>
           <p>
             {Type ? "Already have a account?" : "Dont have a account?"}
             <br />
+            <br></br>
             <span className="line">
               <a href="#" onClick={(e) => setType((r) => !r)}>
                 {Type ? "Sign in" : "Sign Up"}
