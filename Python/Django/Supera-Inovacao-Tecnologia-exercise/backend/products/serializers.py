@@ -9,7 +9,5 @@ class ProductSerializer(serializers.ModelSerializer):
       
 
     def create(self, validated_data):
-        print(validated_data)
         produto = Produto.objects.create(**validated_data)
-
         return produto

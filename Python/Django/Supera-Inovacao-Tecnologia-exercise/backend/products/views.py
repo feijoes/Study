@@ -13,7 +13,7 @@ class ProductsAPI(generics.GenericAPIView):
         serializer: ProductSerializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response({"msg":"created product" },status=status.HTTP_201_CREATED)
+        return Response({"msg":"carrinho atualizado" },status=status.HTTP_201_CREATED)
       
     
     def get(self,request: Request,*args,**kwargs):
@@ -23,4 +23,6 @@ class ProductsAPI(generics.GenericAPIView):
         else: serializer = ProductSerializer(self.get_queryset(), many=True)
 
         return Response(serializer.data)
+    
+    
         

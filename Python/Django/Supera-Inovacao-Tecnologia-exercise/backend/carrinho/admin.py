@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Carrinho, Count
 
-# Register your models here.
+admin.site.register(Carrinho)
+admin.site.register(Count)

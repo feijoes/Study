@@ -7,6 +7,10 @@ from products.models import Produto
 class Carrinho(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     produtos =models.ManyToManyField(Produto, related_name='produto_carrinho', related_query_name='produtos_carrinhos',through="Count",blank=True,)
+    
+    def __str__(self) -> str:
+        return f"{self.user} carrinho"
+
 
 class Count(models.Model):
     carrinho = models.ForeignKey(Carrinho, on_delete=models.CASCADE)

@@ -21,5 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include("auth.urls")),
-    path("",include("products.urls"))
+    path("",include("products.urls")),
+    path("",include("carrinho.urls"))
+    
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
