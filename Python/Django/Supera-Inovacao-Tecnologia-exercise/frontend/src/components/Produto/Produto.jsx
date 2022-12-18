@@ -18,7 +18,7 @@ export const Produto = ({ produto }) => {
             <span>${produto.price}</span>
           </div>
         </div>
-        <button onClick={}>Comprar</button>
+        <button onClick={()=>{}}>Comprar</button>
       </li>
     </>
   );
