@@ -6,7 +6,8 @@ from .models import Produto
 # Create your views here.
 class ProductsAPI(generics.GenericAPIView):
     serializer_class = ProductSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    # o Certo seria IsAuthenticatedOrReadOnly
+    permission_classes = (permissions.AllowAny,)
     queryset=Produto.objects.all()
     
     def post(self, request: Request, *args, **kwargs):
