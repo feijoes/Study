@@ -1,8 +1,7 @@
 #![allow(unused)]
-
 use std::{io::Chain, cmp::Ordering};
-
 use rand::Rng;
+use std::ops::Add;
 
 fn main() -> () {
 
@@ -135,5 +134,44 @@ fn main() -> () {
         Some(second)=>println!("it is 2"),
         None => println!("it is not 2"),
     }
+    for i in &mut vec2 {
+        *i *=2;
+    }
+    for i in &vec2 {
+        println!("{}",i);
+    }
+    println!("Pop : {:?}", vec2.pop());
+
+    
+    /// Functions
+    fn get_sum(x: i8, y: i8) 
+    -> i8
+    {
+        return x + y
+    }
+    fn get_multiplication_and_division(x: i32, y: i32) -> (i32,f32) {
+        return (x * y, x as f32 / y as f32)
+    }
+    fn sum_list(list: &[i32]) ->i32{
+        return list.iter().sum();
+    }
+    let list = [1,2,3,4];
+    println!("{}", get_sum(19, 2));
+    println!("{:?}",get_multiplication_and_division(3, 2));
+    println!("sum {:?} = {}", list,sum_list(&list));
+
+    /// Generics
+    fn get_sum_gen<T:Add<Output = T>>(x: T,y: T) -> T{
+        return x + y;
+    }
+    println!("{}",get_sum_gen(1, 1));
+    println!("{}",get_sum_gen(1.4, 1.2));
+
+    /// Ownership
+    let str1 = String::from("World");
+    let str2 = str1.clone();
+    println!("Hello {}",str1)
+
+    
 }
 
