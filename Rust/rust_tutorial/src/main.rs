@@ -1,8 +1,17 @@
 #![allow(unused)]
 use std::{io::Chain, cmp::Ordering};
+use std::io::{Write, BufReader, BufRead, ErrorKind};
+use std::fs::File;
 use rand::Rng;
 use std::ops::Add;
-
+use std::collections::HashMap;
+use std::thread;
+use std::rc::Rc;
+use std::cell::RefCell;
+use std::sync::{Arc, Mutex};
+use std::time::Duration;
+mod restaurant;
+use crate::restaurant::order_food;
 fn main() -> () {
 
     // User input
@@ -123,7 +132,7 @@ fn main() -> () {
 
     let today: Day  = Day::Monday;
 
-    println!("Is today the weekend {}",today.is_weekend());
+    println!("Is today the weekend?\n {}",today.is_weekend());
 
     /// Vectors
     let vec1: Vec<i32> = Vec::new();
@@ -170,8 +179,204 @@ fn main() -> () {
     /// Ownership
     let str1 = String::from("World");
     let str2 = str1.clone();
-    println!("Hello {}",str1)
+    println!("Hello {}",str1);
+
+    /// Hashmap
+    let mut persons = HashMap::new();
+    persons.insert("Pedro", 19);
+    persons.insert("Buratti", 17);
+
+    for (k,v) in persons.iter(){
+        println!("{} is {} years old",k,v);
+    }
+    
+    /// Structs
+    struct Customer{
+        name: String,
+        age: u8,
+        balance: f32,
+    };
+
+    let bob = Customer{
+        name: String::from("bob"),
+        age: 21,
+        balance: 221.4,
+    };
+    trait Shape{
+        fn new(lenght: f32, width: f32) -> Self;
+        fn area(&self) -> f32;
+    }
+    
+    struct Rectangle{
+        lenght: f32,
+        width: f32,
+    }
+
+    let rec = Rectangle{
+        lenght: 3.1,
+        width: 3.6
+    };
+    impl Shape for Rectangle {
+        fn new(lenght: f32, width: f32) -> Self {
+            return  Rectangle{lenght,width};
+        }
+        fn area(&self) -> f32 {
+            return self.lenght * self.width
+        }
+    }
+
+    println!("area of rec : {}",rec.area());
+
+    // order_food();
+
+    /// File io
+    let path = "lines.txt";
+    let output = File::create(path);
+    let mut output = match output {
+        Ok(file) => file,
+        Err(e) => {
+            panic!("Problem creating file: {:?}",e);
+        }
+    };
+    write!(output, "Just some words").expect("Falied to write to file");
+    
+    let input = File::open(path).unwrap();
+    let buffered = BufReader::new(input);
+
+ 
+    for line in buffered.lines() {
+        println!("{}", line.unwrap());
+    }
+
+    let output2 = File::create("rand.txt");
+    let output2 = match output2 {
+        Ok(file) => file,
+        Err(error) => match error.kind() {
+            ErrorKind::NotFound => match File::create("rand.txt") {
+                Ok(fc) => fc,
+                Err(e) => panic!("Can't create file: {:?}", e),
+            },
+            _other_error => panic!("Problem opening file : {:?}", error),
+        },
+    };
+    /// Closures
+    let can_vote = |age: i32| {
+        age >= 18
+    };
+    println!("Can vote : {}", can_vote(8));
+
+    let mut samp1 = 5;
+    let print_var = || println!("samp1 = {}", samp1);
+    print_var();
+    samp1 = 10;
+
+ 
+    let mut change_var = || samp1 += 1;
+    change_var();
+    println!("samp1 = {}", samp1);
+    samp1 = 10;
+    println!("samp1 = {}", samp1);
+    fn use_func<T>(a: i32, b: i32, func: T) -> i32 where T: Fn(i32, i32) -> i32 {
+        func(a, b)
+    }
+
+    let sum = |a, b| a + b;
+    let prod = |a, b| a * b;
+
+    println!("5 + 4 = {}", use_func(5, 4, sum));
+    println!("5 * 4 = {}", use_func(5, 4, prod));
+
+    /// Box
+    let b_int1 = Box::new(10);
+
+    println!("b_int1 = {}", b_int1);
 
     
+    struct TreeNode<T> {
+        pub left: Option<Box<TreeNode<T>>>,
+        pub right: Option<Box<TreeNode<T>>>,
+        pub key: T,
+    }
+
+    impl<T> TreeNode<T> {
+        pub fn new(key: T) -> Self {
+            TreeNode {
+                left: None,
+                right: None,
+                key,
+            }
+        }
+
+        pub fn left(mut self, node: TreeNode<T>) -> Self {
+            self.left = Some(Box::new(node));
+            self
+        }
+
+        pub fn right(mut self, node: TreeNode<T>) -> Self {
+            self.right = Some(Box::new(node));
+            self
+        }
+    }
+
+    let node1 = TreeNode::new(1)
+    .left(TreeNode::new(2))
+    .right(TreeNode::new(3));
+    
+    /// Thread
+    let thread1 = thread::spawn(|| {
+        for i in 1..25 {
+            println!("Spawned thread : {}", i);
+          
+            thread::sleep(Duration::from_millis(1));
+        }
+    });
+
+    for i in 1..20 {
+        println!("Main thread : {}", i);
+        thread::sleep(Duration::from_millis(1));
+    }
+    thread1.join().unwrap();
+
+    // ----- BANK ACCOUNT EXAMPLE -----
+
+    pub struct Bank {
+        balance: f32
+    }
+
+    fn withdraw(the_bank: &Arc<Mutex<Bank>>, amt:f32){
+        let mut bank_ref = the_bank.lock().unwrap();
+
+        if bank_ref.balance < 5.00{
+            println!("Current Balance : {} Withdrawal a smaller amount",
+            bank_ref.balance);
+        } else {
+            bank_ref.balance -= amt;
+            println!("Customer withdrew {} Current Balance {}",
+            amt, bank_ref.balance);
+        }
+    }
+
+    fn customer(the_bank: Arc<Mutex<Bank>>) {
+        withdraw(&the_bank, 5.00);
+    }
+
+    let bank: Arc<Mutex<Bank>> =
+      Arc::new(Mutex::new(Bank { balance: 20.00 }));
+
+    let handles = (0..10).map(|_| {
+
+        let bank_ref = bank.clone();
+        thread::spawn(|| {
+            customer(bank_ref)
+        })
+    });
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+  
+    
 }
+
 
