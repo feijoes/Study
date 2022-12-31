@@ -3,7 +3,7 @@
 ## Current folders:
 
 ### rust_tutorial
-    learning how rust works
+   * learning how rust works
 
 
 
