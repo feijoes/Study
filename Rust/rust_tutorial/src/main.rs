@@ -376,7 +376,29 @@ fn main() -> () {
     }
 
   
+    /// macro_rules
     
+    // example
+    macro_rules! list_compr {
+        ($id1: ident | $id2: ident <- [$start: expr ; $end: expr], $cond: expr) => {
+            {
+                let mut vec = Vec::new();
+
+                for num in $start..$end + 1{
+                    if $cond(num){
+                        vec.push(num)
+                    }
+                }
+                vec
+            }
+        };
+    }
+    fn even(x:i32)-> bool {
+        x%2 == 0
+    };
+
+    let evens: Vec<i32> = list_compr![x | x <- [1;10],even];
+
 }
 
 
