@@ -1,4 +1,6 @@
 
+use std::async_iter;
+
 use actix_web::{
     get, 
     post, 
@@ -12,7 +14,7 @@ use actix_web::{
 };
 use serde::{Serialize, Deserialize};
 use strum_macros::{Display};
-use crate::model::task::Task;
+use crate::{model::task::Task, repo::ddb::DDBRepository};
 use crate::model::task::TaskState;
 
 
@@ -59,6 +61,41 @@ impl ResponseError for TaskError {
 }
 
 #[get("/task/{task_id}")]
-pub async fn get_task(task_identifier: Path<TaskIdentifier>) -> Result<Json<Task>,TaskState>{
-    return Json(task_identifier.into_inner().task_id);
+pub async fn get_task(
+    task_identifier: Path<TaskIdentifier>,
+    ddb_repo: Data<DDBRepository>
+) 
+-> Result<Json<Task>,TaskError>{
+    let task = ddb_repo.get_task(
+        task_identifier.into_inner().task_id
+    ).await;
+
+    match  task {
+        Some(task) => Ok(Json(task)),
+        None => Err(TaskError::TaskNotFound)
+    }
+}
+
+async fn state_transition(
+    ddb_repo: Data<DDBRepository>,
+    task_identifier: String,
+    new_state: TaskState,
+    result_file: Option<String>
+) -> Result<Json<TaskIdentifier>,TaskError>{
+    let mut task = match ddb_repo.get_task(task_identifier)
+    .await {
+        Some(task) => task,
+        None => return Err(TaskError::TaskNotFound) 
+    };
+    if !task.can_transition_to(&new_state){
+        return Err(TaskError::BadTaskRequest);
+    }
+    task.state = new_state;
+    task.result_file = result_file;
+    let id =  task.get_global_id();
+    match ddb_repo.put_task(task).await {
+        Ok(())=> Ok(Json(TaskIdentifier {task_id :id})),
+        Err(_) => Err(TaskError::TaskUpdateFailure)
+    }
+
 }
