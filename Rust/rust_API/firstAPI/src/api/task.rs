@@ -11,9 +11,13 @@ use actix_web::{
     http::{header::ContentType, StatusCode}
 };
 use serde::{Serialize, Deserialize};
-pub s
+use strum_macros::{Display};
 
+#[derive(Deserialize,Serialize)]
+pub struct TaskIdentifier{
+    task_id: String,
+}
 #[get("/task/{task_id}")]
-pub async fn get_task() -> Json<String>{
-    return Json("hello world".to_string());
+pub async fn get_task(task_identifier: Path<TaskIdentifier>) -> Json<String>{
+    return Json(task_identifier.into_inner().task_id);
 }
