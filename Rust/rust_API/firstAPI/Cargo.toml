@@ -13,6 +13,6 @@ env_logger = "0.10.0"
 log = "0.4.17"
 serde = { version = "1.0.152", features = ["derive"] }
 strum_macros = "0.24.3"
-uuid = "1.2.2"
+uuid = { version = "1.2.2", features = ["v4"] }
 
 strum = { version = "0.24.1", features = ["derive"]}
