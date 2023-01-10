@@ -1,34 +1,45 @@
 mod api;
-mod repo;
 mod model;
-use api::task::{get_task};
-use actix_web::{HttpServer,App,web::Data,middleware::Logger};
-use std::io::Result;
-use std::env::set_var;
+mod repo;
+
+use api::task::{
+    get_task,
+    submit_task,
+    start_task,
+    complete_task,
+    pause_task,
+    fail_task,
+};
 use repo::ddb::DDBRepository;
+use actix_web::{HttpServer, App, web::Data, middleware::Logger};
+
 #[actix_web::main]
-async fn main() -> Result<()> {
-    set_var("RUST_LOG", "debug");
-    set_var("RUST_BACKTRACE", "1");
+async fn main() -> std::io::Result<()> {
+    std::env::set_var("RUST_LOG", "debug");
+    std::env::set_var("RUST_BACKTRACE", "1");
     env_logger::init();
-    
+
     let config = aws_config::load_from_env().await;
-    
     HttpServer::new(move || {
         let ddb_repo: DDBRepository = DDBRepository::init(
-            "task".to_string(),
+            String::from("task"),
             config.clone()
         );
-        let ddb_data: Data<DDBRepository> = Data::new(ddb_repo);
-    
+        let ddb_data = Data::new(
+            ddb_repo
+        );
+        let logger = Logger::default();
         App::new()
-        .wrap(Logger::default())
-        .app_data(ddb_data)
-        .service(get_task)
+            .wrap(logger)
+            .app_data(ddb_data)
+            .service(get_task)
+            .service(submit_task)
+            .service(start_task)
+            .service(complete_task)
+            .service(pause_task)
+            .service(fail_task)
     })
-    .bind(("127.0.0.1",80))?
+    .bind(("127.0.0.1", 80))?
     .run()
     .await
-
-
 }
