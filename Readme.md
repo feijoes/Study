@@ -8,9 +8,9 @@ Current folders--
 
 * JavaScript
     * Angular
-        * Eccommerse with angular
+        * Very simple Eccommerse with angular
     * Node API
-        * Backend with node.js (Check in folder README for more details )
+        * Backend with express (Check in folder README for more details )
     * React
         * Project to learn how react works
         * React native projects
@@ -35,12 +35,15 @@ Current folders--
     * AspNet Core learning
     * Microservices 
 * flutter 
-    * learning dart
+    * learning the basics of dart
 * Frontend (Check in folder README for more details )
-    * Github copy
+    * Github copy > ..not finished..
 * Python
     * FastAPI
+    * Django
 * Rust
+   * makings simple apis
+   * rust tutorials to learn rust
 Frontend folder is proyects to practice my frontend skills, not react, css,...
 
 
