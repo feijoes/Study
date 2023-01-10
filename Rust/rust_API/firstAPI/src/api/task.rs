@@ -1,6 +1,3 @@
-
-use std::async_iter;
-
 use actix_web::{
     get, 
     post, 
@@ -30,7 +27,7 @@ pub struct TaskCompletionRequest{
 #[derive(Deserialize)]
 pub struct SubmitTaskRequest{
     user_id: String,
-    task_typep: String,
+    task_type: String,
     source_file: String
 }
 
@@ -82,7 +79,7 @@ async fn state_transition(
     new_state: TaskState,
     result_file: Option<String>
 ) -> Result<Json<TaskIdentifier>,TaskError>{
-    let mut task = match ddb_repo.get_task(task_identifier)
+    let mut task : Task= match ddb_repo.get_task(task_identifier)
     .await {
         Some(task) => task,
         None => return Err(TaskError::TaskNotFound) 
@@ -99,3 +96,51 @@ async fn state_transition(
     }
 
 }
+
+#[put("/task/{task_id}/start")]
+pub async fn start_task(
+    ddb_repo: Data<DDBRepository>,
+    task_identifier: Path<TaskIdentifier>,
+) -> Result<Json<TaskIdentifier>,TaskError>{
+    state_transition(
+        ddb_repo,
+        task_identifier.into_inner().task_id,
+        TaskState::InProgress,
+        None
+    ).await
+}
+
+#[put("/task/{task_id}/complete")]
+pub async fn complete_task(
+    ddb_repo: Data<DDBRepository>,
+    task_identifier: Path<TaskIdentifier>,
+    completion_request: Json<TaskCompletionRequest>
+) -> Result<Json<TaskIdentifier>,TaskError>{
+    state_transition(
+        ddb_repo,
+        task_identifier.into_inner().task_id,
+        TaskState::Completed,
+        Some(completion_request.result_file.clone())
+    ).await
+}
+
+#[post("/task")]
+pub async fn submit_task(
+    ddb_repo: Data<DDBRepository>,
+    request: Json<SubmitTaskRequest>,
+) -> Result<Json<TaskIdentifier>,TaskError>{
+    let task : Task= Task::new(
+        request.user_id.clone(),
+        request.task_type.clone(),
+        request.source_file.clone()
+    ); 
+    let task_identifier :String = task.get_global_id();
+    match ddb_repo.put_task(task).await {
+        Ok(()) => Ok(Json(TaskIdentifier{task_id : task_identifier})),
+        Err(_) => Err(TaskError::TaskCreationFailure)
+    }
+
+}
+
+
+
