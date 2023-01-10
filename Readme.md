@@ -47,6 +47,9 @@ Current folders--
 Frontend folder is proyects to practice my frontend skills, not react, css,...
 
 
+trying to documentate every project and making a readme for each project, so please take a look at the projects
+
+
 **Future Folders**
 - [ ] PHP/Lavarel
 
