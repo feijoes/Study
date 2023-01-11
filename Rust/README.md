@@ -6,7 +6,7 @@
    * learning how rust works
 
 ### rust_API
-    simple APIs in rust
+   * simple APIs in rust
 
 
 
