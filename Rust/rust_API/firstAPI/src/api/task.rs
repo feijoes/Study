@@ -7,7 +7,7 @@ use actix_web::{
     web::Json,
     web::Data,
     HttpResponse,
-    http::{header::ContentType, StatusCode}, body, cookie::Display
+    http::{header::ContentType, StatusCode}
 };
 use serde::{Serialize, Deserialize};
 use strum_macros::{Display};
