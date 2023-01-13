@@ -31,7 +31,7 @@ the default state is `NotStarted`
 > returned Json 
 ```json
 {
- "task_id": "<uuid of the new task"
+ "task_id": "<uuid of the new task>"
 }
 ```
 
@@ -55,7 +55,7 @@ the default state is `NotStarted`
 > returned Json 
 ```json
 {
- "task_id": "<uuid of the task"
+ "task_id": "<uuid of the task>"
 }
 ```
 
@@ -71,7 +71,7 @@ the default state is `NotStarted`
 > returned Json 
 ```json
 {
- "task_id": "<uuid of the task"
+ "task_id": "<uuid of the task>"
 }
 ```
 
