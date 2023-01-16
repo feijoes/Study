@@ -1,5 +1,5 @@
 [package]
-name = "PostApp_with_diesel"
+name = "post_app_with_diesel"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,3 +11,6 @@ clap = { version = "4.1.0", features = ["derive"]}
 diesel = { version = "2.0.2", features = ["postgres", "chrono"] }
 dotenv = "0.15.0"
 package = "0.0.0"
+
+actix-web = "4.2.1"
+rocket = { version = "0.5.0-rc.2", features = ["json"] }

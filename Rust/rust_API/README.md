@@ -6,4 +6,8 @@ Simple task manager api using actix web [API guide](https://github.com/feijoes/S
 
 ### PostApp_with_diesel
 
-Simple Post app with connection with postgres using diesel
+Simple Post app with connection with postgres using :
+🚀 Rocket
+⛽ Diesel
+🐘 Postgres
+🐳 Docker
