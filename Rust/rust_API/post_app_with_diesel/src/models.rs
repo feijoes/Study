@@ -1,17 +1,17 @@
-use diesel::{Insertable, AsChangeset, Queryable};
+use diesel::{Insertable, Queryable,AsChangeset};
+use serde::{Serialize,Deserialize};
 
-use crate::schema::posts;
-
-#[derive(Insertable)]
-#[table_name = "posts"]
-pub struct NewPost<'a> {
-    pub title: &'a str,
-    pub edited: &'a str,
-}
-
-#[derive(Debug,AsChangeset,Queryable)]
+#[derive(Debug,AsChangeset,Queryable,Serialize, Deserialize,Insertable)]
+#[diesel(table_name = posts)]
 pub struct Post {
     pub id: i32,
     pub title: String,
     pub edited: bool,
+}
+diesel::table! {
+    posts (id) {
+        id -> Int4,
+        title -> Varchar,
+        edited -> Bool,
+    }
 }
