@@ -3,7 +3,7 @@ use serde::{Serialize,Deserialize};
 
 #[derive(Debug,AsChangeset,Queryable,Serialize, Deserialize,Insertable)]
 #[diesel(table_name = posts)]
-pub struct Post {
+pub struct NewPost {
     pub id: i32,
     pub title: String,
     pub edited: bool,
@@ -14,4 +14,4 @@ diesel::table! {
         title -> Varchar,
         edited -> Bool,
     }
-}
+};

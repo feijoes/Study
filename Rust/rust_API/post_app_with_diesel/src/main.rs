@@ -1,20 +1,24 @@
 #[macro_use] extern crate rocket;
 mod models;
-use models::Post;
+mod db;
+
+use db::establish_connection;
+use models::NewPost;
 use rocket::serde::json::Json;
+
 #[get("/")]
 fn index() -> &'static str {
-    "Hello, world!"
+    ""
 }
 #[get("/all")]
-fn get_all_posts() -> Json<Vec<Post>> {
+fn get_all_posts() -> Json<Vec<NewPost>> {
     return Json(vec![
-        Post {
+        NewPost {
             id: 31,
             title: "Some title".to_string(),
             edited: false
         },
-        Post {
+        NewPost {
             id: 3441,
             title: "Some 3q".to_string(),
             edited: true
@@ -23,9 +27,16 @@ fn get_all_posts() -> Json<Vec<Post>> {
     )
 }
 #[post("/", data = "<blog_post>")]
-fn create_blog_post(blog_post: Json<Post>) -> Json<Post> {
+fn create_blog_post(blog_post: Json<NewPost>) -> Json<NewPost> {
+    let connection = establish_connection();
+    diesel::insert_into(posts)
+    .values()
+    .execute(&connection)
+    .expect("Error saving new video");
     blog_post
 }
+pub struct Db(diesel::PgConnection);
+
 #[launch]
 fn rocket() -> _ {
     let rocket = rocket::build();
