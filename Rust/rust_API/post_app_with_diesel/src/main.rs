@@ -1,11 +1,11 @@
 #[macro_use] extern crate rocket;
 mod models;
 mod db;
-
+mod schema;
 use db::establish_connection;
-use models::NewPost;
+use models::{NewPost};
 use rocket::serde::json::Json;
-
+use diesel::RunQueryDsl;
 #[get("/")]
 fn index() -> &'static str {
     ""
@@ -26,12 +26,14 @@ fn get_all_posts() -> Json<Vec<NewPost>> {
       ]
     )
 }
+
 #[post("/", data = "<blog_post>")]
-fn create_blog_post(blog_post: Json<NewPost>) -> Json<NewPost> {
-    let connection = establish_connection();
+async fn create_blog_post(blog_post: Json<NewPost>) -> Json<NewPost> {
+    use crate::schema::posts::dsl::posts;
+    let mut connection = establish_connection();
     diesel::insert_into(posts)
-    .values()
-    .execute(&connection)
+    .values(NewPost {id: 3,title: "d".to_string(),edited: false})
+    .execute(&mut connection)
     .expect("Error saving new video");
     blog_post
 }
