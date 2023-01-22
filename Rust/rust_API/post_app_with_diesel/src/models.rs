@@ -14,4 +14,4 @@ diesel::table! {
         title -> Varchar,
         edited -> Bool,
     }
-};
+}
