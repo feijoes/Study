@@ -2,29 +2,24 @@
 mod models;
 mod db;
 mod schema;
+
+
 use db::establish_connection;
-use models::{NewPost};
+use models::{NewPost,Post};
 use rocket::serde::json::Json;
-use diesel::RunQueryDsl;
+use diesel::{RunQueryDsl, QueryDsl};
 #[get("/")]
 fn index() -> &'static str {
     ""
 }
 #[get("/all")]
-fn get_all_posts() -> Json<Vec<NewPost>> {
-    return Json(vec![
-        NewPost {
-            id: 31,
-            title: "Some title".to_string(),
-            edited: false
-        },
-        NewPost {
-            id: 3441,
-            title: "Some 3q".to_string(),
-            edited: true
-        }
-      ]
-    )
+async fn get_all_posts() -> Json<Vec<Post>> {
+    use crate::schema::posts::dsl::*;
+
+    let connection = &mut establish_connection();
+    let results = posts.count().get_result(connection).expect("s");
+    println!("{:?}",results);
+    return Json::<Vec<Post>>(results)
 }
 
 #[post("/", data = "<blog_post>")]
@@ -32,9 +27,9 @@ async fn create_blog_post(blog_post: Json<NewPost>) -> Json<NewPost> {
     use crate::schema::posts::dsl::posts;
     let mut connection = establish_connection();
     diesel::insert_into(posts)
-    .values(NewPost {id: 3,title: "d".to_string(),edited: false})
+    .values(NewPost {title: "test 2".to_string(),edited: false})
     .execute(&mut connection)
-    .expect("Error saving new video");
+    .expect("E");
     blog_post
 }
 pub struct Db(diesel::PgConnection);
