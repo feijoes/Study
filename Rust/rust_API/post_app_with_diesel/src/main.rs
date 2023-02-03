@@ -20,29 +20,24 @@ fn get_all_posts() -> Json<Vec<Post>> {
     let connection = &mut establish_connection();
     // let results = posts.filter(edited.eq(false)).limit(4).load::<Post>(connection).expect("Error loading posts");
     let results = posts.load::<Post>(connection).expect("");
-    println!("{:?}",results);
+
     return Json::<Vec<Post>>(results)
 }
 
 #[post("/", data = "<blog_post>")]
-async fn create_blog_post(blog_post: Json<NewPost<'_>>) -> Json<NewPost> {
+async fn create_blog_post(blog_post: Json<NewPost<'_>>) -> Json<Post> {
     use crate::schema::posts::dsl::posts;
-    let mut connection = establish_connection();
+    let connection = &mut establish_connection();
 
-    diesel::insert_into(posts)
+    let postcreate = diesel::insert_into(posts)
     .values(&blog_post.into_inner())
-    .execute(&mut connection)
-    .expect("E");
+    .get_result::<Post>(connection).unwrap();
     
-    Json(NewPost { title: "jdd" })
+    Json(postcreate)
 }
-pub struct Db(diesel::PgConnection);
-
 #[launch]
 fn rocket() -> _ {
     let rocket = rocket::build();
     rocket
-        .mount("/", routes![index])
-        .mount("/", routes![get_all_posts])
-        .mount("/", routes![create_blog_post])
+        .mount("/", routes![index,get_all_posts,create_blog_post])
     }
