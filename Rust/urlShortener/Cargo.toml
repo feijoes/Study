@@ -14,3 +14,5 @@ wasm-bindgen-futures = "0.4.33"
 
 [profile.release]
 lto = true
+[build]
+target = "wasm32-unknown-unknown"
