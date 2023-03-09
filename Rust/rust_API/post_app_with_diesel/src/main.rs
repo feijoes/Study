@@ -19,7 +19,7 @@ fn get_all_posts() -> Json<Vec<Post>> {
 
     let connection = &mut establish_connection();
     // let results = posts.filter(edited.eq(false)).limit(4).load::<Post>(connection).expect("Error loading posts");
-    let results = posts.load::<Post>(connection).expect("");
+    let results: Vec<Post> = posts.load::<Post>(connection).expect("Error loading posts");
 
     return Json::<Vec<Post>>(results)
 }
