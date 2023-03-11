@@ -10,8 +10,8 @@
 
 #### Projects
 
-   ### DenoServer
-   * url shortener web site using rust and deno for deploy
+   ###  urlShortener
+   * url shortener web site to improve rust and deno deploy , using the [mooretech](https://www.youtube.com/@mooretech) tutorials
 
 ## Tutorials used
 
