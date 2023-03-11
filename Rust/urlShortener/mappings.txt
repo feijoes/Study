@@ -1,4 +1,4 @@
-/test https://examtple.com/
+/test https://example.com/
 /github https://github.com/feijoes/
 /youtube https://www.youtube.com/watch?v=0Ri_3Bxymxg
 /listmusic https://www.youtube.com/watch?v=xplwZU3mKTA&list=RDxplwZU3mKTA&start_radio=1 

@@ -11,12 +11,10 @@ fn main() -> () {
     let maps = fs::read_to_string("mappings.txt")
         .expect("error reading mappings.txt");
     let mappings = parse(&maps).expect("error parsing");
-    println!("ddddddddddddddddddddddddd");
+
     write_output(&path, &mappings).expect("error writing output file");
 }
 fn write_output(path: &Path, mappings: &[(&str, &str)]) -> Result<(), io::Error> {
-    println!("{}",&path.display());
-    
     let mut f = File::create(&path).expect("unable to create output file");
     writeln!(f, "pub const MAPPINGS: &[(&str, &str)] = &[")?;
 
