@@ -1,4 +1,4 @@
-use std::intrinsics::variant_count;
+
 
 /* 
 #[derive(Debug, Eq, PartialEq)]
@@ -8,10 +8,11 @@ pub enum Error {
     InvalidUrl(String),
 }
 */
+#![allow(dead_code)]
 pub fn parse(txt: &str) -> Option<Vec<(&str,&str)>>{
     let mut mappings = Vec::new();
   
-    for line in txt.lines(){
+for line in txt.lines(){
         if line.starts_with("#"){
             continue;
         }
@@ -19,7 +20,6 @@ pub fn parse(txt: &str) -> Option<Vec<(&str,&str)>>{
         if let Some(index) = value.find("#"){
             value = value[..index].trim()
         }
-         
         mappings.push((key, value))
     }
     Some(mappings)

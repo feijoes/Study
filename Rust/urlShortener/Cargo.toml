@@ -14,5 +14,9 @@ wasm-bindgen-futures = "0.4.33"
 
 [profile.release]
 lto = true
+
+[build-dependencies]
+url = "2.3.1"
+
 [build]
 target = "wasm32-unknown-unknown"
