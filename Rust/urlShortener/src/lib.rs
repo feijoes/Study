@@ -9,19 +9,24 @@ pub async fn handler(request: Request) -> Result<Response, JsValue> {
     console_error_panic_hook::set_once();
   
     let url: Url = request.url().parse().unwrap();
+    let path = url.path();
     let mut init = ResponseInit::default();
-    if let Some(( _, destination )) = MAPPINGS.iter().find(|( key, _ )| *key == url.path() ){
-        let headers = Headers::new()?;
-        headers.set( "Location", destination )?;
+
+    match MAPPINGS.binary_search_by_key(&path,|e| e.0) {
+        Ok(index) => {
+            let ( _, destination ) = MAPPINGS[index];
+            let headers = Headers::new()?;
+            headers.set( "Location", destination )?;
+
     
-        
-        init.headers(&headers).status(302);
-        // entry.map(|(_, v)| *v)
-        Response::new_with_opt_str_and_init(Some("Redirectin"),&init)
-    }
-    else{
-        init.status(404);
-        Response::new_with_opt_str_and_init(Some("Not found"),&init)
+            init.headers(&headers).status(302);
+            // entry.map(|(_, v)| *v)
+            Response::new_with_opt_str_and_init(Some("Redirectin"),&init)
+        }
+        _ => {
+            init.status(404);
+            Response::new_with_opt_str_and_init(Some("Not found"),&init)
+        }
     }
     
     

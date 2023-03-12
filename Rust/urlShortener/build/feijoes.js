@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 
 
 const heap = new Array(128).fill(undefined);

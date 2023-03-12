@@ -1,28 +1,41 @@
+#[allow(dead_code)]
 
-
-/* 
 #[derive(Debug, Eq, PartialEq)]
 pub enum Error {
     InvalidEntry(usize),
     DuplicateKey(String),
     InvalidUrl(String),
 }
-*/
-#![allow(dead_code)]
-pub fn parse(txt: &str) -> Option<Vec<(&str,&str)>>{
-    let mut mappings = Vec::new();
+use url::Url;
+
+#[allow(dead_code)]
+pub fn parse(txt: &str) -> Result<Vec<(&str,Url)>,Error>{
+    let mut mappings: Vec<(&str,Url)> = Vec::new();
   
-for line in txt.lines(){
+    for ( nline, line) in txt.lines().enumerate(){
         if line.starts_with("#"){
             continue;
         }
-        let (key,mut  value) = line.split_once(" ")?;
+
+        let (key,mut  value) = line.split_once(" ")
+            .ok_or_else(|| Error::InvalidEntry(nline+1))?;
+
         if let Some(index) = value.find("#"){
             value = value[..index].trim()
         }
-        mappings.push((key, value))
+        let url: Url = value.parse().map_err(|err| Error::InvalidUrl(format!("'{value}' is not a valid URL: {err}")))?;
+        mappings.push((key, url))
     }
-    Some(mappings)
+
+    mappings.sort_by_key(|entry| entry.0);
+    let mut prev = None;
+    for (key,_) in &mappings {
+        if Some(*key) == prev {
+            return Err(Error::DuplicateKey(format!("duplicate key: {key}")));
+        }
+        prev = Some(key)
+    }   
+    Ok(mappings)
 }
 #[cfg(test)]
 mod tests {
@@ -37,7 +50,7 @@ mod tests {
     fn test_mapping() {
         assert_eq!(
             parse("test https://example.com/here").unwrap(),
-            vec![("test","https://example.com/here")]
+            vec![("test","https://example.com/here".parse().unwrap())]
         );
     }
      
@@ -45,10 +58,10 @@ mod tests {
     fn test_mapping_with_comment() {
         assert_eq!(
             parse("test https://example.com/here # comment").unwrap(),
-            vec![("test", "https://example.com/here")]
+            vec![("test", "https://example.com/here".parse().unwrap())]
         );
     }
-    /*
+   
     #[test]
     fn test_invalid_url() {
         assert_eq!(
@@ -71,5 +84,5 @@ mod tests {
     fn test_malformed_entry() {
         assert_eq!(parse("test"), Err(Error::InvalidEntry(1)));
     }
-    */
+
 }
