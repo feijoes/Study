@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 3rem;
+      }
+      .shortened-url {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4">URL Shortener</h1>
+      <form>
+        <div class="form-group">
+          <label for="url">Enter a URL to shorten:</label>
+          <input type="url" class="form-control" id="url" name="url" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Shorten URL</button>
+      </form>
+      <div class="shortened-url"></div>
+    </div>
+    <script>
+      const form = document.querySelector('form');
+      const input = document.querySelector('#url');
+      const shortenedUrl = document.querySelector('.shortened-url');
+
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const url = input.value;
+        fetch("/test").then(e=>console.log(e))
+        fetch('/shorten?url=' + encodeURIComponent(url))
+          .then(response =>response.text())
+          .then(result => {
+            
+            shortenedUrl.innerHTML = `
+              <div class="alert alert-success" role="alert">
+                <a href="${result}" target="_blank">${result}</a>
+              </div>
+            `;
+          })
+          .catch(error => {
+            shortenedUrl.innerHTML = `
+              <div class="alert alert-danger" role="alert">
+                An error occurred.
+              </div>
+            `;
+            console.error(error);
+          });
+      });
+    </script>
+  </body>
+</html>
