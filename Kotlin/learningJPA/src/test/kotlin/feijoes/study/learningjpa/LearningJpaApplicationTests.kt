@@ -1,4 +1,4 @@
-package feijoes.study.learningJPA
+package feijoes.study.learningjpa
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
