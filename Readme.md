@@ -18,11 +18,12 @@ Current folders--
                * Learning how react-native works
             * PostApp
                * More details in [Project README](./javascript/React/React_native/PostApp/README.md)
+        * TodoApp
+            
     * Nestjs 
         * Simple api to undertand how nest works
     * WebPack
         * Demo app to learning how it works
-
 * Kotlin
     * Leraning the basics of kotlin
 * Java
@@ -30,6 +31,7 @@ Current folders--
     * Frameworks of Java
         * Spring Boot
     * Maven 
+    * Snake Game
 * dotNET (Check in folder README for more details ) 
     * C# learning the basics
     * AspNet Core learning
@@ -41,6 +43,10 @@ Current folders--
 * Python
     * FastAPI
     * Django
+    * Simple Projects
+        * Space War game
+        * Tetris Game
+    * CS50 projects
 * Rust
    * makings simple apis
    * rust tutorials to learn rust
