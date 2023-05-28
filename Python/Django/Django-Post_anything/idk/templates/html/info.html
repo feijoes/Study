@@ -1,0 +1,23 @@
+{% extends "html/main.html" %}
+
+
+
+
+{% block body %}
+<header>
+    <div class="fixed-top">
+        <div id= "Right">
+            <div  class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                <a href="{% url 'contact' %}" class="btn btn-secondary">Contact Me</a>
+                <a href="{% url 'index' %}" class="btn btn-secondary">See Posts</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class = "title"><h1>What is postanything.com?</h1></div>
+
+<p>This site can be use to post anything you want, you can say anything without making a account</p>
+<p>Whatever you post will be upload to the database</p>
+<p> You can see more details about the creator in "Contact Me" seccion</p>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+
+.fixed-top{
+  background: #C0C0C0;
+  height:30px
+
+}
+#Right{
+  position: absolute;
+  right:10px
+}
+ #container-link, #container-link:hover, #container-link:focus, #container-link:active {
+      text-decoration: none;
+      color: inherit;
+ }
+ .post{
+    border: 3px solid grey;
+    max-width: 95% !important;
+    margin: 4px
+ }
+ #body_content{
+    max-height: 150px;
+    min-height: 110px;
+ }
+ .inline{display:inline;}
+ .d-inline-flex{width:40%!important;}
+
+#posts{
+    max-width: 60%;
+    max-height:500px;
+}
+.position-absolute{
+ right:10px;
+    top:20%;
+}
+.title{
+position:relative;
+top:30px;
+height: 140px;
+width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+.position-absolute{
+display: flex;
+  flex-direction: column-reverse;
+ width: 30%;
+ right:30px;
+ }
+ #idk{font-size:17px;}}
+
+
+ #submit{position:relative;
+top:30px;
+ }
+
+ .close {
+  position: absolute;
+
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 30px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+#post-position{
+     position:relative;
+     top:125px;
+     left:10%;
+     height: auto;
+     max-width: 70%;
+}
+img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+div.polaroid {
+  display:inline-block;
+  max-width: 150px;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 25px;
+}

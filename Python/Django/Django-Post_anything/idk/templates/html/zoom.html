@@ -1,0 +1,18 @@
+{% extends "html/main.html" %}
+
+
+
+
+{% block body %}
+<div class='container'>
+
+    <a href="{% url 'index' %}" class="close"></a>
+    <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" id="post-position">
+        <h1>{{title}}</h1>
+        <p>{{date}}</p>
+        <hr>
+        <p>{{body}}</p>
+    </div>
+</div>
+{% endblock %}
+

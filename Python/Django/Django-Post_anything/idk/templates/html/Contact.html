@@ -1,0 +1,44 @@
+{% extends "html/main.html" %}
+{% load static %}
+
+
+
+{% block body %}
+<header>
+    <div class="fixed-top">
+        <div id= "Right">
+            <div  class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                <a href="{% url 'info' %}" class="btn btn-secondary">More information</a>
+                <a href="{% url 'index' %}" class="btn btn-secondary">See Posts</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class = "title"><h1>About the creator</h1></div>
+
+<p>I made this website to practise my web development/Back-end using Django and front-end with bootstrap</p>
+<p>16 years old brazilian that likes programing using python </p>
+<p>You can check my other projects in github</p>
+<p>Contact Me in my social Midia:</p>
+<p class="user-select-all"><a href = "mailto: abc@example.com">pcaladomoura@gmail.com</a> </p>
+
+
+<div class="polaroid shadow">
+  <a href="https://github.com/feijoes" target="_blank">
+        <img src="{% static 'images/github.png' %}" alt="github logo" width="150" height="150">
+  </a>
+  <div class="container">
+  <p>Github account</p>
+  </div>
+</div>
+<div class="polaroid shadow">
+  <a href="https://twitter.com/Feijoes_P" target="_blank">
+        <img src="{% static 'images/twitter.png' %}" alt="twitter logo" width="150" height="150">
+  </a>
+  <div class="container">
+    <p>Twitter</p>
+  </div>
+</div>
+
+</div>
+{% endblock %}

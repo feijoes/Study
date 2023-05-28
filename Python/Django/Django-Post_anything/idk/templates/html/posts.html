@@ -1,0 +1,37 @@
+{% extends "html/main.html" %}
+
+{% block body %}
+<header>
+    <div class="fixed-top">
+        <div id= "Right">
+            <div  class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                <a href="{% url 'info' %}" class="btn btn-secondary">More information</a>
+                <a href="{% url 'contact' %}" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<div class = "title"><h1>Post about anything</h1></div>
+<div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" id="posts">
+    {% for post in posts %}
+    <div class="post">
+        <a id="container-link" href="{{post.post_link}}">
+            <div class='container' >
+                <div><h3>{{post.title}}</h3></div>
+                <div><p class="date fw-light">{{post.date}}</p></div>
+                <div class="overflow-hidden p-3 bg-light" id='body_content'><p>{{post.body}}</p></div>
+            </div>
+        </a>
+    </div>
+    {% empty %}
+        <h1> Still No Posts</h1>
+    {% endfor %}
+</div>
+<div class="position-absolute shadow p-3 mb-5 bg-white">
+    <h1 id="idk"> Wants to post something?</h1>
+    <h2>Post here:</h2>
+    <a href="{% url 'post' %}" class="btn btn-outline-secondary">Post Here</a>
+</div>
+</main>
+{% endblock %}
