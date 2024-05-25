@@ -50,6 +50,8 @@ Current folders--
 * Rust
    * makings simple apis
    * rust tutorials to learn rust
+* Pascal
+   * Simple Activities for college
 Frontend folder is proyects to practice my frontend skills, not react, css,...
 
 
