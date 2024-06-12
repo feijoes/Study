@@ -1,0 +1,8 @@
+textos/texto3.txt
+
+4
+1
+1
+curso 2024
+
+100

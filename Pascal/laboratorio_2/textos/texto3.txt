@@ -1,0 +1,42 @@
+Programacion 1 - curso 2024 - primer semestre
+
+Informacion General del Curso
+
+Este curso se dicta en modalidad presencial.
+Cada estudiante debera asistir a clase en alguno
+de los grupos definidos en la seccion de Horarios y Docentes.
+En cada grupo, se dictaran dos clases semanales
+de una hora y media de duracion cada una.
+Se esta analizando la posibilidad de definir una alternativa virtual,
+se anunciara oportunamente.
+
+Las clases tendran como principal objetivo repasar conceptos teoricos
+y discutir soluciones de ejercicios, asi como responder dudas sobre teorico,
+ejercicios o tareas de laboratorio. En el correr del semestre se iran publicando
+modulos en EVA correspondientes a los distintos temas,
+que incluiran diferentes materiales: guias teoricas, repartidos de ejercicios,
+videos de OpenFing (clases dictadas en 2016), entre otros.
+Los estudiantes deberan estudiar los temas del curso a partir de
+dichos materiales previo a la clase y realizar ejercicios.
+Estos materiales, junto con la bibliografia definida en el programa,
+son imprescindibles para seguir el curso.
+No se hara una presentacion exhaustiva de cada nuevo tema en clase.
+
+En cada modulo se habilitaran foros de consultas para cada tema,
+que se atenderan todos los dias.
+Todos los estudiantes deben acceder regularmente a este recurso,
+tanto para plantear sus propias dudas como para responder consultas
+de otros estudiantes y estar al tanto de los intercambios que se van dando.
+
+Todas las consultas sobre temas generales del curso
+deben plantearse en el Foro General.
+No se deben enviar consultas directamente a los docentes,
+salvo para plantear situaciones particulares, excepciones,
+problemas especificos del estudiante.
+
+Importante: Programacion 1 no se puede aprobar con examen libre,
+es obligatorio inscribirse al curso y aprobarlo.
+La cantidad de veces que se puede recursar es ilimitada,
+no tiene limite de cursadas.
+
+Buena Programacion 1 para todos

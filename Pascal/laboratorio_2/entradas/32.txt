@@ -1,0 +1,56 @@
+textos/texto3.txt
+
+100
+
+4
+1
+1
+curso 2024
+
+4
+1
+15
+curso 2024
+
+4
+1
+29
+curso 2024
+
+4
+13
+5
+principal objetivo
+
+4
+13
+35
+principal objetivo
+
+5
+1
+1
+OpenFing
+
+5
+1
+1
+EVA
+
+5
+1
+1
+Fing
+
+5
+1
+1
+electroencefalografista
+
+
+5
+17
+20
+Buena Programacion 1 para todos
+
+100

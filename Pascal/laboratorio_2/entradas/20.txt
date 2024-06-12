@@ -1,0 +1,20 @@
+textos/texto2.txt
+
+100
+
+6
+1
+9
+MARTIN FIERRO
+
+6
+2
+1
+AUTOR: JOSE HERNANDEZ
+
+6
+16
+11
+mi entendimiento
+
+100

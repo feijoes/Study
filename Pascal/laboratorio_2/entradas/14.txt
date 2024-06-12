@@ -1,0 +1,21 @@
+textos/texto1.txt
+
+100
+
+7
+2
+Hola, mundo
+
+7
+7
+Hello, World
+
+7
+8
+Ola, mundo
+
+7
+9
+Bonjour tout le monde
+
+100

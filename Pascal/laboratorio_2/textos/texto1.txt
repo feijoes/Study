@@ -1,0 +1,5 @@
+Este texto esta en Negrita.
+Este no, pero esta en italico.
+Este esta en ambos.
+Este solo esta subrayado.
+Este tiene un poco de todo.

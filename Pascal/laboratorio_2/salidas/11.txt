@@ -1,0 +1,226 @@
+Ingrese Nombre de Archivo: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. E[0ms[0mt[0me[0m [0mt[0me[0mx[0mt[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mN[0me[0mg[0mr[0mi[0mt[0ma[0m.[0m
+2. E[0ms[0mt[0me[0m [0mn[0mo[0m,[0m [0mp[0me[0mr[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mi[0mt[0ma[0ml[0mi[0mc[0mo[0m.[0m
+3. E[0ms[0mt[0me[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0ma[0mm[0mb[0mo[0ms[0m.[0m
+4. E[0ms[0mt[0me[0m [0ms[0mo[0ml[0mo[0m [0me[0ms[0mt[0ma[0m [0ms[0mu[0mb[0mr[0ma[0my[0ma[0md[0mo[0m.[0m
+5. E[0ms[0mt[0me[0m [0mt[0mi[0me[0mn[0me[0m [0mu[0mn[0m [0mp[0mo[0mc[0mo[0m [0md[0me[0m [0mt[0mo[0md[0mo[0m.[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. [1mE[0m[1ms[0m[1mt[0m[1me[0m[1m [0m[1mt[0m[1me[0m[1mx[0m[1mt[0m[1mo[0m[1m [0m[1me[0m[1ms[0m[1mt[0m[1ma[0m[1m [0m[1me[0m[1mn[0m[1m [0m[1mN[0m[1me[0m[1mg[0m[1mr[0m[1mi[0m[1mt[0m[1ma[0m[1m.[0m
+2. [3mE[0m[3ms[0m[3mt[0m[3me[0m[3m [0m[3mn[0m[3mo[0m[3m,[0m[3m [0m[3mp[0m[3me[0m[3mr[0m[3mo[0m[3m [0m[3me[0m[3ms[0m[3mt[0m[3ma[0m[3m [0m[3me[0m[3mn[0m[3m [0m[3mi[0m[3mt[0m[3ma[0m[3ml[0m[3mi[0m[3mc[0m[3mo[0m[3m.[0m
+3. [1m[3mE[0m[1m[3ms[0m[1m[3mt[0m[1m[3me[0m[1m[3m [0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3ma[0m[1m[3m [0m[1m[3me[0m[1m[3mn[0m[1m[3m [0m[1m[3ma[0m[1m[3mm[0m[1m[3mb[0m[1m[3mo[0m[1m[3ms[0m[1m[3m.[0m
+4. [4mE[0m[4ms[0m[4mt[0m[4me[0m[4m [0m[4ms[0m[4mo[0m[4ml[0m[4mo[0m[4m [0m[4me[0m[4ms[0m[4mt[0m[4ma[0m[4m [0m[4ms[0m[4mu[0m[4mb[0m[4mr[0m[4ma[0m[4my[0m[4ma[0m[4md[0m[4mo[0m[4m.[0m
+5. [1mE[0m[1ms[0m[1mt[0m[1me[0m [0m[4mt[0m[4mi[0m[4me[0m[4mn[0m[4me[0m [0m[3mu[0m[3mn[0m[3m [0m[3mp[0m[3mo[0m[3mc[0m[3mo[0m [0m[1m[3m[4md[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4mt[0m[1m[3m[4mo[0m[1m[3m[4md[0m[1m[3m[4mo[0m[1m[3m[4m.[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|n--|
+|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|-i-|
+|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|ni-|
+|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|--s|
+|n--|n--|n--|n--|---|--s|--s|--s|--s|--s|---|-i-|-i-|-i-|-i-|-i-|-i-|-i-|---|nis|nis|nis|nis|nis|nis|nis|nis|
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Edición finalizada.
