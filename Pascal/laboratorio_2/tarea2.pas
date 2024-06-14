@@ -1,17 +1,28 @@
-function todosTienenFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
-                                   ; ln : Linea ) : boolean;
+Function todosTienenFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
+                                    ; ln : Linea ) : boolean;
 { Retorna true solo si todos los caracteres de `ln` entre las columnas `ini` y `fin`, 
   incluídos los extremos, tienen el formato `tfmt`. En otro caso retorna false. 
 
   Precondiciones: 1 <= ini <= ln.tope
                   1 <= fin <= ln.tope }
 
-begin
-end;
+Var i: integer;
+  tiene_formato: boolean;
+Begin
+  i := ini;
+  tiene_formato := false;
+  While (i <= fin) And Not tiene_formato Do
+    Begin
+      tiene_formato := ln.cars[i].fmt[tfmt]
+                       = true;
+      i := i+1;
+    End;
+  todosTienenFormatoEnLinea := tiene_formato;
 
-
-procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
-                                ; var ln : Linea );
+End;
+Procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin :
+                                 RangoColumna
+                                 ; Var ln : Linea );
 { Aplica el formato `tfmt` a los caracteres de `ln` entre las columnas `ini` y `fin`, 
   incluídos los extremos. 
   Si todos los carácteres ya tienen el tipo de formato `tfmt`, en lugar de aplicarlo 
@@ -19,42 +30,146 @@ procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
 
   Precondiciones: 1 <= ini <= ln.tope
                   1 <= fin <= ln.tope }
-begin
-end;
+
+Var i: integer;
+  quitar: boolean;
+Begin
+  i := 1;
+  quitar := Not todosTienenFormatoEnLinea(tfmt, ini, fin, ln);
+  For i := ini To fin Do
+    Begin
+      ln.cars[i].fmt[tfmt] :=  quitar;
+    End;
+End;
 
 
 
-function contarCaracteresEnTexto ( txt : Texto ) : integer;
+Function contarCaracteresEnTexto ( txt : Texto ) : integer;
 { Retorna la cantidad de caracteres que tiene el texto `txt` }
-begin
-end;
+
+Var cantidad: integer;
+  p: Texto;
+Begin
+  p := txt;
+  cantidad := 0;
+  While (p <> Nil) Do
+    Begin
+      cantidad := cantidad + p^.info.tope;
+      p := p^.sig;
+    End;
+  contarCaracteresEnTexto := cantidad
+End;
 
 
-procedure buscarCadenaEnLineaDesde ( c : Cadena; ln : Linea; desde : RangoColumna
-                                   ; var pc : PosibleColumna );
+Procedure buscarCadenaEnLineaDesde ( c : Cadena; ln : Linea; desde :
+                                    RangoColumna
+                                    ; Var pc : PosibleColumna );
+
+
 { Busca la primera ocurrencia de la cadena `c` en la línea `ln` a partir de la 
   columna `desde`. Si la encuentra, retorna en `pc` la columna en la que incia. 
 
   Precondiciones: 1 <= desde <= ln.tope }
 
-begin
-end;
+Var i,k, location: integer;
+  continuar_check: boolean;
+Begin
+  i := desde;
+  location := -1;
+  While (i <= ln.tope) And (location < 0) Do
+    Begin
+      If c.cars[1] = ln.cars[i].car  Then
+        Begin
+          continuar_check := true;
+          k := i;
+          While (k-i+1 <= c.tope) And (k <= ln.tope) And continuar_check Do
+            Begin
+              If Not (ln.cars[k].car = c.cars[k-i+1]) Then
+                continuar_check := false;
+              k := k+1;
+            End;
+          If (continuar_check) and (k-i+1 >= c.tope) Then location := i;
+        End;
+      i := i + 1;
+    End;
+  If location > 0 Then
+    Begin
+      With pc Do
+        Begin
+          esColumna := true;
+          col := location;
+        End;
+    End
+  Else
+    Begin
+      With pc Do
+        Begin
+          esColumna := false;
+        End;
+    End;
 
-procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion
-                                   ; var pp : PosiblePosicion );
+End;
+
+Procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion
+                                    ; Var pp : PosiblePosicion );
 { Busca la primera ocurrencia de la cadena `c` en el texto `txt` a partir de la 
   posición `desde`. Si la encuentra, retorna en `pp` la posición en la que incia. 
   La búsqueda no encuentra cadenas que ocupen más de una línea.
 
   Precondiciones: 1 <= desde.linea <= cantidad de líneas 
-                  1 <= desde.columna <= tope de línea en desde.linea } 
-begin
-end;
+                  1 <= desde.columna <= tope de línea en desde.linea }
+
+Var i, location, linea_contador: integer;
+  temp_p: Posicion;
+  pc: PosibleColumna;
+  temp_txt: Texto;
+Begin
+  location := -1;
+  linea_contador := desde.linea;
+  temp_txt := txt;
+  For i := 1 To desde.linea-1 Do
+    temp_txt := temp_txt^.sig;
+
+  While (temp_txt <> Nil) And (location < 0) Do
+    Begin
+      buscarCadenaEnLineaDesde(c, temp_txt^.info, desde.columna, pc);
+      If pc.esColumna Then
+        Begin
+       
+          location := pc.col + desde.columna -1
+        End
+      Else
+        Begin
+          linea_contador := linea_contador + 1;
+          temp_txt := temp_txt^.sig;
+        End;
+      desde.columna := 1;
+    End;
+  If location > 0 Then
+    Begin
+      With temp_p Do
+        Begin
+          linea := linea_contador;
+          columna := location;
+        End;
+      With pp Do
+        Begin
+          esPosicion := true;
+          p := temp_p;
+        End;
+    End
+  Else
+    With pp Do
+      Begin
+        esPosicion := false;
+
+      End;
+End;
 
 
 
-procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
-                                ; var ln : linea; var pln : PosibleLinea );
+Procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
+                                 ; Var ln : linea; Var pln : PosibleLinea );
 { Inserta la cadena `c` a partir de la `columna` de `ln`, y desplaza hacia la derecha 
   a los restantes caracteres de la línea. Los carácteres insertados toman el formato 
   del carácter que ocupaba la posición `columna` en la línea. Si la columna es 
@@ -64,15 +179,98 @@ procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
  
   Precondiciones:  1 <= columna <= ln.tope+1
                    columna <= MAXCOL
-                   c.tope + columna <= MAXCOL  }  
-begin
-end;
+                   c.tope + columna <= MAXCOL  }
+
+Var i,start: integer;
+  nueva_linea,copy_linea : Linea;
+  temp_caracter: Caracter;
+
+Begin
+  start := columna;
+  copy_linea := ln;
+  nueva_linea.tope := 0;
+  If columna >= ln.tope+1 Then
+    Begin
+      temp_caracter.fmt[Neg] := false;
+      temp_caracter.fmt[Ita] := false;
+      temp_caracter.fmt[Sub] := false;
+
+    End
+  Else
+    Begin
+      temp_caracter.fmt[Neg] := ln.cars[columna].fmt[Neg];
+      temp_caracter.fmt[Ita] := ln.cars[columna].fmt[Ita];
+      temp_caracter.fmt[Sub] := ln.cars[columna].fmt[Sub];
+    End;
+
+  For  i:=1 To c.tope Do
+    Begin
+      temp_caracter.car := c.cars[i];
+
+      If i + ln.tope = MAXCOL Then
+        Begin
+          With nueva_linea Do
+            Begin
+              cars[tope] := temp_caracter;
+              tope := tope + 1;
+            End;
+        End
+      Else
+        Begin
+          If columna - ln.tope > 0 Then ln.tope := columna ;
+          ln.cars[columna] := temp_caracter;
+        End;
+      columna := columna + 1;
+    End;
+  For  i:= columna To copy_linea.tope + c.tope Do
+    Begin
+      If i + ln.tope > MAXCOL Then
+        Begin
+          With nueva_linea Do
+            Begin
+              cars[tope] := copy_linea.cars[start];
+              tope := tope + 1;
+            End;
+        End
+      Else
+        Begin
+          ln.cars[i] := copy_linea.cars[start];
+          ln.tope := ln.tope + 1;
+        End;
+      start := start + 1;
+    End;
+  If nueva_linea.tope > 0 Then
+    Begin
+      pln.esLinea := true;
+      pln.l := nueva_linea;
+    End
+  Else
+    Begin
+      pln.esLinea := false;
+
+    End;
+End;
 
 
-procedure insertarLineaEnTexto ( ln : Linea; nln : integer; var txt : Texto );
+Procedure insertarLineaEnTexto ( ln : Linea; nln : integer; Var txt : Texto );
 { Inserta la línea `ln` en la posición `nlin` del texto `txt`.
 
   Precondiciones: 1 < nln <= cantidad de líneas del texto + 1
 }
-begin
-end;
+Var temp_txt1, temp_txt2,temp_txt3 : Texto;
+  i: integer;
+Begin
+  New(temp_txt3);
+  temp_txt1 := txt;
+  temp_txt2 := txt;
+  For i:=1 To nln-2 Do
+    Begin
+
+      temp_txt1 := temp_txt1^.sig;
+      temp_txt2 := temp_txt2^.sig;
+    End;
+  temp_txt2 := temp_txt2^.sig;
+  temp_txt1^.sig := temp_txt3;
+  temp_txt3^.info := ln;
+  temp_txt3^.sig := temp_txt2;
+End;

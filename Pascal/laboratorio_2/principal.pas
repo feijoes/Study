@@ -42,9 +42,9 @@ var
 
 begin
    { inicializo el texto }
-   write('Ingrese Nombre de Archivo: ');
+   write('Ingrese Nombre de Archivo:');
    leerTexto(txt);
-
+   write(' ');
    repeat
       opcion := leerOpcion;
       case opcion of

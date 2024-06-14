@@ -1,0 +1,120 @@
+Ingrese Nombre de Archivo: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. T[0mI[0mT[0mU[0mL[0mO[0m:[0m [0m
+2. 
+3. 
+4. A[0mq[0mu[0mi[0m [0mm[0me[0m [0mp[0mo[0mn[0mg[0mo[0m [0ma[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0m
+5. a[0ml[0m [0mc[0mo[0mm[0mp[0ma[0ms[0m [0md[0me[0m [0ml[0ma[0m [0mv[0mi[0mg[0mu[0me[0ml[0ma[0m,[0m [0m
+6. q[0mu[0me[0m [0me[0ml[0m [0mh[0mo[0mm[0mb[0mr[0me[0m [0mq[0mu[0me[0m [0ml[0mo[0m [0md[0me[0ms[0mv[0me[0ml[0ma[0m [0m
+7. u[0mn[0ma[0m [0mp[0me[0mn[0ma[0m [0me[0ms[0mt[0mr[0ma[0mo[0mr[0md[0mi[0mn[0ma[0mr[0mi[0ma[0m,[0m [0m
+8. c[0mo[0mm[0mo[0m [0ml[0ma[0m [0ma[0mv[0me[0m [0ms[0mo[0ml[0mi[0mt[0ma[0mr[0mi[0ma[0m [0m
+9. c[0mo[0mn[0m [0me[0ml[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0ms[0me[0m [0mc[0mo[0mn[0ms[0mu[0me[0ml[0ma[0m.[0m
+10. 
+11. P[0mi[0md[0mo[0m [0ma[0m [0ml[0mo[0ms[0m [0mS[0ma[0mn[0mt[0mo[0ms[0m [0md[0me[0ml[0m [0mC[0mi[0me[0ml[0mo[0m [0m
+12. q[0mu[0me[0m [0ma[0my[0mu[0md[0me[0mn[0m [0mm[0mi[0m [0mp[0me[0mn[0ms[0ma[0mm[0mi[0me[0mn[0mt[0mo[0m [0m
+13. l[0me[0ms[0m [0mp[0mi[0md[0mo[0m [0me[0mn[0m [0me[0ms[0mt[0me[0m [0mm[0mo[0mm[0me[0mn[0mt[0mo[0m [0m
+14. q[0mu[0me[0m [0mv[0mo[0my[0m [0ma[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0mm[0mi[0m [0mh[0mi[0ms[0mt[0mo[0mr[0mi[0ma[0m [0m
+15. m[0me[0m [0mr[0me[0mf[0mr[0me[0ms[0mq[0mu[0me[0mn[0m [0ml[0ma[0m [0mm[0me[0mm[0mo[0mr[0mi[0ma[0m [0m
+16. y[0m [0ma[0mc[0ml[0ma[0mr[0me[0mn[0m [0m.[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:No se encuentra
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:No se encuentra
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:No se encuentra
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. T[0mI[0mT[0mU[0mL[0mO[0m:[0m [0mM[0mA[0mR[0mT[0mI[0mN[0m [0mF[0mI[0mE[0mR[0mR[0mO[0m
+2. A[0mU[0mT[0mO[0mR[0m:[0m [0mJ[0mO[0mS[0mE[0m [0mH[0mE[0mR[0mN[0mA[0mN[0mD[0mE[0mZ[0m
+3. 
+4. A[0mq[0mu[0mi[0m [0mm[0me[0m [0mp[0mo[0mn[0mg[0mo[0m [0ma[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0m
+5. a[0ml[0m [0mc[0mo[0mm[0mp[0ma[0ms[0m [0md[0me[0m [0ml[0ma[0m [0mv[0mi[0mg[0mu[0me[0ml[0ma[0m,[0m [0m
+6. q[0mu[0me[0m [0me[0ml[0m [0mh[0mo[0mm[0mb[0mr[0me[0m [0mq[0mu[0me[0m [0ml[0mo[0m [0md[0me[0ms[0mv[0me[0ml[0ma[0m [0m
+7. u[0mn[0ma[0m [0mp[0me[0mn[0ma[0m [0me[0ms[0mt[0mr[0ma[0mo[0mr[0md[0mi[0mn[0ma[0mr[0mi[0ma[0m,[0m [0m
+8. c[0mo[0mm[0mo[0m [0ml[0ma[0m [0ma[0mv[0me[0m [0ms[0mo[0ml[0mi[0mt[0ma[0mr[0mi[0ma[0m [0m
+9. c[0mo[0mn[0m [0me[0ml[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0ms[0me[0m [0mc[0mo[0mn[0ms[0mu[0me[0ml[0ma[0m.[0m
+10. 
+11. P[0mi[0md[0mo[0m [0ma[0m [0ml[0mo[0ms[0m [0mS[0ma[0mn[0mt[0mo[0ms[0m [0md[0me[0ml[0m [0mC[0mi[0me[0ml[0mo[0m [0m
+12. q[0mu[0me[0m [0ma[0my[0mu[0md[0me[0mn[0m [0mm[0mi[0m [0mp[0me[0mn[0ms[0ma[0mm[0mi[0me[0mn[0mt[0mo[0m [0m
+13. l[0me[0ms[0m [0mp[0mi[0md[0mo[0m [0me[0mn[0m [0me[0ms[0mt[0me[0m [0mm[0mo[0mm[0me[0mn[0mt[0mo[0m [0m
+14. q[0mu[0me[0m [0mv[0mo[0my[0m [0ma[0m [0mc[0ma[0mn[0mt[0ma[0mr[0m [0mm[0mi[0m [0mh[0mi[0ms[0mt[0mo[0mr[0mi[0ma[0m [0m
+15. m[0me[0m [0mr[0me[0mf[0mr[0me[0ms[0mq[0mu[0me[0mn[0m [0ml[0ma[0m [0mm[0me[0mm[0mo[0mr[0mi[0ma[0m [0m
+16. y[0m [0ma[0mc[0ml[0ma[0mr[0me[0mn[0m [0mm[0mi[0m [0me[0mn[0mt[0me[0mn[0md[0mi[0mm[0mi[0me[0mn[0mt[0mo[0m.[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Edición finalizada.

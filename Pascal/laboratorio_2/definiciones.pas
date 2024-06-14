@@ -57,7 +57,7 @@ type
 		  end;
 
    { posición en el texto }
-   Posicion	= record
+   Posicion = record
 		     linea    : 1 .. maxint;
 		     columna  : RangoColumna
 		  end;

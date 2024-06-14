@@ -1,0 +1,113 @@
+Ingrese Nombre de Archivo: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. E[0ms[0mt[0me[0m [0mt[0me[0mx[0mt[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mN[0me[0mg[0mr[0mi[0mt[0ma[0m.[0m
+2. E[0ms[0mt[0me[0m [0mn[0mo[0m,[0m [0mp[0me[0mr[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mi[0mt[0ma[0ml[0mi[0mc[0mo[0m.[0m
+3. E[0ms[0mt[0me[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0ma[0mm[0mb[0mo[0ms[0m.[0m
+4. E[0ms[0mt[0me[0m [0ms[0mo[0ml[0mo[0m [0me[0ms[0mt[0ma[0m [0ms[0mu[0mb[0mr[0ma[0my[0ma[0md[0mo[0m.[0m
+5. E[0ms[0mt[0me[0m [0mt[0mi[0me[0mn[0me[0m [0mu[0mn[0m [0mp[0mo[0mc[0mo[0m [0md[0me[0m [0mt[0mo[0md[0mo[0m.[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese texto de línea: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese texto de línea: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese texto de línea: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese texto de línea: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+1. E[0ms[0mt[0me[0m [0mt[0me[0mx[0mt[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mN[0me[0mg[0mr[0mi[0mt[0ma[0m.[0m
+2. H[0mo[0ml[0ma[0m,[0m [0mm[0mu[0mn[0md[0mo[0m
+3. E[0ms[0mt[0me[0m [0mn[0mo[0m,[0m [0mp[0me[0mr[0mo[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0mi[0mt[0ma[0ml[0mi[0mc[0mo[0m.[0m
+4. E[0ms[0mt[0me[0m [0me[0ms[0mt[0ma[0m [0me[0mn[0m [0ma[0mm[0mb[0mo[0ms[0m.[0m
+5. E[0ms[0mt[0me[0m [0ms[0mo[0ml[0mo[0m [0me[0ms[0mt[0ma[0m [0ms[0mu[0mb[0mr[0ma[0my[0ma[0md[0mo[0m.[0m
+6. E[0ms[0mt[0me[0m [0mt[0mi[0me[0mn[0me[0m [0mu[0mn[0m [0mp[0mo[0mc[0mo[0m [0md[0me[0m [0mt[0mo[0md[0mo[0m.[0m
+7. H[0me[0ml[0ml[0mo[0m,[0m [0mW[0mo[0mr[0ml[0md[0m
+8. O[0ml[0ma[0m,[0m [0mm[0mu[0mn[0md[0mo[0m
+9. B[0mo[0mn[0mj[0mo[0mu[0mr[0m [0mt[0mo[0mu[0mt[0m [0ml[0me[0m [0mm[0mo[0mn[0md[0me[0m
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Edición finalizada.

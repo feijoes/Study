@@ -1,6 +1,4 @@
-import os, sys
-import shutil
-import time
+import os
 import subprocess
 
 def dir(nombre):
@@ -16,7 +14,7 @@ if os.name == 'nt':
     ejecutable = ejecutable +  '.exe'
 
     
-stream = os.popen('fpc -Co -Cr -gl -Miso principal.pas')
+stream = os.popen('sudo fpc -Co -Cr -gl -Miso principal.pas')
 output = stream.read()
 stream.close()
 
@@ -32,7 +30,6 @@ else:
     
     casos = (file for file in os.listdir(dir('entradas')) 
          if os.path.isfile(os.path.join(dir('entradas'), file)))
-    
     for p in sorted(casos):
         path_entrada = arch('entradas',p)
         path_salida  = arch('salidas',p)
@@ -40,7 +37,7 @@ else:
         path_diff    = arch('diffs',p)
 
         try:
-            subprocess.run([ejecutable], stdin=open(path_entrada, "r")
+            subprocess.run(["sudo", ejecutable], stdin=open(path_entrada, "r")
                                        , stdout=open(path_mio, "w")
                                        , timeout=60.0, check=True)
             
@@ -56,7 +53,7 @@ else:
             
             if os.path.isfile(path_diff):
                 os.remove(path_diff)
-
+            
             if salida == output:
                 print (" -- El caso", p[:2]," se resolvió correctamente")
                 correctos += 1
@@ -72,7 +69,7 @@ else:
                 print("**********************************")
                 erroneos += 1
                 
-                diff_process = subprocess.Popen(['diff', path_salida, path_mio]
+                diff_process = subprocess.Popen(['sudo','diff', path_salida, path_mio]
                                                 , stdout=subprocess.PIPE
                                                 , stderr=subprocess.PIPE, text=True)
                 stdout, stderr = diff_process.communicate()
@@ -85,5 +82,7 @@ else:
                  ," ha agotado el tiempo de ejecución, revise los loops")
             print("**********************************")
             timeouts += 1
-
+    
     print ("Correctos: ", correctos, " Errores: ", erroneos, " Timeouts: ", timeouts)
+os.remove(f"{ejecutable}")
+os.remove(f"{ejecutable}.o")
