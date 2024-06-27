@@ -1,0 +1,39 @@
+textos/texto6.txt
+
+6
+1
+28
+ consectetur adipiscing elit, sed do eiusmod tempora
+1
+
+100
+
+6
+3
+25
+ Hic textus nullam significationem habet apparentem, 
+1
+
+100
+
+6
+4
+1
+licet non accidentalem, sed modificationem
+1
+
+100
+
+6
+4
+1
+sed modificationem textus a Ciceron in latino,
+1
+
+100
+
+7
+9
+nil novum sub sole
+
+100
