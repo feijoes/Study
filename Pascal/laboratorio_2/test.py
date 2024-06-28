@@ -1,4 +1,7 @@
-import os
+import difflib
+import os, sys
+import shutil
+import time
 import subprocess
 
 def dir(nombre):
@@ -14,15 +17,15 @@ if os.name == 'nt':
     ejecutable = ejecutable +  '.exe'
 
     
-stream = os.popen('sudo fpc -Co -Cr -gl -Miso principal.pas')
+stream = os.popen('fpc -Co -Cr -gl -Miso principal.pas')
 output = stream.read()
 stream.close()
 
 if "compiled" not in output:
     print (output)
-    print ("**************************************************************************")
+    print ("**************************")
     print ("Su programa no compiló. Por favor corrija los errores y vuelva a ejecutar.")
-    print ("**************************************************************************")
+    print ("**************************")
 else:
     correctos = 0
     erroneos  = 0
@@ -30,16 +33,18 @@ else:
     
     casos = (file for file in os.listdir(dir('entradas')) 
          if os.path.isfile(os.path.join(dir('entradas'), file)))
+    
     for p in sorted(casos):
         path_entrada = arch('entradas',p)
         path_salida  = arch('salidas',p)
         path_mio     = arch('mios',p)
         path_diff    = arch('diffs',p)
-
+        #if '34' in p or '60' in p: continue
+        
         try:
-            subprocess.run(["sudo", ejecutable], stdin=open(path_entrada, "r")
+            subprocess.run(['sudo', ejecutable], stdin=open(path_entrada, "r")
                                        , stdout=open(path_mio, "w")
-                                       , timeout=60.0, check=True)
+                                       , timeout=5.0, check=True)
             
             f_entrada = open(path_entrada, "r")
             entrada = f_entrada.read()[:-1]
@@ -53,20 +58,16 @@ else:
             
             if os.path.isfile(path_diff):
                 os.remove(path_diff)
-            
+
             if salida == output:
                 print (" -- El caso", p[:2]," se resolvió correctamente")
                 correctos += 1
             else:
-                print("**********************************")
-                print("El caso", p[:2], " tiene errores")
-                print("La entrada es: ")
-                print(entrada)
-                print("Su programa genera:")
-                print(output)
-                print("El resultado correcto es:")
-                print(salida)
-                print("**********************************")
+                print(" -- El caso", p[:2], "NO se resolvió correctamente")
+                print("Diferencias:")
+                differ = difflib.Differ()
+                diff = differ.compare(salida.splitlines(), output.splitlines())
+                print('\n'.join(diff))
                 erroneos += 1
                 
                 diff_process = subprocess.Popen(['sudo','diff', path_salida, path_mio]
@@ -77,12 +78,10 @@ else:
                     f_diff.write(stdout)
                 
         except subprocess.TimeoutExpired:
-            print("**********************************")
+            print("************")
             print("El caso", p[:2]
                  ," ha agotado el tiempo de ejecución, revise los loops")
-            print("**********************************")
+            print("************")
             timeouts += 1
-    
+
     print ("Correctos: ", correctos, " Errores: ", erroneos, " Timeouts: ", timeouts)
-os.remove(f"{ejecutable}")
-os.remove(f"{ejecutable}.o")

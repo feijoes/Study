@@ -1,5 +1,6 @@
 Function todosTienenFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
                                     ; ln : Linea ) : boolean;
+
 { Retorna true solo si todos los caracteres de `ln` entre las columnas `ini` y `fin`, 
   incluídos los extremos, tienen el formato `tfmt`. En otro caso retorna false. 
 
@@ -13,16 +14,16 @@ Begin
   tiene_formato := false;
   While (i <= fin) And Not tiene_formato Do
     Begin
-      tiene_formato := ln.cars[i].fmt[tfmt]
-                       = true;
+      tiene_formato := ln.cars[i].fmt[tfmt] = false;
       i := i+1;
     End;
-  todosTienenFormatoEnLinea := tiene_formato;
+  todosTienenFormatoEnLinea := Not tiene_formato;
 
 End;
 Procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin :
                                  RangoColumna
                                  ; Var ln : Linea );
+
 { Aplica el formato `tfmt` a los caracteres de `ln` entre las columnas `ini` y `fin`, 
   incluídos los extremos. 
   Si todos los carácteres ya tienen el tipo de formato `tfmt`, en lugar de aplicarlo 
@@ -34,7 +35,7 @@ Procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin :
 Var i: integer;
   quitar: boolean;
 Begin
-  i := 1;
+
   quitar := Not todosTienenFormatoEnLinea(tfmt, ini, fin, ln);
   For i := ini To fin Do
     Begin
@@ -88,7 +89,7 @@ Begin
                 continuar_check := false;
               k := k+1;
             End;
-          If (continuar_check) and (k-i+1 >= c.tope) Then location := i;
+          If (continuar_check) And (k-i+1 >= c.tope) Then location := i;
         End;
       i := i + 1;
     End;
@@ -102,16 +103,14 @@ Begin
     End
   Else
     Begin
-      With pc Do
-        Begin
-          esColumna := false;
-        End;
+      pc.esColumna := false;
     End;
 
 End;
 
 Procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion
                                     ; Var pp : PosiblePosicion );
+
 { Busca la primera ocurrencia de la cadena `c` en el texto `txt` a partir de la 
   posición `desde`. Si la encuentra, retorna en `pp` la posición en la que incia. 
   La búsqueda no encuentra cadenas que ocupen más de una línea.
@@ -135,8 +134,7 @@ Begin
       buscarCadenaEnLineaDesde(c, temp_txt^.info, desde.columna, pc);
       If pc.esColumna Then
         Begin
-       
-          location := pc.col + desde.columna -1
+          location := pc.col;
         End
       Else
         Begin
@@ -162,7 +160,6 @@ Begin
     With pp Do
       Begin
         esPosicion := false;
-
       End;
 End;
 
@@ -170,6 +167,7 @@ End;
 
 Procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
                                  ; Var ln : linea; Var pln : PosibleLinea );
+
 { Inserta la cadena `c` a partir de la `columna` de `ln`, y desplaza hacia la derecha 
   a los restantes caracteres de la línea. Los carácteres insertados toman el formato 
   del carácter que ocupaba la posición `columna` en la línea. Si la columna es 
@@ -181,74 +179,32 @@ Procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
                    columna <= MAXCOL
                    c.tope + columna <= MAXCOL  }
 
-Var i,start: integer;
-  nueva_linea,copy_linea : Linea;
+Var i: integer;
+  nueva_linea : Linea;
   temp_caracter: Caracter;
-
 Begin
-  start := columna;
-  copy_linea := ln;
   nueva_linea.tope := 0;
-  If columna >= ln.tope+1 Then
+  If columna < ln.tope+1 Then temp_caracter.fmt := ln.cars[columna].fmt;
+  For i:= ln.tope + c.tope Downto columna+c.tope Do
     Begin
-      temp_caracter.fmt[Neg] := false;
-      temp_caracter.fmt[Ita] := false;
-      temp_caracter.fmt[Sub] := false;
-
-    End
-  Else
-    Begin
-      temp_caracter.fmt[Neg] := ln.cars[columna].fmt[Neg];
-      temp_caracter.fmt[Ita] := ln.cars[columna].fmt[Ita];
-      temp_caracter.fmt[Sub] := ln.cars[columna].fmt[Sub];
+      If i > MAXCOL Then
+        Begin
+          nueva_linea.tope := nueva_linea.tope +1;
+          nueva_linea.cars[i - MAXCOL] := ln.cars[i - c.tope];
+        End
+      Else
+        Begin
+          ln.cars[i] := ln.cars[i - c.tope];
+        End;
     End;
-
-  For  i:=1 To c.tope Do
+  For i:= 1 To c.tope Do
     Begin
       temp_caracter.car := c.cars[i];
-
-      If i + ln.tope = MAXCOL Then
-        Begin
-          With nueva_linea Do
-            Begin
-              cars[tope] := temp_caracter;
-              tope := tope + 1;
-            End;
-        End
-      Else
-        Begin
-          If columna - ln.tope > 0 Then ln.tope := columna ;
-          ln.cars[columna] := temp_caracter;
-        End;
-      columna := columna + 1;
+      ln.cars[i + columna-1] := temp_caracter;
     End;
-  For  i:= columna To copy_linea.tope + c.tope Do
-    Begin
-      If i + ln.tope > MAXCOL Then
-        Begin
-          With nueva_linea Do
-            Begin
-              cars[tope] := copy_linea.cars[start];
-              tope := tope + 1;
-            End;
-        End
-      Else
-        Begin
-          ln.cars[i] := copy_linea.cars[start];
-          ln.tope := ln.tope + 1;
-        End;
-      start := start + 1;
-    End;
-  If nueva_linea.tope > 0 Then
-    Begin
-      pln.esLinea := true;
-      pln.l := nueva_linea;
-    End
-  Else
-    Begin
-      pln.esLinea := false;
-
-    End;
+  ln.tope := ln.tope + c.tope - nueva_linea.tope;
+  pln.esLinea := nueva_linea.tope > 0;
+  pln.l := nueva_linea;
 End;
 
 
