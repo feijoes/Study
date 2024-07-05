@@ -62,51 +62,45 @@ Begin
 End;
 
 
-Procedure buscarCadenaEnLineaDesde ( c : Cadena; ln : Linea; desde :
-                                    RangoColumna
-                                    ; Var pc : PosibleColumna );
-
-
+Procedure buscarCadenaEnLineaDesde(c: Cadena; ln: Linea; desde: RangoColumna; Var pc: PosibleColumna);
 { Busca la primera ocurrencia de la cadena `c` en la línea `ln` a partir de la 
-  columna `desde`. Si la encuentra, retorna en `pc` la columna en la que incia. 
+  columna `desde`. Si la encuentra, retorna en `pc` la columna en la que inicia. 
 
   Precondiciones: 1 <= desde <= ln.tope }
 
-Var i,k, location: integer;
-  continuar_check: boolean;
+Var
+  i, k, location: integer;
+  matchFound: boolean;
 Begin
   i := desde;
   location := -1;
+  
   While (i <= ln.tope) And (location < 0) Do
+  Begin
+    If c.cars[1] = ln.cars[i].car Then
     Begin
-      If c.cars[1] = ln.cars[i].car  Then
-        Begin
-          continuar_check := true;
-          k := i;
-          While (k-i+1 <= c.tope) And (k <= ln.tope) And continuar_check Do
-            Begin
-              If Not (ln.cars[k].car = c.cars[k-i+1]) Then
-                continuar_check := false;
-              k := k+1;
-            End;
-          If (continuar_check) And (k-i+1 >= c.tope) Then location := i;
-        End;
-      i := i + 1;
+      matchFound := true;
+      k := i;
+      While (matchFound) And (k - i + 1 <= c.tope) And (k <= ln.tope) Do
+      Begin
+        If ln.cars[k].car <> c.cars[k - i + 1] Then
+          matchFound := false;
+        k := k + 1;
+      End;
+      If matchFound And (k - i = c.tope) Then
+        location := i;
     End;
+    i := i + 1;
+  End;
   If location > 0 Then
-    Begin
-      With pc Do
-        Begin
-          esColumna := true;
-          col := location;
-        End;
-    End
-  Else
-    Begin
-      pc.esColumna := false;
-    End;
-
+  Begin
+    pc.esColumna := true;
+    pc.col := location;
+  End
+  Else pc.esColumna := false;
 End;
+
+
 
 Procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion
                                     ; Var pp : PosiblePosicion );
@@ -118,51 +112,35 @@ Procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion
   Precondiciones: 1 <= desde.linea <= cantidad de líneas 
                   1 <= desde.columna <= tope de línea en desde.linea }
 
-Var i, location, linea_contador: integer;
+Var i, linea_contador: integer;
   temp_p: Posicion;
   pc: PosibleColumna;
   temp_txt: Texto;
+  posicion_encontrada: boolean;
 Begin
-  location := -1;
   linea_contador := desde.linea;
-  temp_txt := txt;
-  For i := 1 To desde.linea-1 Do
-    temp_txt := temp_txt^.sig;
-
-  While (temp_txt <> Nil) And (location < 0) Do
+  temp_txt := ubicarLineaEnTexto(txt,desde.linea);
+  posicion_encontrada:= false;
+  While (temp_txt <> Nil) And not posicion_encontrada Do
     Begin
       buscarCadenaEnLineaDesde(c, temp_txt^.info, desde.columna, pc);
       If pc.esColumna Then
         Begin
-          location := pc.col;
+          posicion_encontrada := true;
+          pp.esPosicion := true;
+          pp.p.linea := linea_contador;
+          pp.p.columna := pc.col;
         End
       Else
         Begin
           linea_contador := linea_contador + 1;
           temp_txt := temp_txt^.sig;
+          desde.columna := 1;
         End;
-      desde.columna := 1;
     End;
-  If location > 0 Then
-    Begin
-      With temp_p Do
-        Begin
-          linea := linea_contador;
-          columna := location;
-        End;
-      With pp Do
-        Begin
-          esPosicion := true;
-          p := temp_p;
-        End;
-    End
-  Else
-    With pp Do
-      Begin
-        esPosicion := false;
-      End;
+  If Not posicion_encontrada Then
+    pp.esPosicion := false;
 End;
-
 
 
 Procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna
@@ -214,19 +192,12 @@ Procedure insertarLineaEnTexto ( ln : Linea; nln : integer; Var txt : Texto );
   Precondiciones: 1 < nln <= cantidad de líneas del texto + 1
 }
 Var temp_txt1, temp_txt2,temp_txt3 : Texto;
-  i: integer;
 Begin
   New(temp_txt3);
-  temp_txt1 := txt;
-  temp_txt2 := txt;
-  For i:=1 To nln-2 Do
-    Begin
-
-      temp_txt1 := temp_txt1^.sig;
-      temp_txt2 := temp_txt2^.sig;
-    End;
-  temp_txt2 := temp_txt2^.sig;
-  temp_txt1^.sig := temp_txt3;
+  temp_txt1 := ubicarLineaEnTexto(txt, nln-1);
+  temp_txt2 := ubicarLineaEnTexto(txt, nln);
   temp_txt3^.info := ln;
   temp_txt3^.sig := temp_txt2;
+  temp_txt1^.sig := temp_txt3;
+  
 End;
