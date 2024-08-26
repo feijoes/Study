@@ -2,7 +2,7 @@
 
 Some folders are anotations for understand the frameworks/language
 
-or other are simple project that a don't think are big/important enough for create a new repo
+Or others are simple projects that I don't think are big or important enough to create a new repo.
 
 Current folders--
 
