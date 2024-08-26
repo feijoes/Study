@@ -39,7 +39,7 @@ Current folders--
 * flutter 
     * learning the basics of dart
 * Frontend (Check in folder README for more details )
-    * Github copy > ..not finished..
+    * Github copy -> ..not finished..
 * Python
     * FastAPI
     * Django
@@ -52,12 +52,7 @@ Current folders--
    * rust tutorials to learn rust
 * Pascal
    * Simple Activities for college
-Frontend folder is proyects to practice my frontend skills, not react, css,...
+* Cpp
+   * Simple Activities for college
 
-
-trying to documentate every project and making a readme for each project, so please take a look at the projects
-
-
-**Future Folders**
-- [ ] PHP/Lavarel
-
+Trying to document every project and create a README for each one, so please take a look at them.
