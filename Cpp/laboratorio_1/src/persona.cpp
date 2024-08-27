@@ -1,5 +1,4 @@
 #include "../include/persona.h"
-#include "./fecha.h"
 
 // Define la estructura Persona
 struct rep_persona {

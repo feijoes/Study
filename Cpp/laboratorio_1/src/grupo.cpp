@@ -55,14 +55,10 @@ void imprimirTGrupo(TGrupo grupo)
 {
     /************ Parte 5.2 ************/
     /*Escriba el código a continuación */
-    if ((*grupo).tope != 0)
-    {
-
-        for (int i = 0; i < (*grupo).tope; i++)
+    for (int i = 0; i < (*grupo).tope; i++)
         {
             imprimirTPersona((*grupo).personas[i]);
         }
-    }
     /****** Fin de parte Parte 5.2 *****/
 }
 
@@ -73,13 +69,12 @@ void liberarTGrupo(TGrupo &grupo)
 {
     /************ Parte 5.2 ************/
     /*Escriba el código a continuación */
-    if ((*grupo).tope != 0)
-    {
-        for (int i = 0; i < (*grupo).tope; i++)
+
+    for (int i = 0; i < (*grupo).tope; i++)
         {
             liberarTPersona((*grupo).personas[i]);
         }
-    }
+    
     delete grupo;
     grupo = NULL;
     /****** Fin de parte Parte 5.2 *****/
