@@ -1,0 +1,6 @@
+crearCliente 31 Valquiria Sanchez 12
+imprimirCliente
+imprimirEdadCliente
+imprimirIdCliente
+liberarCliente
+Fin

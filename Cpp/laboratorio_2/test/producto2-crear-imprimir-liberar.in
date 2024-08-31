@@ -1,0 +1,11 @@
+crearFecha 1/1/2001
+crearProducto 7 producto1 15
+idProducto
+imprimirProducto
+liberarProducto
+crearFecha 2/7/2003
+crearProducto 3 producto2 20
+imprimirProducto
+idProducto
+liberarProducto
+Fin

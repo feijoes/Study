@@ -1,0 +1,70 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> La SucursalesLDE de clientes ha sido creado de forma exitosa.
+2> La cantidad de clientesABB en SucursalesLDE es 0
+3> NO existe un clientesABB en la posicion 3
+4> NO existe un clientesABB en la posicion 40
+5> El clientesABB ha sido creado de forma exitosa.
+6> Cliente creado de forma exitosa.
+7> Se ha agregado el cliente al clientesABB de forma exitosa.
+8> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+9> La cantidad de clientesABB en SucursalesLDE es 1
+10> Primer clientesABB:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+11> ClientesABB en la posicion 1:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+12> El clientesABB ha sido creado de forma exitosa.
+13> Cliente creado de forma exitosa.
+14> Se ha agregado el cliente al clientesABB de forma exitosa.
+15> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+16> ClientesABB en la posicion 1:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+17> ClientesABB en la posicion 2:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 32
+18> El clientesABB ha sido creado de forma exitosa.
+19> Cliente creado de forma exitosa.
+20> Se ha agregado el cliente al clientesABB de forma exitosa.
+21> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+22> El clientesABB ha sido creado de forma exitosa.
+23> Cliente creado de forma exitosa.
+24> Se ha agregado el cliente al clientesABB de forma exitosa.
+25> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+26> La cantidad de clientesABB en SucursalesLDE es 4
+27> Primer clientesABB:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+28> ClientesABB en la posicion 1:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+29> ClientesABB en la posicion 4:
+Cliente Brunilda Fernandez
+Id: 6
+Edad: 51
+30> clientesSucursalesLDE de grupos:
+Grupo con edad promedio 21.00:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 21
+Grupo con edad promedio 32.00:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 32
+Grupo con edad promedio 43.00:
+Cliente Brunilda Fernandez
+Id: 5
+Edad: 43
+Grupo con edad promedio 51.00:
+Cliente Brunilda Fernandez
+Id: 6
+Edad: 51
+31> SucursalesLDE de ClientesABB liberada
+32> Fin.

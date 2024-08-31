@@ -1,0 +1,44 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> Carrito de productos creado de forma exitosa.
+2> Fecha creada en forma exitosa.
+3> Producto creado en forma exitosa.
+4> Producto agregado de forma exitosa.
+5> Producto con id 125 removido con exito.
+6> 7> Fecha creada en forma exitosa.
+8> Producto creado en forma exitosa.
+9> Producto agregado de forma exitosa.
+10> Fecha creada en forma exitosa.
+11> Producto creado en forma exitosa.
+12> Producto agregado de forma exitosa.
+13> Fecha creada en forma exitosa.
+14> Producto creado en forma exitosa.
+15> Producto agregado de forma exitosa.
+16> Producto: 12
+Mesa
+Precio: 9
+Ingresado el: 1/4/2001
+Producto: 15
+Computadora
+Precio: 9
+Ingresado el: 1/5/2001
+Producto: 24
+Sillon
+Precio: 9
+Ingresado el: 1/1/2001
+17> Producto con id 15 removido con exito.
+18> Producto: 12
+Mesa
+Precio: 9
+Ingresado el: 1/4/2001
+Producto: 24
+Sillon
+Precio: 9
+Ingresado el: 1/1/2001
+19> Producto con id 24 removido con exito.
+20> Producto: 12
+Mesa
+Precio: 9
+Ingresado el: 1/4/2001
+21> Producto con id 12 removido con exito.
+22> 23> Carrito de productos liberado con exito.
+24> Fin.

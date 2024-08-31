@@ -1,0 +1,28 @@
+crearCarritoProductos
+imprimirCarritoProductos
+liberarCarritoProductos
+crearCarritoProductos
+crearFecha 6/6/2001
+crearProducto 7 Leche 17
+agregarCarritoProductos
+imprimirCarritoProductos
+liberarCarritoProductos
+crearCarritoProductos
+crearFecha 1/1/2001
+crearProducto 12 Carne 17
+agregarCarritoProductos
+crearFecha 1/1/2001
+crearProducto 10 Lechuga 23
+agregarCarritoProductos
+crearFecha 1/2/2001
+crearProducto 6 Television 23
+agregarCarritoProductos
+crearFecha 1/1/2003
+crearProducto 2 Tomate 23
+agregarCarritoProductos
+crearFecha 2/1/2001
+crearProducto 16 Cafetera 23
+agregarCarritoProductos
+imprimirCarritoProductos
+liberarCarritoProductos
+Fin

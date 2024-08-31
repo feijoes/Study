@@ -1,0 +1,34 @@
+crearClientesABB
+crearCliente 7 Zenobia Gomez 16
+agregarAClientesABB
+maxIdClientesABB
+crearCliente 21 Casimira Lopez 42
+agregarAClientesABB
+maxIdClientesABB
+crearCliente 15 Valquiria Gomez 35
+agregarAClientesABB
+maxIdClientesABB
+crearCliente 40 Zafiro Martinez 20
+agregarAClientesABB
+maxIdClientesABB
+removerDeClientesABB 21
+maxIdClientesABB
+removerDeClientesABB 40
+maxIdClientesABB
+crearCliente 40 Zafiro Martinez 20
+agregarAClientesABB
+crearCliente 21 Casimira Lopez 42
+agregarAClientesABB
+crearCliente 25 Valquiria Gonzalez 19
+agregarAClientesABB
+maxIdClientesABB
+crearCliente 45 Valquiria Garcia 33
+agregarAClientesABB
+imprimirClientesABB
+maxIdClientesABB
+removerDeClientesABB 40
+imprimirClientesABB
+removerDeClientesABB 25
+imprimirClientesABB
+liberarClientesABB
+Fin

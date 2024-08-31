@@ -1,0 +1,47 @@
+crearClientesSucursalesLDE
+crearClientesABB
+crearCliente 1 Zafiro Lopez 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+removerUltimoClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+crearClientesABB
+crearCliente 2 Filemon Fernandez 32
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 3 Brunilda Sanchez 41
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 4 Filemon Martinez 44
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+removerNesimoClientesSucursalesLDE 3
+removerUltimoClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+removerUltimoClientesSucursalesLDE
+crearClientesABB
+crearCliente 10 Valquiria Perez 33
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 11 Ubaldo Lopez 53
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 12 Rufino Rodriguez 43
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 13 Valquiria Rodriguez 18
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+imprimirClientesSucursalesLDE
+removerNesimoClientesSucursalesLDE 3
+removerNesimoClientesSucursalesLDE 1
+removerNesimoClientesSucursalesLDE 2
+removerNesimoClientesSucursalesLDE 1
+liberarClientesSucursalesLDE
+Fin

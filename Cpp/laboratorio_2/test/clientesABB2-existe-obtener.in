@@ -1,0 +1,22 @@
+crearClientesABB
+crearCliente 10 Artemio Perez 21
+agregarAClientesABB
+obtenerClienteClientesABB 10
+crearCliente 5 Casimira Fernandez 52
+agregarAClientesABB
+crearCliente 3 Ubaldo Fernandez 19
+agregarAClientesABB
+crearCliente 2 Esmeralda Lopez 21
+agregarAClientesABB
+existeEnClientesABB 10
+existeEnClientesABB 1
+existeEnClientesABB 2
+existeEnClientesABB 4
+existeEnClientesABB 5
+existeEnClientesABB 7
+obtenerClienteClientesABB 5
+obtenerClienteClientesABB 3
+obtenerClienteClientesABB 10
+obtenerClienteClientesABB 2
+liberarClientesABB
+Fin

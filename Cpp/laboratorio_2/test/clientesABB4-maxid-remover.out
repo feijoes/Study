@@ -1,0 +1,77 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> El clientesABB ha sido creado de forma exitosa.
+2> Cliente creado de forma exitosa.
+3> Se ha agregado el cliente al clientesABB de forma exitosa.
+4> El mayor id en el clientesABB es 7.
+5> Cliente creado de forma exitosa.
+6> Se ha agregado el cliente al clientesABB de forma exitosa.
+7> El mayor id en el clientesABB es 21.
+8> Cliente creado de forma exitosa.
+9> Se ha agregado el cliente al clientesABB de forma exitosa.
+10> El mayor id en el clientesABB es 21.
+11> Cliente creado de forma exitosa.
+12> Se ha agregado el cliente al clientesABB de forma exitosa.
+13> El mayor id en el clientesABB es 40.
+14> El cliente con id 21 se removio del clientesABB.
+15> El mayor id en el clientesABB es 40.
+16> El cliente con id 40 se removio del clientesABB.
+17> El mayor id en el clientesABB es 15.
+18> Cliente creado de forma exitosa.
+19> Se ha agregado el cliente al clientesABB de forma exitosa.
+20> Cliente creado de forma exitosa.
+21> Se ha agregado el cliente al clientesABB de forma exitosa.
+22> Cliente creado de forma exitosa.
+23> Se ha agregado el cliente al clientesABB de forma exitosa.
+24> El mayor id en el clientesABB es 40.
+25> Cliente creado de forma exitosa.
+26> Se ha agregado el cliente al clientesABB de forma exitosa.
+27> Cliente Zenobia Gomez
+Id: 7
+Edad: 16
+Cliente Valquiria Gomez
+Id: 15
+Edad: 35
+Cliente Casimira Lopez
+Id: 21
+Edad: 42
+Cliente Valquiria Gonzalez
+Id: 25
+Edad: 19
+Cliente Zafiro Martinez
+Id: 40
+Edad: 20
+Cliente Valquiria Garcia
+Id: 45
+Edad: 33
+28> El mayor id en el clientesABB es 45.
+29> El cliente con id 40 se removio del clientesABB.
+30> Cliente Zenobia Gomez
+Id: 7
+Edad: 16
+Cliente Valquiria Gomez
+Id: 15
+Edad: 35
+Cliente Casimira Lopez
+Id: 21
+Edad: 42
+Cliente Valquiria Gonzalez
+Id: 25
+Edad: 19
+Cliente Valquiria Garcia
+Id: 45
+Edad: 33
+31> El cliente con id 25 se removio del clientesABB.
+32> Cliente Zenobia Gomez
+Id: 7
+Edad: 16
+Cliente Valquiria Gomez
+Id: 15
+Edad: 35
+Cliente Casimira Lopez
+Id: 21
+Edad: 42
+Cliente Valquiria Garcia
+Id: 45
+Edad: 33
+33> ClientesABB liberado con exito.
+34> Fin.

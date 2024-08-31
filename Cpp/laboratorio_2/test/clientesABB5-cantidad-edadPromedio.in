@@ -1,0 +1,21 @@
+crearClientesABB
+cantidadClientesClientesABB
+edadPromedioClientesABB
+crearCliente 10 Artemio Lopez 34
+agregarAClientesABB
+cantidadClientesClientesABB
+edadPromedioClientesABB
+crearCliente 11 Casimira Rodriguez 22
+agregarAClientesABB
+cantidadClientesClientesABB
+edadPromedioClientesABB
+crearCliente 12 Zenobia Lopez 40
+agregarAClientesABB
+cantidadClientesClientesABB
+edadPromedioClientesABB
+crearCliente 13 Esmeralda Perez 16
+agregarAClientesABB
+cantidadClientesClientesABB
+edadPromedioClientesABB
+liberarClientesABB
+Fin

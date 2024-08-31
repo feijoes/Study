@@ -1,0 +1,36 @@
+crearClientesABB
+crearCliente 15 Rufino Garcia 21
+agregarAClientesABB
+obtenerNesimoClienteClientesABB 1
+crearCliente 3 Zafiro Fernandez 25
+agregarAClientesABB
+obtenerNesimoClienteClientesABB 1
+obtenerNesimoClienteClientesABB 2
+crearCliente 25 Casimira Sanchez 26
+agregarAClientesABB
+crearCliente 22 Zafiro Sanchez 33
+agregarAClientesABB
+crearCliente 20 Rufino Gonzalez 23
+agregarAClientesABB
+crearCliente 19 Esmeralda Ruiz 32
+agregarAClientesABB
+crearCliente 21 Esmeralda Garcia 58
+agregarAClientesABB
+crearCliente 2 Rufino Lopez 28
+agregarAClientesABB
+crearCliente 1 Valquiria Ruiz 27
+agregarAClientesABB
+crearCliente 6 Zafiro Rodriguez 42
+agregarAClientesABB
+obtenerNesimoClienteClientesABB 10
+obtenerNesimoClienteClientesABB 9
+obtenerNesimoClienteClientesABB 8
+obtenerNesimoClienteClientesABB 7
+obtenerNesimoClienteClientesABB 6
+obtenerNesimoClienteClientesABB 1
+obtenerNesimoClienteClientesABB 2
+obtenerNesimoClienteClientesABB 3
+obtenerNesimoClienteClientesABB 4
+obtenerNesimoClienteClientesABB 5
+liberarClientesABB
+Fin

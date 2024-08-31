@@ -1,0 +1,76 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> El clientesABB ha sido creado de forma exitosa.
+2> Cliente creado de forma exitosa.
+3> Se ha agregado el cliente al clientesABB de forma exitosa.
+4> Cliente nro 1 del clientesABB:
+Cliente Rufino Garcia
+Id: 15
+Edad: 21
+5> Cliente creado de forma exitosa.
+6> Se ha agregado el cliente al clientesABB de forma exitosa.
+7> Cliente nro 1 del clientesABB:
+Cliente Zafiro Fernandez
+Id: 3
+Edad: 25
+8> Cliente nro 2 del clientesABB:
+Cliente Rufino Garcia
+Id: 15
+Edad: 21
+9> Cliente creado de forma exitosa.
+10> Se ha agregado el cliente al clientesABB de forma exitosa.
+11> Cliente creado de forma exitosa.
+12> Se ha agregado el cliente al clientesABB de forma exitosa.
+13> Cliente creado de forma exitosa.
+14> Se ha agregado el cliente al clientesABB de forma exitosa.
+15> Cliente creado de forma exitosa.
+16> Se ha agregado el cliente al clientesABB de forma exitosa.
+17> Cliente creado de forma exitosa.
+18> Se ha agregado el cliente al clientesABB de forma exitosa.
+19> Cliente creado de forma exitosa.
+20> Se ha agregado el cliente al clientesABB de forma exitosa.
+21> Cliente creado de forma exitosa.
+22> Se ha agregado el cliente al clientesABB de forma exitosa.
+23> Cliente creado de forma exitosa.
+24> Se ha agregado el cliente al clientesABB de forma exitosa.
+25> Cliente nro 10 del clientesABB:
+Cliente Casimira Sanchez
+Id: 25
+Edad: 26
+26> Cliente nro 9 del clientesABB:
+Cliente Zafiro Sanchez
+Id: 22
+Edad: 33
+27> Cliente nro 8 del clientesABB:
+Cliente Esmeralda Garcia
+Id: 21
+Edad: 58
+28> Cliente nro 7 del clientesABB:
+Cliente Rufino Gonzalez
+Id: 20
+Edad: 23
+29> Cliente nro 6 del clientesABB:
+Cliente Esmeralda Ruiz
+Id: 19
+Edad: 32
+30> Cliente nro 1 del clientesABB:
+Cliente Valquiria Ruiz
+Id: 1
+Edad: 27
+31> Cliente nro 2 del clientesABB:
+Cliente Rufino Lopez
+Id: 2
+Edad: 28
+32> Cliente nro 3 del clientesABB:
+Cliente Zafiro Fernandez
+Id: 3
+Edad: 25
+33> Cliente nro 4 del clientesABB:
+Cliente Zafiro Rodriguez
+Id: 6
+Edad: 42
+34> Cliente nro 5 del clientesABB:
+Cliente Rufino Garcia
+Id: 15
+Edad: 21
+35> ClientesABB liberado con exito.
+36> Fin.

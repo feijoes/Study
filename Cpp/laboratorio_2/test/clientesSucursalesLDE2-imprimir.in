@@ -1,0 +1,29 @@
+crearClientesSucursalesLDE
+imprimirClientesSucursalesLDE
+imprimirInvertidaClientesSucursalesLDE
+crearClientesABB
+crearCliente 4 Zafiro Garcia 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 8 Filemon Ruiz 52
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 5 Brunilda Fernandez 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+imprimirClientesSucursalesLDE
+imprimirInvertidaClientesSucursalesLDE
+crearClientesABB
+crearCliente 6 Brunilda Martinez 24
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 5 Artemio Garcia 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+imprimirClientesSucursalesLDE
+imprimirInvertidaClientesSucursalesLDE
+liberarClientesSucursalesLDE
+Fin

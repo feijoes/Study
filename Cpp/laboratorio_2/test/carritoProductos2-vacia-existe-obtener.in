@@ -1,0 +1,33 @@
+crearCarritoProductos
+esVacioCarritoProductos
+existeProductoCarritoProductos 50
+crearFecha 1/1/2002
+crearProducto 10 Silla 23
+agregarCarritoProductos
+esVacioCarritoProductos
+existeProductoCarritoProductos 10
+existeProductoCarritoProductos 5
+obtenerProductoCarritoProductos 10
+crearFecha 29/09/2000
+crearProducto 6 Mesa 23
+agregarCarritoProductos
+esVacioCarritoProductos
+existeProductoCarritoProductos 10
+existeProductoCarritoProductos 5
+existeProductoCarritoProductos 6
+obtenerProductoCarritoProductos 10
+obtenerProductoCarritoProductos 6
+crearFecha 25/12/2001
+crearProducto 15 Mesa 23
+agregarCarritoProductos
+esVacioCarritoProductos
+existeProductoCarritoProductos 10
+existeProductoCarritoProductos 5
+existeProductoCarritoProductos 6
+existeProductoCarritoProductos 15
+obtenerProductoCarritoProductos 10
+obtenerProductoCarritoProductos 15
+liberarCarritoProductos
+esVacioCarritoProductos
+existeProductoCarritoProductos 10
+Fin

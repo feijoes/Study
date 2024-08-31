@@ -1,0 +1,7 @@
+crearFecha 1/1/2001
+crearProducto 7 producto1 5
+liberarProducto
+crearFecha 1/1/2001
+crearProducto 7 producto1 15
+liberarProducto
+Fin

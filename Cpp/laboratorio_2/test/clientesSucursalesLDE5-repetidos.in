@@ -1,0 +1,36 @@
+crearClientesSucursalesLDE
+clienteMasRepetido
+crearClientesABB
+crearCliente 2 Casimira Garcia 34
+agregarAClientesABB
+crearCliente 1 Artemio Rodriguez 21
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 2 Casimira Garcia 34
+agregarAClientesABB
+crearCliente 1 Artemio Rodriguez 21
+agregarAClientesABB
+crearCliente 3 Brunilda Gonzalez 20
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+clienteMasRepetido
+crearClientesABB
+crearCliente 2 Casimira Garcia 34
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 2 Casimira Garcia 34
+agregarAClientesABB
+crearCliente 4 Zenobia Ruiz 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 2 Casimira Garcia 34
+agregarAClientesABB
+crearCliente 4 Zenobia Ruiz 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+clienteMasRepetido
+liberarClientesSucursalesLDE
+Fin

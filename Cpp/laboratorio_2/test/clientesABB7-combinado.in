@@ -1,0 +1,45 @@
+crearClientesABB
+liberarClientesABB
+crearClientesABB
+crearCliente 10 Brunilda Gomez 34
+agregarAClientesABB
+crearCliente 20 Casimira Ruiz 22
+agregarAClientesABB
+crearCliente 16 Zenobia Garcia 40
+agregarAClientesABB
+crearCliente 24 Brunilda Perez 16
+agregarAClientesABB
+crearCliente 30 Zenobia Gonzalez 22
+agregarAClientesABB
+crearCliente 31 Rufino Fernandez 24
+agregarAClientesABB
+crearCliente 32 Casimira Perez 16
+agregarAClientesABB
+crearCliente 40 Ubaldo Garcia 21
+agregarAClientesABB
+crearCliente 8 Esmeralda Fernandez 23
+agregarAClientesABB
+crearCliente 4 Filemon Lopez 42
+agregarAClientesABB
+crearCliente 6 Casimira Martinez 18
+agregarAClientesABB
+crearCliente 7 Rufino Martinez 25
+agregarAClientesABB
+alturaClientesABB
+existeEnClientesABB 6
+existeEnClientesABB 31
+existeEnClientesABB 2
+existeEnClientesABB 18
+maxIdClientesABB
+edadPromedioClientesABB
+removerDeClientesABB 30
+removerDeClientesABB 8
+removerDeClientesABB 31
+removerDeClientesABB 24
+alturaClientesABB
+existeEnClientesABB 6
+existeEnClientesABB 31
+maxIdClientesABB
+edadPromedioClientesABB
+liberarClientesABB
+Fin

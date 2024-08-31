@@ -1,0 +1,43 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> La SucursalesLDE de clientes ha sido creado de forma exitosa.
+2> No hay cliente repetido porque no hay clientes en los clientesABB de sucursales.
+3> El clientesABB ha sido creado de forma exitosa.
+4> Cliente creado de forma exitosa.
+5> Se ha agregado el cliente al clientesABB de forma exitosa.
+6> Cliente creado de forma exitosa.
+7> Se ha agregado el cliente al clientesABB de forma exitosa.
+8> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+9> El clientesABB ha sido creado de forma exitosa.
+10> Cliente creado de forma exitosa.
+11> Se ha agregado el cliente al clientesABB de forma exitosa.
+12> Cliente creado de forma exitosa.
+13> Se ha agregado el cliente al clientesABB de forma exitosa.
+14> Cliente creado de forma exitosa.
+15> Se ha agregado el cliente al clientesABB de forma exitosa.
+16> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+17> El cliente que aparece en la mayor cantidad de sucursales es:
+Cliente Artemio Rodriguez
+Id: 1
+Edad: 21
+18> El clientesABB ha sido creado de forma exitosa.
+19> Cliente creado de forma exitosa.
+20> Se ha agregado el cliente al clientesABB de forma exitosa.
+21> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+22> El clientesABB ha sido creado de forma exitosa.
+23> Cliente creado de forma exitosa.
+24> Se ha agregado el cliente al clientesABB de forma exitosa.
+25> Cliente creado de forma exitosa.
+26> Se ha agregado el cliente al clientesABB de forma exitosa.
+27> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+28> El clientesABB ha sido creado de forma exitosa.
+29> Cliente creado de forma exitosa.
+30> Se ha agregado el cliente al clientesABB de forma exitosa.
+31> Cliente creado de forma exitosa.
+32> Se ha agregado el cliente al clientesABB de forma exitosa.
+33> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+34> El cliente que aparece en la mayor cantidad de sucursales es:
+Cliente Casimira Garcia
+Id: 2
+Edad: 34
+35> SucursalesLDE de ClientesABB liberada
+36> Fin.

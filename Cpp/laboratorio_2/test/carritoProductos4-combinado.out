@@ -1,0 +1,61 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> Carrito de productos creado de forma exitosa.
+2> Fecha creada en forma exitosa.
+3> Producto creado en forma exitosa.
+4> Producto agregado de forma exitosa.
+5> Fecha creada en forma exitosa.
+6> Producto creado en forma exitosa.
+7> Producto agregado de forma exitosa.
+8> Fecha creada en forma exitosa.
+9> Producto creado en forma exitosa.
+10> Producto agregado de forma exitosa.
+11> Fecha creada en forma exitosa.
+12> Producto creado en forma exitosa.
+13> Producto agregado de forma exitosa.
+14> Fecha creada en forma exitosa.
+15> Producto creado en forma exitosa.
+16> Producto agregado de forma exitosa.
+17> Fecha creada en forma exitosa.
+18> Producto creado en forma exitosa.
+19> Producto agregado de forma exitosa.
+20> Producto con id 5 removido con exito.
+21> Producto con id 1 removido con exito.
+22> El carrito de productos NO es vacio.
+23> Fecha creada en forma exitosa.
+24> Producto creado en forma exitosa.
+25> Producto agregado de forma exitosa.
+26> Producto: 5
+Computadora
+Precio: 32
+Ingresado el: 1/1/2005
+27> Producto: 4
+Silla
+Precio: 12
+Ingresado el: 5/4/2007
+28> Producto: 6
+Tele
+Precio: 23
+Ingresado el: 5/4/2008
+29> El carrito de productos NO es vacio.
+30> Producto: 3
+Mesa
+Precio: 15
+Ingresado el: 3/2/2004
+Producto: 4
+Silla
+Precio: 12
+Ingresado el: 5/4/2007
+Producto: 5
+Computadora
+Precio: 32
+Ingresado el: 1/1/2005
+Producto: 6
+Tele
+Precio: 23
+Ingresado el: 5/4/2008
+Producto: 7
+Pizza
+Precio: 23
+Ingresado el: 5/4/2006
+31> Carrito de productos liberado con exito.
+32> Fin.

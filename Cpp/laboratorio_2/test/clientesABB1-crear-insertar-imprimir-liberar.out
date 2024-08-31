@@ -1,0 +1,90 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> El clientesABB ha sido creado de forma exitosa.
+2> Cliente creado de forma exitosa.
+3> Se ha agregado el cliente al clientesABB de forma exitosa.
+4> Cliente creado de forma exitosa.
+5> Se ha agregado el cliente al clientesABB de forma exitosa.
+6> Cliente creado de forma exitosa.
+7> Se ha agregado el cliente al clientesABB de forma exitosa.
+8> Cliente creado de forma exitosa.
+9> Se ha agregado el cliente al clientesABB de forma exitosa.
+10> Cliente Ubaldo Gonzalez
+Id: 1
+Edad: 57
+Cliente Ubaldo Rodriguez
+Id: 4
+Edad: 25
+Cliente Brunilda Garcia
+Id: 5
+Edad: 14
+Cliente Artemio Martinez
+Id: 10
+Edad: 20
+11> Cliente creado de forma exitosa.
+12> Se ha agregado el cliente al clientesABB de forma exitosa.
+13> Cliente creado de forma exitosa.
+14> Se ha agregado el cliente al clientesABB de forma exitosa.
+15> Cliente creado de forma exitosa.
+16> Se ha agregado el cliente al clientesABB de forma exitosa.
+17> Cliente creado de forma exitosa.
+18> Se ha agregado el cliente al clientesABB de forma exitosa.
+19> Cliente Ubaldo Gonzalez
+Id: 1
+Edad: 57
+Cliente Ubaldo Rodriguez
+Id: 4
+Edad: 25
+Cliente Brunilda Garcia
+Id: 5
+Edad: 14
+Cliente Artemio Martinez
+Id: 10
+Edad: 20
+Cliente Ubaldo Martinez
+Id: 11
+Edad: 54
+Cliente Esmeralda Martinez
+Id: 12
+Edad: 20
+Cliente Zenobia Fernandez
+Id: 14
+Edad: 20
+Cliente Artemio Fernandez
+Id: 17
+Edad: 20
+20> Cliente creado de forma exitosa.
+21> Se ha agregado el cliente al clientesABB de forma exitosa.
+22> Cliente creado de forma exitosa.
+23> Se ha agregado el cliente al clientesABB de forma exitosa.
+24> Cliente Ubaldo Gonzalez
+Id: 1
+Edad: 57
+Cliente Ubaldo Gomez
+Id: 2
+Edad: 24
+Cliente Zenobia Martinez
+Id: 3
+Edad: 23
+Cliente Ubaldo Rodriguez
+Id: 4
+Edad: 25
+Cliente Brunilda Garcia
+Id: 5
+Edad: 14
+Cliente Artemio Martinez
+Id: 10
+Edad: 20
+Cliente Ubaldo Martinez
+Id: 11
+Edad: 54
+Cliente Esmeralda Martinez
+Id: 12
+Edad: 20
+Cliente Zenobia Fernandez
+Id: 14
+Edad: 20
+Cliente Artemio Fernandez
+Id: 17
+Edad: 20
+25> ClientesABB liberado con exito.
+26> Fin.

@@ -1,0 +1,7 @@
+crearCliente 19 Casimira Gonzalez 27
+imprimirCliente
+liberarCliente
+crearCliente 31 Esmeralda Rodriguez 30
+imprimirCliente
+liberarCliente
+Fin

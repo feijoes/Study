@@ -1,0 +1,79 @@
+crearClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 4 Zafiro Perez 28
+agregarAClientesABB
+crearCliente 6 Artemio Ruiz 30
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 6 Artemio Ruiz 30
+agregarAClientesABB
+crearCliente 2 Ubaldo Perez 32
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 3 Valquiria Fernandez 22
+agregarAClientesABB
+crearCliente 6 Artemio Ruiz 30
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 3 Valquiria Fernandez 22
+agregarAClientesABB
+crearCliente 5 Zenobia Rodriguez 38
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+cantidadClientesSucursalesLDE
+obtenerPrimeroClientesSucursalesLDE
+obtenerNesimoClientesSucursalesLDE 3
+imprimirClientesSucursalesLDE
+imprimirInvertidaClientesSucursalesLDE
+removerUltimoClientesSucursalesLDE
+clienteMasRepetido
+
+liberarClientesSucursalesLDE
+
+
+crearClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 7 Esmeralda Sanchez 26
+agregarAClientesABB
+crearCliente 5 Zenobia Rodriguez 38
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 5 Zenobia Rodriguez 38
+agregarAClientesABB
+crearCliente 4 Zafiro Perez 28
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 7 Esmeralda Sanchez 26
+agregarAClientesABB
+crearCliente 3 Valquiria Fernandez 22
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+crearClientesABB
+crearCliente 4 Zafiro Perez 28
+agregarAClientesABB
+crearCliente 1 Rufino Sanchez 24
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+
+removerNesimoClientesSucursalesLDE 2
+imprimirClientesSucursalesLDE
+imprimirInvertidaClientesSucursalesLDE
+clienteMasRepetido
+
+liberarClientesSucursalesLDE
+
+Fin

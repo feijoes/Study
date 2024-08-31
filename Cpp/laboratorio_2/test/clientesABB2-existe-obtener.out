@@ -1,0 +1,33 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> El clientesABB ha sido creado de forma exitosa.
+2> Cliente creado de forma exitosa.
+3> Se ha agregado el cliente al clientesABB de forma exitosa.
+4> Cliente Artemio Perez
+Id: 10
+Edad: 21
+5> Cliente creado de forma exitosa.
+6> Se ha agregado el cliente al clientesABB de forma exitosa.
+7> Cliente creado de forma exitosa.
+8> Se ha agregado el cliente al clientesABB de forma exitosa.
+9> Cliente creado de forma exitosa.
+10> Se ha agregado el cliente al clientesABB de forma exitosa.
+11> El cliente con id 10 pertenece al clientesABB.
+12> El cliente con id 1 NO pertenece al clientesABB.
+13> El cliente con id 2 pertenece al clientesABB.
+14> El cliente con id 4 NO pertenece al clientesABB.
+15> El cliente con id 5 pertenece al clientesABB.
+16> El cliente con id 7 NO pertenece al clientesABB.
+17> Cliente Casimira Fernandez
+Id: 5
+Edad: 52
+18> Cliente Ubaldo Fernandez
+Id: 3
+Edad: 19
+19> Cliente Artemio Perez
+Id: 10
+Edad: 21
+20> Cliente Esmeralda Lopez
+Id: 2
+Edad: 21
+21> ClientesABB liberado con exito.
+22> Fin.

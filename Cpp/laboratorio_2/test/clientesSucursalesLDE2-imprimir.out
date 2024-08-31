@@ -1,0 +1,94 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> La SucursalesLDE de clientes ha sido creado de forma exitosa.
+2> clientesSucursalesLDE de grupos:
+3> clientesSucursalesLDE de grupos:
+4> El clientesABB ha sido creado de forma exitosa.
+5> Cliente creado de forma exitosa.
+6> Se ha agregado el cliente al clientesABB de forma exitosa.
+7> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+8> El clientesABB ha sido creado de forma exitosa.
+9> Cliente creado de forma exitosa.
+10> Se ha agregado el cliente al clientesABB de forma exitosa.
+11> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+12> El clientesABB ha sido creado de forma exitosa.
+13> Cliente creado de forma exitosa.
+14> Se ha agregado el cliente al clientesABB de forma exitosa.
+15> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+16> clientesSucursalesLDE de grupos:
+Grupo con edad promedio 22.00:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Brunilda Fernandez
+Id: 5
+Edad: 22
+Grupo con edad promedio 52.00:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 52
+17> clientesSucursalesLDE de grupos:
+Grupo con edad promedio 52.00:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 52
+Grupo con edad promedio 22.00:
+Cliente Brunilda Fernandez
+Id: 5
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 22
+18> El clientesABB ha sido creado de forma exitosa.
+19> Cliente creado de forma exitosa.
+20> Se ha agregado el cliente al clientesABB de forma exitosa.
+21> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+22> El clientesABB ha sido creado de forma exitosa.
+23> Cliente creado de forma exitosa.
+24> Se ha agregado el cliente al clientesABB de forma exitosa.
+25> Se ha agregado el clientesABB a SucursalesLDE de forma exitosa.
+26> clientesSucursalesLDE de grupos:
+Grupo con edad promedio 22.00:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Brunilda Fernandez
+Id: 5
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Artemio Garcia
+Id: 5
+Edad: 22
+Grupo con edad promedio 24.00:
+Cliente Brunilda Martinez
+Id: 6
+Edad: 24
+Grupo con edad promedio 52.00:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 52
+27> clientesSucursalesLDE de grupos:
+Grupo con edad promedio 52.00:
+Cliente Filemon Ruiz
+Id: 8
+Edad: 52
+Grupo con edad promedio 24.00:
+Cliente Brunilda Martinez
+Id: 6
+Edad: 24
+Grupo con edad promedio 22.00:
+Cliente Artemio Garcia
+Id: 5
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Brunilda Fernandez
+Id: 5
+Edad: 22
+Grupo con edad promedio 22.00:
+Cliente Zafiro Garcia
+Id: 4
+Edad: 22
+28> SucursalesLDE de ClientesABB liberada
+29> Fin.

@@ -1,0 +1,32 @@
+crearClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+obtenerNesimoClientesSucursalesLDE 3
+obtenerNesimoClientesSucursalesLDE 40
+crearClientesABB
+crearCliente 4 Zafiro Garcia 21
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+obtenerPrimeroClientesSucursalesLDE
+obtenerNesimoClientesSucursalesLDE 1
+crearClientesABB
+crearCliente 8 Filemon Ruiz 32
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+obtenerNesimoClientesSucursalesLDE 1
+obtenerNesimoClientesSucursalesLDE 2
+crearClientesABB
+crearCliente 5 Brunilda Fernandez 43
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+crearClientesABB
+crearCliente 6 Brunilda Fernandez 51
+agregarAClientesABB
+agregarAClientesSucursalesLDE
+cantidadClientesSucursalesLDE
+obtenerPrimeroClientesSucursalesLDE
+obtenerNesimoClientesSucursalesLDE 1
+obtenerNesimoClientesSucursalesLDE 4
+imprimirClientesSucursalesLDE
+liberarClientesSucursalesLDE
+Fin

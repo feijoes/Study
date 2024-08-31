@@ -1,0 +1,16 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> Cliente creado de forma exitosa.
+2> Cliente Filemon Gonzalez
+Id: 31
+Edad: 29
+3> La edad del cliente es: 29
+4> El id del cliente es: 31
+5> Cliente copiado. Datos de la copia:
+Cliente Filemon Gonzalez
+Id: 31
+Edad: 29
+6> Cliente Filemon Gonzalez
+Id: 31
+Edad: 29
+7> Cliente liberado con exito.
+8> Fin.

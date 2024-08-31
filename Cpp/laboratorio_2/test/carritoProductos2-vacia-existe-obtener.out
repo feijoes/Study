@@ -1,0 +1,49 @@
+Bienvenido al programa principal de Mercado FINGer. Por favor ingrese su comando:
+1> Carrito de productos creado de forma exitosa.
+2> El carrito de productos es vacio.
+3> El producto con id 50 NO se encuentra en el carrito.
+4> Fecha creada en forma exitosa.
+5> Producto creado en forma exitosa.
+6> Producto agregado de forma exitosa.
+7> El carrito de productos NO es vacio.
+8> El producto con id 10 se encuentra a el carrito.
+9> El producto con id 5 NO se encuentra en el carrito.
+10> Producto: 10
+Silla
+Precio: 23
+Ingresado el: 1/1/2002
+11> Fecha creada en forma exitosa.
+12> Producto creado en forma exitosa.
+13> Producto agregado de forma exitosa.
+14> El carrito de productos NO es vacio.
+15> El producto con id 10 se encuentra a el carrito.
+16> El producto con id 5 NO se encuentra en el carrito.
+17> El producto con id 6 se encuentra a el carrito.
+18> Producto: 10
+Silla
+Precio: 23
+Ingresado el: 1/1/2002
+19> Producto: 6
+Mesa
+Precio: 23
+Ingresado el: 29/9/2000
+20> Fecha creada en forma exitosa.
+21> Producto creado en forma exitosa.
+22> Producto agregado de forma exitosa.
+23> El carrito de productos NO es vacio.
+24> El producto con id 10 se encuentra a el carrito.
+25> El producto con id 5 NO se encuentra en el carrito.
+26> El producto con id 6 se encuentra a el carrito.
+27> El producto con id 15 se encuentra a el carrito.
+28> Producto: 10
+Silla
+Precio: 23
+Ingresado el: 1/1/2002
+29> Producto: 15
+Mesa
+Precio: 23
+Ingresado el: 25/12/2001
+30> Carrito de productos liberado con exito.
+31> El carrito de productos es vacio.
+32> El producto con id 10 NO se encuentra en el carrito.
+33> Fin.

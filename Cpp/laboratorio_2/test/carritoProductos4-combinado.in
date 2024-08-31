@@ -1,0 +1,32 @@
+crearCarritoProductos
+crearFecha 1/1/2001
+crearProducto 1 Sillon 3
+agregarCarritoProductos
+crearFecha 3/2/2004
+crearProducto 3 Mesa 15
+agregarCarritoProductos
+crearFecha 1/1/2005
+crearProducto 5 Computadora 17
+agregarCarritoProductos
+crearFecha 5/4/2006
+crearProducto 7 Pizza 23
+agregarCarritoProductos
+crearFecha 5/4/2007
+crearProducto 4 Silla 12
+agregarCarritoProductos
+crearFecha 5/4/2008
+crearProducto 6 Tele 23
+agregarCarritoProductos
+removerDeCarritoProductos 5
+removerDeCarritoProductos 1
+esVacioCarritoProductos
+crearFecha 1/1/2005
+crearProducto 5 Computadora 32
+agregarCarritoProductos
+obtenerProductoCarritoProductos 5
+obtenerProductoCarritoProductos 4
+obtenerProductoCarritoProductos 6
+esVacioCarritoProductos
+imprimirCarritoProductos
+liberarCarritoProductos
+Fin

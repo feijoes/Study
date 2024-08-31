@@ -1,0 +1,24 @@
+crearCarritoProductos
+crearFecha 1/2/2001
+crearProducto 125 Silla 9
+agregarCarritoProductos
+removerDeCarritoProductos 125
+imprimirCarritoProductos
+crearFecha 1/4/2001
+crearProducto 12 Mesa 9
+agregarCarritoProductos
+crearFecha 1/1/2001
+crearProducto 24 Sillon 9
+agregarCarritoProductos
+crearFecha 1/5/2001
+crearProducto 15 Computadora 9
+agregarCarritoProductos
+imprimirCarritoProductos
+removerDeCarritoProductos 15
+imprimirCarritoProductos
+removerDeCarritoProductos 24
+imprimirCarritoProductos
+removerDeCarritoProductos 12
+imprimirCarritoProductos
+liberarCarritoProductos
+Fin

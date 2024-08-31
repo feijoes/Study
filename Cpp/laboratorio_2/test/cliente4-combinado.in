@@ -1,0 +1,8 @@
+crearCliente 31 Filemon Gonzalez 29
+imprimirCliente
+imprimirEdadCliente
+imprimirIdCliente
+copiarCliente
+imprimirCliente
+liberarCliente
+Fin
