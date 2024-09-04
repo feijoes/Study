@@ -31,20 +31,14 @@ void insertarProductoCarritoProductos(TCarritoProductos &carritoProductos, TProd
         carritoProductos->producto = producto;
         return;
     }
-    TCarritoProductos carrito = crearCarritoProductosConProducto(producto);
     if (idTProducto(carritoProductos->producto) > idTProducto(producto))
     {
+        TCarritoProductos carrito = crearCarritoProductosConProducto(producto);
         carrito->sig = carritoProductos;
         carritoProductos = carrito ;
         return;
     }
-    TCarritoProductos carritosCopy_before = carritoProductos;
-    while (carritosCopy_before->sig != NULL && idTProducto(carritosCopy_before->sig->producto) < idTProducto(producto))
-    {
-        carritosCopy_before = carritosCopy_before->sig;
-    }
-    carrito->sig = carritosCopy_before->sig;
-    carritosCopy_before->sig = carrito;
+    insertarProductoCarritoProductos(carritoProductos->sig, producto);
 }
 
 void imprimirCarritoProductos(TCarritoProductos carritoProductos)
