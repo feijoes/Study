@@ -37,8 +37,7 @@ void liberarTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE
 // El formato de impresión es:
 // clientesSucursalesLDE de grupos:
   //  <y luego para cada grupo se repite>
-  //  Sucursal: <id_sucursal>
-  //  Clientes con edad promedio <edad promedio>:
+  //  Grupo con edad promedio <edad promedio>:
   //  <imprimir el grupo con función imprimirTClientesABB>
 
 // Nota: la edad promedio se imprime con 2 dígitos después de la coma (formato '%.2f').

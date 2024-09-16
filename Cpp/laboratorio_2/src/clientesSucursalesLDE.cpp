@@ -1,149 +1,108 @@
 #include "../include/clientesSucursalesLDE.h"
 
-struct rep_clientesSucursalesLDE
+typedef struct rep_nodo *TNodo;
+
+struct rep_nodo
 {
 	TClientesABB abb;
-	TClientesSucursalesLDE ant, sig;
-	int id;
+	TNodo ant, sig;
+};
+struct rep_clientesSucursalesLDE
+{
+	TNodo inicio, final;
 };
 
 TClientesSucursalesLDE crearTClientesSucursalesLDEVacia()
 {
 	TClientesSucursalesLDE surcusal = new rep_clientesSucursalesLDE;
-	surcusal->abb = NULL;
-	surcusal->ant = NULL;
-	surcusal->sig = NULL;
+	surcusal->inicio = NULL;
+	surcusal->final = NULL;
 	return surcusal;
 }
-TClientesSucursalesLDE crearTClientesSucursalesLDEConCliente(TClientesABB clientesABB)
+TNodo crearTNodoConClientesABB(TClientesABB clientesABB)
 {
-	TClientesSucursalesLDE surcusal = crearTClientesSucursalesLDEVacia();
-	surcusal->abb = clientesABB;
-	return surcusal;
+	TNodo nodo = new rep_nodo;
+	nodo->ant = NULL;
+	nodo->sig = NULL;
+	nodo->abb = clientesABB;
+	return nodo;
 }
 
 void insertarClientesABBTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE, TClientesABB clientesABB, int idSucursal)
 {
-	if (clientesSucursalesLDE->abb == NULL)
+	TNodo new_nodo = crearTNodoConClientesABB(clientesABB);
+	if (clientesSucursalesLDE->inicio == NULL)
 	{
-		clientesSucursalesLDE->abb = clientesABB;
-		clientesSucursalesLDE->id = idSucursal;
+		clientesSucursalesLDE->inicio = new_nodo;
+		clientesSucursalesLDE->final = new_nodo;
 		return;
 	}
-	TClientesSucursalesLDE temp = clientesSucursalesLDE;
-	TClientesSucursalesLDE new_sucursal = crearTClientesSucursalesLDEConCliente(clientesABB);
-	new_sucursal->id = idSucursal;
-	if (edadPromedioTClientesABB(temp->abb) > edadPromedioTClientesABB(clientesABB))
+	TNodo temp = clientesSucursalesLDE->inicio;
+
+	while (temp != NULL && edadPromedioTClientesABB(temp->abb) <= edadPromedioTClientesABB(clientesABB))
 	{
-		while (temp->ant != NULL && edadPromedioTClientesABB(temp->ant->abb) > edadPromedioTClientesABB(clientesABB))
-		{
-			temp = temp->ant;
-		}
-		new_sucursal->sig = temp;
-		new_sucursal->ant = temp->ant;
-		if (temp->ant != NULL)
-		{
-			temp->ant->sig = new_sucursal;
-		}
-		temp->ant = new_sucursal;
+		temp = temp->sig;
 	}
-	else
-	{
-		while (temp->sig != NULL && edadPromedioTClientesABB(temp->sig->abb) <= edadPromedioTClientesABB(clientesABB))
-		{
-			temp = temp->sig;
-		}
-		new_sucursal->ant = temp;
-		new_sucursal->sig = temp->sig;
-		if (temp->sig != NULL)
-		{
-			temp->sig->ant = new_sucursal;
-		}
-		temp->sig = new_sucursal;
+	if (temp == NULL){
+		clientesSucursalesLDE->final->sig = new_nodo;
+		new_nodo->ant = clientesSucursalesLDE->final;
+		clientesSucursalesLDE->final = new_nodo;
+		return;
 	}
+	if (temp == clientesSucursalesLDE->inicio){
+		clientesSucursalesLDE->inicio = new_nodo;
+	} else {
+		temp->ant->sig = new_nodo;
+	}
+	new_nodo->sig = temp;
+	new_nodo->ant = temp->ant;
+	temp->ant = new_nodo;
+	return;
 }
 // Funciones axiliales de liberar
-void liberarNodoTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE)
+void liberarSoloTNodo(TNodo &nodo)
 {
-	if (clientesSucursalesLDE == NULL)
+	if (nodo == NULL)
 	{
 		return;
 	}
-	if (clientesSucursalesLDE->abb != NULL)
-	{
-		liberarTClientesABB(clientesSucursalesLDE->abb);
-	}
-	delete clientesSucursalesLDE;
-	clientesSucursalesLDE = NULL;
+	delete nodo;
+	nodo = NULL;
 }
-void liberarSoloTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE)
+void liberarSigTNodo(TNodo &nodo)
 {
-	if (clientesSucursalesLDE == NULL)
+	if (nodo == NULL)
 	{
 		return;
 	}
-	delete clientesSucursalesLDE;
-	clientesSucursalesLDE = NULL;
-}
-void liberarSigTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE)
-{
-	if (clientesSucursalesLDE == NULL)
-	{
-		return;
-	}
-	liberarSigTClientesSucursalesLDE(clientesSucursalesLDE->sig);
-	liberarNodoTClientesSucursalesLDE(clientesSucursalesLDE);
-}
-void liberarAntTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE)
-{
-	if (clientesSucursalesLDE == NULL)
-	{
-		return;
-	}
-	liberarAntTClientesSucursalesLDE(clientesSucursalesLDE->ant);
-	liberarNodoTClientesSucursalesLDE(clientesSucursalesLDE);
+	liberarSigTNodo(nodo->sig);
+	liberarTClientesABB(nodo->abb);
+	liberarSoloTNodo(nodo);
 }
 
 void liberarTClientesSucursalesLDE(TClientesSucursalesLDE &clientesSucursalesLDE)
 {
-	liberarAntTClientesSucursalesLDE(clientesSucursalesLDE->ant);
-	liberarSigTClientesSucursalesLDE(clientesSucursalesLDE->sig);
-	liberarNodoTClientesSucursalesLDE(clientesSucursalesLDE);
+	liberarSigTNodo(clientesSucursalesLDE->inicio);
+	delete clientesSucursalesLDE;
+	clientesSucursalesLDE = NULL;
 }
 // Funciones axiliales de imprimir
-TClientesSucursalesLDE irHastaPrincipioTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
+void imprimirSoloTNodo(TNodo nodo)
 {
-	if (clientesSucursalesLDE->ant == NULL)
-	{
-		return clientesSucursalesLDE;
-	}
-	return irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE->ant);
-}
-TClientesSucursalesLDE irHastaFinalTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
-{
-	if (clientesSucursalesLDE->sig == NULL)
-	{
-		return clientesSucursalesLDE;
-	}
-	return irHastaFinalTClientesSucursalesLDE(clientesSucursalesLDE->sig);
-}
-void imprimirSoloTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
-{
-	if (clientesSucursalesLDE->abb == NULL)
+	if (nodo->abb == NULL)
 	{
 		return;
 	}
-	printf("Grupo con edad promedio %.2f:\n", edadPromedioTClientesABB(clientesSucursalesLDE->abb));
-	imprimirTClientesABB(clientesSucursalesLDE->abb);
+	printf("Grupo con edad promedio %.2f:\n", edadPromedioTClientesABB(nodo->abb));
+	imprimirTClientesABB(nodo->abb);
 }
 void imprimirTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
 {
 	printf("clientesSucursalesLDE de grupos:\n");
-	TClientesSucursalesLDE inicio = irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE);
-
+	TNodo inicio = clientesSucursalesLDE->inicio;
 	while (inicio != NULL)
 	{
-		imprimirSoloTClientesSucursalesLDE(inicio);
+		imprimirSoloTNodo(inicio);
 		inicio = inicio->sig;
 	}
 }
@@ -151,21 +110,21 @@ void imprimirTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE
 void imprimirInvertidoTClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
 {
 	printf("clientesSucursalesLDE de grupos:\n");
-	TClientesSucursalesLDE final = irHastaFinalTClientesSucursalesLDE(clientesSucursalesLDE);
+	TNodo final = clientesSucursalesLDE->final;
 	while (final != NULL)
 	{
-		imprimirSoloTClientesSucursalesLDE(final);
+		imprimirSoloTNodo(final);
 		final = final->ant;
 	}
 }
 
 nat cantidadTClientesABBClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
 {
-	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->abb == NULL)
+	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->inicio == NULL)
 	{
 		return 0;
 	}
-	TClientesSucursalesLDE inicio = irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE);
+	TNodo inicio = clientesSucursalesLDE->inicio;
 	int i = 0;
 	while (inicio != NULL)
 	{
@@ -177,8 +136,8 @@ nat cantidadTClientesABBClientesSucursalesLDE(TClientesSucursalesLDE clientesSuc
 
 TClientesABB obtenerPrimeroClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
 {
-	
-	return irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE)->abb;
+
+	return clientesSucursalesLDE->inicio->abb;
 }
 
 TClientesABB obtenerNesimoClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE, int n)
@@ -187,7 +146,7 @@ TClientesABB obtenerNesimoClientesSucursalesLDE(TClientesSucursalesLDE clientesS
 	{
 		return NULL;
 	}
-	TClientesSucursalesLDE inicio = irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE);
+	TNodo inicio = clientesSucursalesLDE->inicio;
 	while (n > 1)
 	{
 		n--;
@@ -196,13 +155,13 @@ TClientesABB obtenerNesimoClientesSucursalesLDE(TClientesSucursalesLDE clientesS
 	return inicio->abb;
 }
 
-TClientesSucursalesLDE obtenerNesimoClientesSucursalesLDEInstancia(TClientesSucursalesLDE clientesSucursalesLDE, int n)
+TNodo obtenerNesimoTNodoInstancia(TClientesSucursalesLDE clientesSucursalesLDE, int n)
 {
 	if (clientesSucursalesLDE == NULL || cantidadTClientesABBClientesSucursalesLDE(clientesSucursalesLDE) < (nat)n)
 	{
 		return NULL;
 	}
-	TClientesSucursalesLDE inicio = irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE);
+	TNodo inicio = clientesSucursalesLDE->inicio;
 	while (n > 1)
 	{
 		n--;
@@ -213,67 +172,81 @@ TClientesSucursalesLDE obtenerNesimoClientesSucursalesLDEInstancia(TClientesSucu
 
 TClientesABB removerUltimoClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE)
 {
-	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->abb == NULL)
+	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->inicio == NULL)
 	{
 		return NULL;
 	}
 
-	TClientesSucursalesLDE final = irHastaFinalTClientesSucursalesLDE(clientesSucursalesLDE);
+	TNodo final = clientesSucursalesLDE->final;
 	TClientesABB clienteAbb = final->abb;
-
-	if (final == clientesSucursalesLDE){
-		clientesSucursalesLDE->abb = NULL;
+	
+	if (final == clientesSucursalesLDE->inicio)
+	{
+		clientesSucursalesLDE->final = NULL;
+		clientesSucursalesLDE->inicio = NULL;
+		liberarSoloTNodo(final);
 		return clienteAbb;
 	}
-	if (final->ant != NULL)
-	{
-		final->ant->sig = NULL;
-	}
-	liberarSoloTClientesSucursalesLDE(final);
-	
+	clientesSucursalesLDE->final = final->ant;
+	clientesSucursalesLDE->final->sig = NULL;
+
+	liberarSoloTNodo(final);
+
 	return clienteAbb;
 }
 
 TClientesABB removerNesimoClientesSucursalesLDE(TClientesSucursalesLDE clientesSucursalesLDE, int n)
 {
-	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->abb == NULL)
+	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->inicio == NULL)
 	{
 		return NULL;
 	}
-	TClientesSucursalesLDE sucursal_a_remover = obtenerNesimoClientesSucursalesLDEInstancia(clientesSucursalesLDE, n);
-	TClientesABB clienteAbb = sucursal_a_remover->abb;
+	TNodo nodo_a_remover = obtenerNesimoTNodoInstancia(clientesSucursalesLDE, n);
+	TClientesABB clienteAbb = nodo_a_remover->abb;
 
-	if (sucursal_a_remover == clientesSucursalesLDE){
-		clientesSucursalesLDE->abb = NULL;
-		return clienteAbb;
+	if (nodo_a_remover->ant != NULL)
+	{
+		nodo_a_remover->ant->sig = nodo_a_remover->sig;
 	}
-	if (sucursal_a_remover->ant != NULL){
-		sucursal_a_remover->ant->sig = sucursal_a_remover->sig;
+	if (nodo_a_remover->sig != NULL)
+	{
+		nodo_a_remover->sig->ant = nodo_a_remover->ant;
 	}
-	if (sucursal_a_remover->sig != NULL){
-		sucursal_a_remover->sig->ant = sucursal_a_remover->ant;
+
+	if (nodo_a_remover == clientesSucursalesLDE->inicio)
+	{
+		clientesSucursalesLDE->inicio = nodo_a_remover->sig;
 	}
-	liberarSoloTClientesSucursalesLDE(sucursal_a_remover);
+	if (nodo_a_remover == clientesSucursalesLDE->final)
+	{
+		clientesSucursalesLDE->final = nodo_a_remover->ant;
+	}
+
+	liberarSoloTNodo(nodo_a_remover);
 	return clienteAbb;
 }
 
 TCliente clienteMasRepetido(TClientesSucursalesLDE clientesSucursalesLDE)
 {
-	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->abb == NULL){
+	if (clientesSucursalesLDE == NULL || clientesSucursalesLDE->inicio == NULL)
+	{
 		return NULL;
 	}
 	int cantidad[1000] = {0};
 	int tope = 0;
 
-	TClientesSucursalesLDE inicio = irHastaPrincipioTClientesSucursalesLDE(clientesSucursalesLDE);
-	TClientesSucursalesLDE temp = inicio;
-	while (inicio != NULL){
+	TNodo inicio = clientesSucursalesLDE->inicio;
+	TNodo temp = inicio;
+	while (inicio != NULL)
+	{
 		int cantidad_abb = cantidadClientesTClientesABB(inicio->abb);
 
-		for (int j = 1; j <= cantidad_abb; ++j){
-			TCliente cliente = obtenerNesimoClienteTClientesABB(inicio->abb,j);
+		for (int j = 1; j <= cantidad_abb; ++j)
+		{
+			TCliente cliente = obtenerNesimoClienteTClientesABB(inicio->abb, j);
 			int client_id = idTCliente(cliente);
-			if (client_id > tope ){
+			if (client_id > tope)
+			{
 				tope = client_id;
 			}
 			cantidad[client_id] = cantidad[client_id] + 1;
@@ -282,17 +255,19 @@ TCliente clienteMasRepetido(TClientesSucursalesLDE clientesSucursalesLDE)
 	}
 	int max = 0;
 	int index = 0;
-	for (int i = 1; i <= tope; i++){
-		if (cantidad[i] > max){
+	for (int i = 1; i <= tope; i++)
+	{
+		if (cantidad[i] > max)
+		{
 			max = cantidad[i];
 			index = i;
 		}
 	}
-	
-	while (!existeTClienteTClientesABB(temp->abb, index)){
+
+	while (!existeTClienteTClientesABB(temp->abb, index))
+	{
 		temp = temp->sig;
 	}
 
-	
 	return obtenerTClienteTClientesABB(temp->abb, index);
 }

@@ -35,7 +35,7 @@ void insertarProductoCarritoProductos(TCarritoProductos &carritoProductos, TProd
     {
         TCarritoProductos carrito = crearCarritoProductosConProducto(producto);
         carrito->sig = carritoProductos;
-        carritoProductos = carrito ;
+        carritoProductos = carrito;
         return;
     }
     insertarProductoCarritoProductos(carritoProductos->sig, producto);
