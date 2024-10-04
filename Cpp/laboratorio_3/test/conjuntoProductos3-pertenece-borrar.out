@@ -1,0 +1,30 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> El conjunto productos fue creado en forma correcta.
+2> El conjunto de productos es vacio.
+3> El cardinal del conjunto es: 0.
+4> La cantidad maxima del conjunto es: 3.
+5> Se ejecuto 'insertarTConjuntoProductos' con producto de id 2 exitosamente.
+6> La conjunto de productos NO es vacio.
+7> El producto de id 2 pertenece al conjunto.
+8> Se ejecuto 'insertarTConjuntoProductos' con producto de id 0 exitosamente.
+9> Se ejecuto 'insertarTConjuntoProductos' con producto de id 1 exitosamente.
+10> El cardinal del conjunto es: 3.
+11> La cantidad maxima del conjunto es: 3.
+12> El producto de id 2 pertenece al conjunto.
+13> El producto de id 3 NO pertenece al conjunto.
+14> El producto de id 4 NO pertenece al conjunto.
+15> Se ejecuto 'borrarDeTConjuntoProductos' con producto de id 0 exitosamente.
+16> Se ejecuto 'borrarDeTConjuntoProductos' con producto de id 1 exitosamente.
+17> Se ejecuto 'borrarDeTConjuntoProductos' con producto de id 2 exitosamente.
+18> El cardinal del conjunto es: 0.
+19> La cantidad maxima del conjunto es: 3.
+20> Se ejecuto 'insertarTConjuntoProductos' con producto de id 0 exitosamente.
+21> Se ejecuto 'borrarDeTConjuntoProductos' con producto de id 2 exitosamente.
+22> Se ejecuto 'insertarTConjuntoProductos' con producto de id 1 exitosamente.
+23> La conjunto de productos NO es vacio.
+24> El cardinal del conjunto es: 2.
+25> La cantidad maxima del conjunto es: 3.
+26> Conjunto de productos:
+0 1 
+27> Conjunto de productos liberado exitosamente.
+28> Fin.

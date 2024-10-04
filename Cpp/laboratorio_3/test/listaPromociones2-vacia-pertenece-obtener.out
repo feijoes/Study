@@ -1,0 +1,35 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Lista de promociones creada con exito.
+2> La lista de promociones es vacia.
+3> La promocion de id 1 NO pertenece a la lista de promociones.
+4> Promocion creada con exito.
+5> Productos agregados a la promocion de forma exitosa.
+6> Se ha agregado la promocion a la lista de forma exitosa.
+7> La promocion de id 1 pertenece a la lista de promociones.
+8> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+9> La lista de promociones NO es vacia.
+10> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+11> Promocion creada con exito.
+12> Productos agregados a la promocion de forma exitosa.
+13> Se ha agregado la promocion a la lista de forma exitosa.
+14> Promocion creada con exito.
+15> Productos agregados a la promocion de forma exitosa.
+16> Se ha agregado la promocion a la lista de forma exitosa.
+17> La promocion de id 2 pertenece a la lista de promociones.
+18> La promocion de id 1 pertenece a la lista de promociones.
+19> Promocion #2 del 1/2/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+20> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+21> La promocion de id 3 NO pertenece a la lista de promociones.
+22> La lista de promociones NO es vacia.
+23> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+Promocion #2 del 1/2/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+Promocion #4 del 1/3/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 
+24> Lista promociones liberada con exito.
+25> Fin.

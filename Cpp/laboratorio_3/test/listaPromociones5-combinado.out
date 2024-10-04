@@ -1,0 +1,46 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Lista de promociones creada con exito.
+2> La lista de promociones es vacia.
+3> Promocion creada con exito.
+4> Productos agregados a la promocion de forma exitosa.
+5> Se ha agregado la promocion a la lista de forma exitosa.
+6> Promocion creada con exito.
+7> Productos agregados a la promocion de forma exitosa.
+8> Se ha agregado la promocion a la lista de forma exitosa.
+9> Promocion creada con exito.
+10> Productos agregados a la promocion de forma exitosa.
+11> Se ha agregado la promocion a la lista de forma exitosa.
+12> Promocion #1 del 1/1/2022 al 1/7/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+Promocion #2 del 1/2/2022 al 1/6/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+Promocion #3 del 2/3/2022 al 1/5/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+13> Promocion creada con exito.
+14> Productos agregados a la promocion de forma exitosa.
+15> La promocion es compatible con el resto de las promociones de la lista.
+16> Promocion liberada con exito.
+17> Promocion #4 del 4/3/2002 al 1/7/2002
+Productos: 2 3 
+Promocion #5 del 5/3/2002 al 1/7/2002
+Productos: 3 4 
+Promocion #1 del 1/1/2022 al 1/7/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+Promocion #2 del 1/2/2022 al 1/6/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+Promocion #3 del 2/3/2022 al 1/5/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+18> La lista de promociones NO es vacia.
+19> La promocion de id 2 pertenece a la lista de promociones.
+20> Promocion #3 del 2/3/2022 al 1/5/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+21> Promociones finalizadas: 
+Promocion #3 del 2/3/2022 al 1/5/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+22> Promociones activas: 
+Promocion #1 del 1/1/2022 al 1/7/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+23> Promocion #2 del 1/2/2022 al 1/6/2022
+Productos: 0 1 2 3 4 5 6 7 8 
+24> Lista promociones liberada con exito.
+25> Fin.

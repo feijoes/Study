@@ -1,0 +1,15 @@
+crearConjuntoProductos 2
+esVacioConjuntoProductos
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+insertarConjuntoProductos 2
+cardinalConjuntoProductos
+cardinalConjuntoProductos
+esVacioConjuntoProductos
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+insertarConjuntoProductos 1
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+liberarConjuntoProductos
+Fin

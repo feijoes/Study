@@ -1,0 +1,10 @@
+crearConjuntoProductos 2
+imprimirConjuntoProductos
+liberarConjuntoProductos
+crearConjuntoProductos 2
+insertarConjuntoProductos 1
+insertarConjuntoProductos 2
+insertarConjuntoProductos 1
+imprimirConjuntoProductos
+liberarConjuntoProductos
+Fin

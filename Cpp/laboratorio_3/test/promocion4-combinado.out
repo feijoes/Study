@@ -1,0 +1,28 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Promocion creada con exito.
+2> Productos agregados a la promocion de forma exitosa.
+3> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 10 43 49 
+4> Productos agregados a la promocion de forma exitosa.
+5> Promocion #1 del 1/1/2002 al 1/6/2002
+Productos: 0 1 2 3 4 5 6 7 8 9 10 17 24 43 49 
+6> El producto de id 0 pertenece a la promocion.
+7> El producto de id 1 pertenece a la promocion.
+8> El producto de id 6 pertenece a la promocion.
+9> El producto de id 9 pertenece a la promocion.
+10> El producto de id 10 pertenece a la promocion.
+11> El producto de id 100 NO pertenece a la promocion.
+12> El id de la promocion es: 1.
+13> La fecha inicio de la promocion es: 1/1/2002
+14> La fecha fin de la promocion es: 1/6/2002
+15> Las promociones NO son compatibles.
+16> Las promociones NO son compatibles.
+17> Las promociones NO son compatibles.
+18> Las promociones NO son compatibles.
+19> Las promociones NO son compatibles.
+20> Las promociones NO son compatibles.
+21> Las promociones son compatibles.
+22> Las promociones son compatibles.
+23> Las promociones son compatibles.
+24> Promocion liberada con exito.
+25> Fin.

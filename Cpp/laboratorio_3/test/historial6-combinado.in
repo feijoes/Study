@@ -1,0 +1,63 @@
+crearHistorial 01/01/2024
+crearPromocion 01/12/2023 01/01/2024 10 1
+agregarPromocionHistorial
+crearPromocion 02/01/2024 15/02/2024 10 2
+agregarPromocionHistorial
+crearPromocion 03/01/2024 15/02/2024 10 3
+agregarPromocionHistorial
+crearPromocion 10/01/2023 15/06/2024 10 4
+agregarPromocionHistorial
+crearPromocion 10/04/2024 15/06/2024 10 5
+agregarPromocionHistorial
+crearFecha 01/01/2020
+crearProducto 1 Producto1 Autor1 Apellido1
+agregarProductoAPromocionHistorial 1
+crearFecha 02/02/2020
+crearProducto 2 Producto2 Autor2 Apellido2
+agregarProductoAPromocionHistorial 1
+crearFecha 03/03/2020
+crearProducto 3 Producto3 Autor3 Apellido3
+agregarProductoAPromocionHistorial 2
+crearFecha 04/04/2020
+crearProducto 4 Producto4 Autor4 Apellido4
+agregarProductoAPromocionHistorial 2
+crearFecha 05/05/2020
+crearProducto 5 Producto5 Autor5 Apellido5
+agregarProductoAPromocionHistorial 3
+crearFecha 06/06/2020
+crearProducto 6 Producto6 Autor6 Apellido6
+agregarProductoAPromocionHistorial 4
+crearFecha 07/07/2020
+crearProducto 7 Producto7 Autor7 Apellido7
+agregarProductoAPromocionHistorial 4
+crearFecha 08/08/2020
+crearProducto 8 Producto8 Autor8 Apellido8
+agregarProductoAPromocionHistorial 5
+crearFecha 09/09/2020
+crearProducto 9 Producto9 Autor9 Apellido9
+agregarProductoAPromocionHistorial 5
+imprimirPromocionesFinalizadosHistorial
+imprimirPromocionesActivasHistorial
+imprimirPromocionesFuturasHistorial
+avanzarAFechaHistorial 05/01/2024
+imprimirPromocionesFinalizadosHistorial
+imprimirPromocionesActivasHistorial
+imprimirPromocionesFuturasHistorial
+crearPromocion 01/12/2023 15/12/2023 10 1
+agregarAPromocion 1 5
+esCompatiblePromocionHistorial
+liberarPromocion
+crearPromocion 01/12/2023 15/12/2024 10 1
+agregarAPromocion 1 0
+esCompatiblePromocionHistorial
+liberarPromocion
+crearPromocion 02/01/2024 15/02/2024 10 1
+agregarAPromocion 4 1 2 8 9
+esCompatiblePromocionHistorial
+liberarPromocion
+crearPromocion 02/01/2024 15/02/2024 10 1
+agregarAPromocion 4 1 2 3 8 9
+esCompatiblePromocionHistorial
+liberarPromocion
+liberarHistorial
+Fin

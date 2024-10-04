@@ -1,0 +1,15 @@
+crearConjuntoProductos 10
+insertarConjuntoProductos 0
+insertarConjuntoProductos 1
+insertarConjuntoProductos 2
+insertarConjuntoProductos 3
+insertarConjuntoProductos 6
+insertarConjuntoProductos 7
+insertarConjuntoProductos 8
+insertarConjuntoProductos 9
+imprimirConjuntoProductos
+unionConjuntoProductos 5 1 3 4 5 6
+interseccionConjuntoProductos 5 1 3 4 5 6
+diferenciaConjuntoProductos 5 1 3 4 5 6
+liberarConjuntoProductos
+Fin

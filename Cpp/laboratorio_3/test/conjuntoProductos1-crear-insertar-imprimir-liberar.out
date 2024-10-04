@@ -1,0 +1,13 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> El conjunto productos fue creado en forma correcta.
+2> Conjunto de productos:
+
+3> Conjunto de productos liberado exitosamente.
+4> El conjunto productos fue creado en forma correcta.
+5> Se ejecuto 'insertarTConjuntoProductos' con producto de id 1 exitosamente.
+6> Se ejecuto 'insertarTConjuntoProductos' con producto de id 2 exitosamente.
+7> Se ejecuto 'insertarTConjuntoProductos' con producto de id 1 exitosamente.
+8> Conjunto de productos:
+1 
+9> Conjunto de productos liberado exitosamente.
+10> Fin.

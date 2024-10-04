@@ -1,0 +1,84 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Historial creado con exito.
+2> Promocion creada con exito.
+3> La promocion fue agregada al historial con exito.
+4> Promocion creada con exito.
+5> La promocion fue agregada al historial con exito.
+6> Promocion creada con exito.
+7> La promocion fue agregada al historial con exito.
+8> Promocion creada con exito.
+9> La promocion fue agregada al historial con exito.
+10> Promocion creada con exito.
+11> La promocion fue agregada al historial con exito.
+12> Fecha creada en forma exitosa.
+13> Producto creado en forma exitosa.
+14> El producto fue agregado a la promocion de id 1.
+15> Fecha creada en forma exitosa.
+16> Producto creado en forma exitosa.
+17> El producto fue agregado a la promocion de id 1.
+18> Fecha creada en forma exitosa.
+19> Producto creado en forma exitosa.
+20> El producto fue agregado a la promocion de id 2.
+21> Fecha creada en forma exitosa.
+22> Producto creado en forma exitosa.
+23> El producto fue agregado a la promocion de id 2.
+24> Fecha creada en forma exitosa.
+25> Producto creado en forma exitosa.
+26> El producto fue agregado a la promocion de id 3.
+27> Fecha creada en forma exitosa.
+28> Producto creado en forma exitosa.
+29> El producto fue agregado a la promocion de id 4.
+30> Fecha creada en forma exitosa.
+31> Producto creado en forma exitosa.
+32> El producto fue agregado a la promocion de id 4.
+33> Fecha creada en forma exitosa.
+34> Producto creado en forma exitosa.
+35> El producto fue agregado a la promocion de id 5.
+36> Fecha creada en forma exitosa.
+37> Producto creado en forma exitosa.
+38> El producto fue agregado a la promocion de id 5.
+39> Promociones finalizadas:
+40> Promociones activas:
+Promocion #4 del 10/1/2023 al 15/6/2024
+Productos: 6 7 
+Promocion #1 del 1/12/2023 al 1/1/2024
+Productos: 1 2 
+41> Promociones futuras:
+Promocion #2 del 2/1/2024 al 15/2/2024
+Productos: 3 4 
+Promocion #3 del 3/1/2024 al 15/2/2024
+Productos: 5 
+Promocion #5 del 10/4/2024 al 15/6/2024
+Productos: 8 9 
+42> Se avanzo la fecha de la historial a 5/1/2024
+43> Promociones finalizadas:
+Promocion #1 del 1/12/2023 al 1/1/2024
+Productos: 1 2 
+44> Promociones activas:
+Promocion #4 del 10/1/2023 al 15/6/2024
+Productos: 6 7 
+Promocion #2 del 2/1/2024 al 15/2/2024
+Productos: 3 4 
+Promocion #3 del 3/1/2024 al 15/2/2024
+Productos: 5 
+45> Promociones futuras:
+Promocion #5 del 10/4/2024 al 15/6/2024
+Productos: 8 9 
+46> Promocion creada con exito.
+47> Productos agregados a la promocion de forma exitosa.
+48> La promocion es compatible con las demas promociones de la historial.
+49> Promocion liberada con exito.
+50> Promocion creada con exito.
+51> Productos agregados a la promocion de forma exitosa.
+52> La promocion es compatible con las demas promociones de la historial.
+53> Promocion liberada con exito.
+54> Promocion creada con exito.
+55> Productos agregados a la promocion de forma exitosa.
+56> La promocion es compatible con las demas promociones de la historial.
+57> Promocion liberada con exito.
+58> Promocion creada con exito.
+59> Productos agregados a la promocion de forma exitosa.
+60> La promocion NO es compatible con las demas promociones de la historial.
+61> Promocion liberada con exito.
+62> Historial liberada con exito.
+63> Fin.

@@ -1,0 +1,28 @@
+crearConjuntoProductos 3
+esVacioConjuntoProductos
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+insertarConjuntoProductos 2
+esVacioConjuntoProductos
+perteneceConjuntoProductos 2
+insertarConjuntoProductos 0
+insertarConjuntoProductos 1
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+perteneceConjuntoProductos 2
+perteneceConjuntoProductos 3
+perteneceConjuntoProductos 4
+borrarDeConjuntoProductos 0
+borrarDeConjuntoProductos 1
+borrarDeConjuntoProductos 2
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+insertarConjuntoProductos 0
+borrarDeConjuntoProductos 2
+insertarConjuntoProductos 1
+esVacioConjuntoProductos
+cardinalConjuntoProductos
+cantMaxConjuntoProductos
+imprimirConjuntoProductos
+liberarConjuntoProductos
+Fin

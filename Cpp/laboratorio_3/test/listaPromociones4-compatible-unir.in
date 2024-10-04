@@ -1,0 +1,26 @@
+crearListaPromociones
+crearPromocion 01/01/2002 01/07/2002 10 1
+agregarAPromocion 9 0 1 2 3 4 5 6 7 8
+agregarAListaPromociones
+crearPromocion 01/02/2002 01/07/2002 10 2
+agregarAPromocion 9 0 1 2 3 4 5 6 7 8
+agregarAListaPromociones
+crearPromocion 02/03/2002 01/07/2002 10 3
+agregarAPromocion 9 0 1 2 3 4 5 6 7 8
+agregarAListaPromociones
+imprimirListaPromociones
+crearPromocion 03/03/2003 01/07/2003 10 3
+agregarAPromocion 9 0 1 2 3 4 5 6 7 8
+esCompatibleListaPromociones
+liberarPromocion
+crearPromocion 02/03/2002 01/07/2002 10 3
+agregarAPromocion 9 0 1 2 3 4 5 6 7 8
+esCompatibleListaPromociones
+liberarPromocion
+crearPromocion 02/03/2002 01/07/2002 10 3
+agregarAPromocion 1 9
+esCompatibleListaPromociones
+liberarPromocion
+unirListaPromociones 2 04/03/2002 01/07/2002 10 4 2 3 4 05/03/2002 01/07/2002 10 5 2 2 3
+liberarListaPromociones
+Fin
