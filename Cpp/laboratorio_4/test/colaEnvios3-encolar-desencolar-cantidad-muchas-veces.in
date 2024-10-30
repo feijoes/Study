@@ -1,0 +1,63 @@
+crearColaEnvios 10
+crearCarritoProductos
+crearFecha 1/1/2022
+crearProducto 1 Pan 5
+agregarCarritoProductos
+crearEnvio 5/5/2022
+encolarEnvioColaEnvios
+cantidadColaEnvios
+crearCarritoProductos
+crearFecha 2/2/2022
+crearProducto 2 Queso 15
+agregarCarritoProductos
+crearEnvio 6/6/2022
+encolarEnvioColaEnvios
+cantidadColaEnvios
+crearCarritoProductos
+crearFecha 3/3/2022
+crearProducto 3 Huevos 10
+agregarCarritoProductos
+crearEnvio 7/7/2022
+encolarEnvioColaEnvios
+desencolarColaEnvios
+cantidadColaEnvios
+crearCarritoProductos
+crearFecha 4/4/2022
+crearProducto 4 Yogurt 8
+agregarCarritoProductos
+crearEnvio 8/8/2022
+encolarEnvioColaEnvios
+crearCarritoProductos
+crearFecha 5/5/2022
+crearProducto 5 Cereal 12
+agregarCarritoProductos
+crearEnvio 9/9/2022
+encolarEnvioColaEnvios
+desencolarColaEnvios
+cantidadColaEnvios
+crearCarritoProductos
+crearFecha 6/6/2022
+crearProducto 6 Leche 7
+agregarCarritoProductos
+crearEnvio 10/10/2022
+encolarEnvioColaEnvios
+crearCarritoProductos
+crearFecha 7/7/2022
+crearProducto 7 Manzanas 6
+agregarCarritoProductos
+crearEnvio 11/11/2024
+encolarEnvioColaEnvios
+cantidadColaEnvios
+crearCarritoProductos
+crearFecha 8/8/2022
+crearProducto 8 Pasta 9
+agregarCarritoProductos
+crearEnvio 12/12/2024
+encolarEnvioColaEnvios
+imprimirColaEnvios
+cantidadColaEnvios
+desencolarColaEnvios
+cantidadColaEnvios
+imprimirColaEnvios
+liberarColaEnvios
+Fin

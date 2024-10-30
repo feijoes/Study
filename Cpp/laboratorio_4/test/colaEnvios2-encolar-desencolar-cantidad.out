@@ -1,0 +1,65 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Cola de envios creada con exito.
+2> Coleccion de productos creada de forma exitosa.
+3> Fecha creada en forma exitosa.
+4> Producto creado en forma exitosa.
+5> Producto agregada de forma exitosa.
+6> Envio creado con exito.
+7> Se ha agregado el envio a la cola de envios de forma exitosa.
+8> La cantidad de envios en la cola es 1
+9> Coleccion de productos creada de forma exitosa.
+10> Fecha creada en forma exitosa.
+11> Producto creado en forma exitosa.
+12> Producto agregada de forma exitosa.
+13> Envio creado con exito.
+14> Se ha agregado el envio a la cola de envios de forma exitosa.
+15> Coleccion de productos creada de forma exitosa.
+16> Fecha creada en forma exitosa.
+17> Producto creado en forma exitosa.
+18> Producto agregada de forma exitosa.
+19> Envio creado con exito.
+20> Se ha agregado el envio a la cola de envios de forma exitosa.
+21> La cantidad de envios en la cola es 3
+22> 
+Nivel 1
+1) Producto: 8
+Manzana
+Precio: 10
+Ingresado el: 8/8/2001
+Fecha del envio: 1/1/2025
+
+Nivel 2
+2) Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001
+Fecha del envio: 10/10/2010
+3) Producto: 8
+Manzana
+Precio: 10
+Ingresado el: 8/8/2001
+Fecha del envio: 1/1/2024
+
+23> Producto: 8
+Manzana
+Precio: 10
+Ingresado el: 8/8/2001
+Fecha del envio: 1/1/2025
+24> La cantidad de envios en la cola es 2
+25> 
+Nivel 1
+1) Producto: 8
+Manzana
+Precio: 10
+Ingresado el: 8/8/2001
+Fecha del envio: 1/1/2024
+
+Nivel 2
+2) Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001
+Fecha del envio: 10/10/2010
+
+26> La cola de envios se ha liberado exitosamente.
+27> Fin.

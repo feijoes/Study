@@ -1,0 +1,143 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Cola de envios creada con exito.
+2> Coleccion de productos creada de forma exitosa.
+3> Fecha creada en forma exitosa.
+4> Producto creado en forma exitosa.
+5> Producto agregada de forma exitosa.
+6> Envio creado con exito.
+7> Se ha agregado el envio a la cola de envios de forma exitosa.
+8> La cantidad de envios en la cola es 1
+9> Coleccion de productos creada de forma exitosa.
+10> Fecha creada en forma exitosa.
+11> Producto creado en forma exitosa.
+12> Producto agregada de forma exitosa.
+13> Envio creado con exito.
+14> Se ha agregado el envio a la cola de envios de forma exitosa.
+15> La cantidad de envios en la cola es 2
+16> Coleccion de productos creada de forma exitosa.
+17> Fecha creada en forma exitosa.
+18> Producto creado en forma exitosa.
+19> Producto agregada de forma exitosa.
+20> Envio creado con exito.
+21> Se ha agregado el envio a la cola de envios de forma exitosa.
+22> Producto: 3
+Huevos
+Precio: 10
+Ingresado el: 3/3/2022
+Fecha del envio: 7/7/2022
+23> La cantidad de envios en la cola es 2
+24> Coleccion de productos creada de forma exitosa.
+25> Fecha creada en forma exitosa.
+26> Producto creado en forma exitosa.
+27> Producto agregada de forma exitosa.
+28> Envio creado con exito.
+29> Se ha agregado el envio a la cola de envios de forma exitosa.
+30> Coleccion de productos creada de forma exitosa.
+31> Fecha creada en forma exitosa.
+32> Producto creado en forma exitosa.
+33> Producto agregada de forma exitosa.
+34> Envio creado con exito.
+35> Se ha agregado el envio a la cola de envios de forma exitosa.
+36> Producto: 5
+Cereal
+Precio: 12
+Ingresado el: 5/5/2022
+Fecha del envio: 9/9/2022
+37> La cantidad de envios en la cola es 3
+38> Coleccion de productos creada de forma exitosa.
+39> Fecha creada en forma exitosa.
+40> Producto creado en forma exitosa.
+41> Producto agregada de forma exitosa.
+42> Envio creado con exito.
+43> Se ha agregado el envio a la cola de envios de forma exitosa.
+44> Coleccion de productos creada de forma exitosa.
+45> Fecha creada en forma exitosa.
+46> Producto creado en forma exitosa.
+47> Producto agregada de forma exitosa.
+48> Envio creado con exito.
+49> Se ha agregado el envio a la cola de envios de forma exitosa.
+50> La cantidad de envios en la cola es 5
+51> Coleccion de productos creada de forma exitosa.
+52> Fecha creada en forma exitosa.
+53> Producto creado en forma exitosa.
+54> Producto agregada de forma exitosa.
+55> Envio creado con exito.
+56> Se ha agregado el envio a la cola de envios de forma exitosa.
+57> 
+Nivel 1
+1) Producto: 8
+Pasta
+Precio: 9
+Ingresado el: 8/8/2022
+Fecha del envio: 12/12/2024
+
+Nivel 2
+2) Producto: 6
+Leche
+Precio: 7
+Ingresado el: 6/6/2022
+Fecha del envio: 10/10/2022
+3) Producto: 7
+Manzanas
+Precio: 6
+Ingresado el: 7/7/2022
+Fecha del envio: 11/11/2024
+
+Nivel 3
+4) Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+5) Producto: 4
+Yogurt
+Precio: 8
+Ingresado el: 4/4/2022
+Fecha del envio: 8/8/2022
+6) Producto: 2
+Queso
+Precio: 15
+Ingresado el: 2/2/2022
+Fecha del envio: 6/6/2022
+
+58> La cantidad de envios en la cola es 6
+59> Producto: 8
+Pasta
+Precio: 9
+Ingresado el: 8/8/2022
+Fecha del envio: 12/12/2024
+60> La cantidad de envios en la cola es 5
+61> 
+Nivel 1
+1) Producto: 7
+Manzanas
+Precio: 6
+Ingresado el: 7/7/2022
+Fecha del envio: 11/11/2024
+
+Nivel 2
+2) Producto: 6
+Leche
+Precio: 7
+Ingresado el: 6/6/2022
+Fecha del envio: 10/10/2022
+3) Producto: 2
+Queso
+Precio: 15
+Ingresado el: 2/2/2022
+Fecha del envio: 6/6/2022
+
+Nivel 3
+4) Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+5) Producto: 4
+Yogurt
+Precio: 8
+Ingresado el: 4/4/2022
+Fecha del envio: 8/8/2022
+
+62> La cola de envios se ha liberado exitosamente.
+63> Fin.

@@ -1,0 +1,176 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Cola de envios creada con exito.
+2> Coleccion de productos creada de forma exitosa.
+3> Fecha creada en forma exitosa.
+4> Producto creado en forma exitosa.
+5> Producto agregada de forma exitosa.
+6> Envio creado con exito.
+7> Se ha agregado el envio a la cola de envios de forma exitosa.
+8> La cantidad de envios en la cola es 1
+9> Coleccion de productos creada de forma exitosa.
+10> Fecha creada en forma exitosa.
+11> Producto creado en forma exitosa.
+12> Producto agregada de forma exitosa.
+13> Envio creado con exito.
+14> Se ha agregado el envio a la cola de envios de forma exitosa.
+15> La cantidad de envios en la cola es 2
+16> Coleccion de productos creada de forma exitosa.
+17> Fecha creada en forma exitosa.
+18> Producto creado en forma exitosa.
+19> Producto agregada de forma exitosa.
+20> Envio creado con exito.
+21> Se ha agregado el envio a la cola de envios de forma exitosa.
+22> Producto: 3
+Huevos
+Precio: 10
+Ingresado el: 3/3/2022
+Fecha del envio: 7/7/2022
+23> La cantidad de envios en la cola es 2
+24> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+25> El envio con mayor prioridad de la cola de envios es:
+Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+26> La cantidad maxima de envios en la cola de envios es: 10
+27> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+28> Coleccion de productos creada de forma exitosa.
+29> Fecha creada en forma exitosa.
+30> Producto creado en forma exitosa.
+31> Producto agregada de forma exitosa.
+32> Envio creado con exito.
+33> Se ha agregado el envio a la cola de envios de forma exitosa.
+34> Coleccion de productos creada de forma exitosa.
+35> Fecha creada en forma exitosa.
+36> Producto creado en forma exitosa.
+37> Producto agregada de forma exitosa.
+38> Envio creado con exito.
+39> Se ha agregado el envio a la cola de envios de forma exitosa.
+40> Producto: 5
+Cereal
+Precio: 12
+Ingresado el: 5/5/2022
+Fecha del envio: 9/9/2022
+41> La cantidad de envios en la cola es 3
+42> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+43> El envio con mayor prioridad de la cola de envios es:
+Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+44> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+45> Coleccion de productos creada de forma exitosa.
+46> Fecha creada en forma exitosa.
+47> Producto creado en forma exitosa.
+48> Producto agregada de forma exitosa.
+49> Envio creado con exito.
+50> Se ha agregado el envio a la cola de envios de forma exitosa.
+51> Coleccion de productos creada de forma exitosa.
+52> Fecha creada en forma exitosa.
+53> Producto creado en forma exitosa.
+54> Producto agregada de forma exitosa.
+55> Envio creado con exito.
+56> Se ha agregado el envio a la cola de envios de forma exitosa.
+57> La cantidad de envios en la cola es 5
+58> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+59> El envio con mayor prioridad de la cola de envios es:
+Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+60> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+61> Coleccion de productos creada de forma exitosa.
+62> Fecha creada en forma exitosa.
+63> Producto creado en forma exitosa.
+64> Producto agregada de forma exitosa.
+65> Envio creado con exito.
+66> Se ha agregado el envio a la cola de envios de forma exitosa.
+67> 
+Nivel 1
+1) Producto: 8
+Pasta
+Precio: 9
+Ingresado el: 8/8/2022
+Fecha del envio: 12/12/2024
+
+Nivel 2
+2) Producto: 6
+Leche
+Precio: 7
+Ingresado el: 6/6/2022
+Fecha del envio: 10/10/2022
+3) Producto: 7
+Manzanas
+Precio: 6
+Ingresado el: 7/7/2022
+Fecha del envio: 11/11/2024
+
+Nivel 3
+4) Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+5) Producto: 4
+Yogurt
+Precio: 8
+Ingresado el: 4/4/2022
+Fecha del envio: 8/8/2022
+6) Producto: 2
+Queso
+Precio: 15
+Ingresado el: 2/2/2022
+Fecha del envio: 6/6/2022
+
+68> La cantidad de envios en la cola es 6
+69> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+70> El envio con mayor prioridad de la cola de envios es:
+Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+71> Se ejecuto invertirPrioridadTColaEnvios exitosamente.
+72> Producto: 8
+Pasta
+Precio: 9
+Ingresado el: 8/8/2022
+Fecha del envio: 12/12/2024
+73> La cantidad de envios en la cola es 5
+74> 
+Nivel 1
+1) Producto: 7
+Manzanas
+Precio: 6
+Ingresado el: 7/7/2022
+Fecha del envio: 11/11/2024
+
+Nivel 2
+2) Producto: 6
+Leche
+Precio: 7
+Ingresado el: 6/6/2022
+Fecha del envio: 10/10/2022
+3) Producto: 2
+Queso
+Precio: 15
+Ingresado el: 2/2/2022
+Fecha del envio: 6/6/2022
+
+Nivel 3
+4) Producto: 1
+Pan
+Precio: 5
+Ingresado el: 1/1/2022
+Fecha del envio: 5/5/2022
+5) Producto: 4
+Yogurt
+Precio: 8
+Ingresado el: 4/4/2022
+Fecha del envio: 8/8/2022
+
+75> La cola de envios se ha liberado exitosamente.
+76> Fin.

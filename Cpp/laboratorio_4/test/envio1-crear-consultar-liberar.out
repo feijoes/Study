@@ -1,0 +1,47 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> Coleccion de productos creada de forma exitosa.
+2> Fecha creada en forma exitosa.
+3> Producto creado en forma exitosa.
+4> Producto agregada de forma exitosa.
+5> Envio creado con exito.
+6> Carrito de productos del envio:
+Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001
+7> Fecha de envio: 10/10/2010
+8> Envio:
+Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001
+Fecha del envio: 10/10/2010
+9> Envio liberado con exito.
+10> Coleccion de productos creada de forma exitosa.
+11> Fecha creada en forma exitosa.
+12> Producto creado en forma exitosa.
+13> Producto agregada de forma exitosa.
+14> Fecha creada en forma exitosa.
+15> Producto creado en forma exitosa.
+16> Producto agregada de forma exitosa.
+17> Envio creado con exito.
+18> Carrito de productos del envio:
+Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001Producto: 12
+Computadora
+Precio: 20
+Ingresado el: 29/9/2000
+19> Fecha de envio: 10/10/2010
+20> Envio:
+Producto: 7
+Leche
+Precio: 17
+Ingresado el: 6/6/2001Producto: 12
+Computadora
+Precio: 20
+Ingresado el: 29/9/2000
+Fecha del envio: 10/10/2010
+21> Envio liberado con exito.
+22> Fin.

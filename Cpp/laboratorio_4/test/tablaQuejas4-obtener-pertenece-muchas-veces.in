@@ -1,0 +1,46 @@
+crearTablaQuejas 15
+liberarTablaQuejas
+crearTablaQuejas 30
+crearFecha 5/5/2005
+crearProducto 10 producto1 8
+crearCliente 25 Ana Rodriguez 30
+crearQueja 5/5/2005 Primera_Queja_Modificada
+agregarQuejaTablaQuejas
+crearFecha 20/7/2005
+crearProducto 15 producto2 12
+crearCliente 30 Carlos Sanchez 40
+crearQueja 20/7/2005 Segunda_Queja_Modificada
+agregarQuejaTablaQuejas
+crearFecha 10/9/2005
+crearProducto 20 producto3 18
+crearCliente 35 Elena Gomez 45
+crearQueja 10/9/2005 Tercera_Queja_Modificada
+agregarQuejaTablaQuejas
+obtenerQuejaTablaQuejas 5/5/2005
+obtenerQuejaTablaQuejas 20/7/2005
+obtenerQuejaTablaQuejas 10/9/2005
+obtenerQuejaTablaQuejas 1/1/2005
+perteneceQuejaTablaQuejas 5/5/2005
+perteneceQuejaTablaQuejas 20/7/2005
+perteneceQuejaTablaQuejas 10/9/2005
+perteneceQuejaTablaQuejas 1/1/2005
+crearFecha 15/11/2005
+crearProducto 25 producto4 22
+crearCliente 40 Luis Martinez 50
+crearQueja 15/11/2005 Cuarta_Queja_Modificada
+agregarQuejaTablaQuejas
+crearFecha 25/12/2005
+crearProducto 30 producto5 28
+crearCliente 45 Maria Fernandez 55
+crearQueja 25/12/2005 Quinta_Queja_Modificada
+agregarQuejaTablaQuejas
+obtenerQuejaTablaQuejas 15/11/2005
+obtenerQuejaTablaQuejas 1/12/2005
+obtenerQuejaTablaQuejas 25/12/2005
+obtenerQuejaTablaQuejas 31/12/2004
+perteneceQuejaTablaQuejas 15/11/2005
+perteneceQuejaTablaQuejas 1/12/2005
+perteneceQuejaTablaQuejas 25/12/2005
+perteneceQuejaTablaQuejas 31/12/2004
+liberarTablaQuejas
+Fin

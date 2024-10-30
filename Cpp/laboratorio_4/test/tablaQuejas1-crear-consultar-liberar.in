@@ -1,0 +1,11 @@
+crearTablaQuejas 10
+liberarTablaQuejas
+crearTablaQuejas 23
+crearFecha 1/1/2001
+crearProducto 7 producto1 5
+crearCliente 19 Casimira Gonzalez 27
+crearQueja 1/1/2001 Primera_Queja
+agregarQuejaTablaQuejas
+imprimirTablaQuejas
+liberarTablaQuejas
+Fin

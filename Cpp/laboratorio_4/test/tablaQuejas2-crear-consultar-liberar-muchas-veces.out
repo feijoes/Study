@@ -1,0 +1,161 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> tablaQuejas creado exitosamente.
+2> Fecha creada en forma exitosa.
+3> Producto creado en forma exitosa.
+4> Cliente creado de forma exitosa.
+5> Queja creada exitosamente.
+6> Queja agregada a tablaQuejas exitosamente.
+7> Fecha creada en forma exitosa.
+8> Producto creado en forma exitosa.
+9> Cliente creado de forma exitosa.
+10> Queja creada exitosamente.
+11> Queja agregada a tablaQuejas exitosamente.
+12> Fecha creada en forma exitosa.
+13> Producto creado en forma exitosa.
+14> Cliente creado de forma exitosa.
+15> Queja creada exitosamente.
+16> Queja agregada a tablaQuejas exitosamente.
+17> Fecha creada en forma exitosa.
+18> Producto creado en forma exitosa.
+19> Cliente creado de forma exitosa.
+20> Queja creada exitosamente.
+21> Queja agregada a tablaQuejas exitosamente.
+22> Fecha creada en forma exitosa.
+23> Producto creado en forma exitosa.
+24> Cliente creado de forma exitosa.
+25> Queja creada exitosamente.
+26> Queja agregada a tablaQuejas exitosamente.
+27> Fecha creada en forma exitosa.
+28> Producto creado en forma exitosa.
+29> Cliente creado de forma exitosa.
+30> Queja creada exitosamente.
+31> Queja agregada a tablaQuejas exitosamente.
+32> Fecha creada en forma exitosa.
+33> Producto creado en forma exitosa.
+34> Cliente creado de forma exitosa.
+35> Queja creada exitosamente.
+36> Queja agregada a tablaQuejas exitosamente.
+37> No hay elementos guardados en la posicion 0 de la tabla.
+No hay elementos guardados en la posicion 1 de la tabla.
+Elementos en la posicion 2 de la tabla:
+Fecha: 18/4/2002
+Cliente: Cliente Carmen Sanchez
+Id: 65
+Edad: 40
+Producto: 40
+producto7
+Precio: 35
+Ingresado el: 18/4/2002
+Comentario: Septima_Queja
+Fecha: 10/12/2001
+Cliente: Cliente Ana Martinez
+Id: 55
+Edad: 38
+Producto: 30
+producto5
+Precio: 25
+Ingresado el: 10/12/2001
+Comentario: Quinta_Queja
+Fecha: 1/1/2001
+Cliente: Cliente Casimira Gonzalez
+Id: 19
+Edad: 27
+Producto: 7
+producto1
+Precio: 5
+Ingresado el: 1/1/2001
+Comentario: Primera_Queja
+No hay elementos guardados en la posicion 3 de la tabla.
+Elementos en la posicion 4 de la tabla:
+Fecha: 5/9/2001
+Cliente: Cliente Pedro Rodriguez
+Id: 42
+Edad: 50
+Producto: 25
+producto4
+Precio: 20
+Ingresado el: 5/9/2001
+Comentario: Cuarta_Queja
+Elementos en la posicion 5 de la tabla:
+Fecha: 3/2/2002
+Cliente: Cliente Luis Garcia
+Id: 60
+Edad: 45
+Producto: 35
+producto6
+Precio: 30
+Ingresado el: 3/2/2002
+Comentario: Sexta_Queja
+Elementos en la posicion 6 de la tabla:
+Fecha: 20/6/2001
+Cliente: Cliente Maria Lopez
+Id: 31
+Edad: 42
+Producto: 18
+producto3
+Precio: 15
+Ingresado el: 20/6/2001
+Comentario: Tercera_Queja
+No hay elementos guardados en la posicion 7 de la tabla.
+Elementos en la posicion 8 de la tabla:
+Fecha: 15/3/2001
+Cliente: Cliente Juan Perez
+Id: 23
+Edad: 35
+Producto: 12
+producto2
+Precio: 10
+Ingresado el: 15/3/2001
+Comentario: Segunda_Queja
+No hay elementos guardados en la posicion 9 de la tabla.
+38> Hash liberado con exito.
+39> tablaQuejas creado exitosamente.
+40> Fecha creada en forma exitosa.
+41> Producto creado en forma exitosa.
+42> Cliente creado de forma exitosa.
+43> Queja creada exitosamente.
+44> Queja agregada a tablaQuejas exitosamente.
+45> Fecha creada en forma exitosa.
+46> Producto creado en forma exitosa.
+47> Cliente creado de forma exitosa.
+48> Queja creada exitosamente.
+49> Queja agregada a tablaQuejas exitosamente.
+50> Fecha creada en forma exitosa.
+51> Producto creado en forma exitosa.
+52> Cliente creado de forma exitosa.
+53> Queja creada exitosamente.
+54> Queja agregada a tablaQuejas exitosamente.
+55> No hay elementos guardados en la posicion 0 de la tabla.
+Elementos en la posicion 1 de la tabla:
+Fecha: 14/12/2002
+Cliente: Cliente Miguel Ruiz
+Id: 80
+Edad: 60
+Producto: 55
+producto10
+Precio: 50
+Ingresado el: 14/12/2002
+Comentario: Decima_Queja
+No hay elementos guardados en la posicion 2 de la tabla.
+No hay elementos guardados en la posicion 3 de la tabla.
+Elementos en la posicion 4 de la tabla:
+Fecha: 9/10/2002
+Cliente: Cliente Elena Torres
+Id: 75
+Edad: 48
+Producto: 50
+producto9
+Precio: 45
+Ingresado el: 9/10/2002
+Comentario: Novena_Queja
+Fecha: 22/7/2002
+Cliente: Cliente Roberto Fernandez
+Id: 70
+Edad: 55
+Producto: 45
+producto8
+Precio: 40
+Ingresado el: 22/7/2002
+Comentario: Octava_Queja
+56> Hash liberado con exito.
+57> Fin.

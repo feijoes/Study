@@ -1,0 +1,55 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> tablaQuejas creado exitosamente.
+2> Hash liberado con exito.
+3> tablaQuejas creado exitosamente.
+4> Fecha creada en forma exitosa.
+5> Producto creado en forma exitosa.
+6> Cliente creado de forma exitosa.
+7> Queja creada exitosamente.
+8> Queja agregada a tablaQuejas exitosamente.
+9> No hay elementos guardados en la posicion 0 de la tabla.
+No hay elementos guardados en la posicion 1 de la tabla.
+No hay elementos guardados en la posicion 2 de la tabla.
+No hay elementos guardados en la posicion 3 de la tabla.
+No hay elementos guardados en la posicion 4 de la tabla.
+No hay elementos guardados en la posicion 5 de la tabla.
+No hay elementos guardados en la posicion 6 de la tabla.
+No hay elementos guardados en la posicion 7 de la tabla.
+No hay elementos guardados en la posicion 8 de la tabla.
+Elementos en la posicion 9 de la tabla:
+Fecha: 1/1/2001
+Cliente: Cliente Casimira Gonzalez
+Id: 19
+Edad: 27
+Producto: 7
+producto1
+Precio: 5
+Ingresado el: 1/1/2001
+Comentario: Primera_Queja
+No hay elementos guardados en la posicion 10 de la tabla.
+No hay elementos guardados en la posicion 11 de la tabla.
+No hay elementos guardados en la posicion 12 de la tabla.
+No hay elementos guardados en la posicion 13 de la tabla.
+No hay elementos guardados en la posicion 14 de la tabla.
+No hay elementos guardados en la posicion 15 de la tabla.
+No hay elementos guardados en la posicion 16 de la tabla.
+No hay elementos guardados en la posicion 17 de la tabla.
+No hay elementos guardados en la posicion 18 de la tabla.
+No hay elementos guardados en la posicion 19 de la tabla.
+No hay elementos guardados en la posicion 20 de la tabla.
+No hay elementos guardados en la posicion 21 de la tabla.
+No hay elementos guardados en la posicion 22 de la tabla.
+10> Fecha: 1/1/2001
+Cliente: Cliente Casimira Gonzalez
+Id: 19
+Edad: 27
+Producto: 7
+producto1
+Precio: 5
+Ingresado el: 1/1/2001
+Comentario: Primera_Queja
+11> No se puede obtener la queja de fecha 2/2/2001 porque NO pertenece a la tabla.
+12> Una queja con fecha 1/1/2001 pertenece a la tabla
+13> Una queja con fecha 2/2/2001 NO pertenece a la tabla
+14> Hash liberado con exito.
+15> Fin.

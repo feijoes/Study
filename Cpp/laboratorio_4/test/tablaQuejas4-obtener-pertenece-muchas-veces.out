@@ -1,0 +1,87 @@
+Bienvenido al programa principal de MercadoFinger. Por favor ingrese su comando:
+1> tablaQuejas creado exitosamente.
+2> Hash liberado con exito.
+3> tablaQuejas creado exitosamente.
+4> Fecha creada en forma exitosa.
+5> Producto creado en forma exitosa.
+6> Cliente creado de forma exitosa.
+7> Queja creada exitosamente.
+8> Queja agregada a tablaQuejas exitosamente.
+9> Fecha creada en forma exitosa.
+10> Producto creado en forma exitosa.
+11> Cliente creado de forma exitosa.
+12> Queja creada exitosamente.
+13> Queja agregada a tablaQuejas exitosamente.
+14> Fecha creada en forma exitosa.
+15> Producto creado en forma exitosa.
+16> Cliente creado de forma exitosa.
+17> Queja creada exitosamente.
+18> Queja agregada a tablaQuejas exitosamente.
+19> Fecha: 5/5/2005
+Cliente: Cliente Ana Rodriguez
+Id: 25
+Edad: 30
+Producto: 10
+producto1
+Precio: 8
+Ingresado el: 5/5/2005
+Comentario: Primera_Queja_Modificada
+20> Fecha: 20/7/2005
+Cliente: Cliente Carlos Sanchez
+Id: 30
+Edad: 40
+Producto: 15
+producto2
+Precio: 12
+Ingresado el: 20/7/2005
+Comentario: Segunda_Queja_Modificada
+21> Fecha: 10/9/2005
+Cliente: Cliente Elena Gomez
+Id: 35
+Edad: 45
+Producto: 20
+producto3
+Precio: 18
+Ingresado el: 10/9/2005
+Comentario: Tercera_Queja_Modificada
+22> No se puede obtener la queja de fecha 1/1/2005 porque NO pertenece a la tabla.
+23> Una queja con fecha 5/5/2005 pertenece a la tabla
+24> Una queja con fecha 20/7/2005 pertenece a la tabla
+25> Una queja con fecha 10/9/2005 pertenece a la tabla
+26> Una queja con fecha 1/1/2005 NO pertenece a la tabla
+27> Fecha creada en forma exitosa.
+28> Producto creado en forma exitosa.
+29> Cliente creado de forma exitosa.
+30> Queja creada exitosamente.
+31> Queja agregada a tablaQuejas exitosamente.
+32> Fecha creada en forma exitosa.
+33> Producto creado en forma exitosa.
+34> Cliente creado de forma exitosa.
+35> Queja creada exitosamente.
+36> Queja agregada a tablaQuejas exitosamente.
+37> Fecha: 15/11/2005
+Cliente: Cliente Luis Martinez
+Id: 40
+Edad: 50
+Producto: 25
+producto4
+Precio: 22
+Ingresado el: 15/11/2005
+Comentario: Cuarta_Queja_Modificada
+38> No se puede obtener la queja de fecha 1/12/2005 porque NO pertenece a la tabla.
+39> Fecha: 25/12/2005
+Cliente: Cliente Maria Fernandez
+Id: 45
+Edad: 55
+Producto: 30
+producto5
+Precio: 28
+Ingresado el: 25/12/2005
+Comentario: Quinta_Queja_Modificada
+40> No se puede obtener la queja de fecha 31/12/2004 porque NO pertenece a la tabla.
+41> Una queja con fecha 15/11/2005 pertenece a la tabla
+42> Una queja con fecha 1/12/2005 NO pertenece a la tabla
+43> Una queja con fecha 25/12/2005 pertenece a la tabla
+44> Una queja con fecha 31/12/2004 NO pertenece a la tabla
+45> Hash liberado con exito.
+46> Fin.

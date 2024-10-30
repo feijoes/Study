@@ -1,0 +1,57 @@
+crearTablaQuejas 10
+crearFecha 1/1/2001
+crearProducto 7 producto1 5
+crearCliente 19 Casimira Gonzalez 27
+crearQueja 1/1/2001 Primera_Queja
+agregarQuejaTablaQuejas
+crearFecha 15/3/2001
+crearProducto 12 producto2 10
+crearCliente 23 Juan Perez 35
+crearQueja 15/3/2001 Segunda_Queja
+agregarQuejaTablaQuejas
+crearFecha 20/6/2001
+crearProducto 18 producto3 15
+crearCliente 31 Maria Lopez 42
+crearQueja 20/6/2001 Tercera_Queja
+agregarQuejaTablaQuejas
+crearFecha 5/9/2001
+crearProducto 25 producto4 20
+crearCliente 42 Pedro Rodriguez 50
+crearQueja 5/9/2001 Cuarta_Queja
+agregarQuejaTablaQuejas
+crearFecha 10/12/2001
+crearProducto 30 producto5 25
+crearCliente 55 Ana Martinez 38
+crearQueja 10/12/2001 Quinta_Queja
+agregarQuejaTablaQuejas
+crearFecha 3/2/2002
+crearProducto 35 producto6 30
+crearCliente 60 Luis Garcia 45
+crearQueja 3/2/2002 Sexta_Queja
+agregarQuejaTablaQuejas
+crearFecha 18/4/2002
+crearProducto 40 producto7 35
+crearCliente 65 Carmen Sanchez 40
+crearQueja 18/4/2002 Septima_Queja
+agregarQuejaTablaQuejas
+imprimirTablaQuejas
+liberarTablaQuejas
+crearTablaQuejas 5
+crearFecha 22/7/2002
+crearProducto 45 producto8 40
+crearCliente 70 Roberto Fernandez 55
+crearQueja 22/7/2002 Octava_Queja
+agregarQuejaTablaQuejas
+crearFecha 9/10/2002
+crearProducto 50 producto9 45
+crearCliente 75 Elena Torres 48
+crearQueja 9/10/2002 Novena_Queja
+agregarQuejaTablaQuejas
+crearFecha 14/12/2002
+crearProducto 55 producto10 50
+crearCliente 80 Miguel Ruiz 60
+crearQueja 14/12/2002 Decima_Queja
+agregarQuejaTablaQuejas
+imprimirTablaQuejas
+liberarTablaQuejas
+Fin

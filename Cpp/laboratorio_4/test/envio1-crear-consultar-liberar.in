@@ -1,0 +1,22 @@
+crearCarritoProductos
+crearFecha 6/6/2001
+crearProducto 7 Leche 17
+agregarCarritoProductos
+crearEnvio 10/10/2010
+obtenerCarritoProductosTEnvio
+obtenerFechaTEnvio
+imprimirTEnvio
+liberarTEnvio
+crearCarritoProductos
+crearFecha 6/6/2001
+crearProducto 7 Leche 17
+agregarCarritoProductos
+crearFecha 29/09/2000
+crearProducto 12 Computadora 20
+agregarCarritoProductos
+crearEnvio 10/10/2010
+obtenerCarritoProductosTEnvio
+obtenerFechaTEnvio
+imprimirTEnvio
+liberarTEnvio
+Fin

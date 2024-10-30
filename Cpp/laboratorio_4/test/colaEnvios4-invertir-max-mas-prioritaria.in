@@ -1,0 +1,27 @@
+crearColaEnvios 3
+crearCarritoProductos
+crearFecha 6/6/2001
+crearProducto 7 Leche 17
+agregarCarritoProductos
+crearEnvio 10/10/2010
+encolarEnvioColaEnvios
+crearCarritoProductos
+crearFecha 8/8/2001
+crearProducto 8 Manzana 10
+agregarCarritoProductos
+crearEnvio 1/1/2025
+encolarEnvioColaEnvios
+crearCarritoProductos
+crearFecha 8/8/2001
+crearProducto 8 Manzana 10
+agregarCarritoProductos
+crearEnvio 1/1/2024
+encolarEnvioColaEnvios
+masPrioritarioColaEnvios
+maxColaEnvios
+imprimirColaEnvios
+invertirPrioridadColaEnvios
+masPrioritarioColaEnvios
+imprimirColaEnvios
+liberarColaEnvios
+Fin
