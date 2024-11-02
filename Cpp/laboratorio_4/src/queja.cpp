@@ -16,14 +16,6 @@ TQueja crearTQueja(TFecha fecha, TProducto producto, TCliente cliente,
   strcpy(nuevaQueja->comentario, comentario);
   return nuevaQueja;
 }
-// Se imprimen la queja empleando el siguiente formato:
-//   Fecha: <fecha_queja>
-//   Cliente: <cliente>
-//   Producto: <producto>
-//   Comentario: <comentario>
-// La impresión del cliente se realiza con la función 'imprimirTCliente'.
-// La impresión del producto se realiza con la función 'imprimirTProducto'.
-// La impresión de la fecha se realiza con la función 'imprimirTFecha'.
 void imprimirTQueja(TQueja queja) {
   printf("Fecha: ");
   imprimirTFecha(fechaTQueja(queja));

@@ -1,37 +1,123 @@
 #include "../include/tablaQuejas.h"
+#include <cassert>
 
-struct rep_tablaQuejas { 
-  int cantEstimadas;
-  TQueja *queja;
-  int cant;
+typedef struct req_lista_queja *TListaQueja;
+
+struct req_lista_queja
+{
+  TQueja cabeza;
+  TListaQueja sig;
 };
 
-int funcionHash(TFecha fecha, int cantEstimadas){
-    return (31 * (int) mesTFecha(fecha) + (int) diaTFecha(fecha)) % cantEstimadas;
+struct rep_tablaQuejas
+{
+  int cantEstimadas;
+  TListaQueja *quejas;
+};
+
+int funcionHash(TFecha fecha, int cantEstimadas)
+{
+  return (31 * (int)mesTFecha(fecha) + (int)diaTFecha(fecha)) % cantEstimadas;
 }
 
-TablaQuejas crearTablaQuejas(int cantEstimadas) { 
+TListaQueja crearTListaQuejaConCabeza(TQueja cabeza)
+{
+  TListaQueja lista = new req_lista_queja;
+  lista->cabeza = cabeza;
+  lista->sig = NULL;
+  return lista;
+}
+
+TablaQuejas crearTablaQuejas(int cantEstimadas)
+{
   TablaQuejas tabla = new rep_tablaQuejas;
   tabla->cantEstimadas = cantEstimadas;
-  tabla->queja = new TQueja[cantEstimadas];
-  tabla->cant = 0;
+  tabla->quejas = new TListaQueja[cantEstimadas + 1];
+  for (int i = 0; i <= cantEstimadas; ++i)
+  {
+    tabla->quejas[i] = NULL;
+  }
   return tabla;
 }
+void insertarQuejaTListaQuejas(TListaQueja &lista, TQueja queja)
+{
+  TListaQueja nueva = crearTListaQuejaConCabeza(queja);
+  nueva->sig = lista;
+  lista = nueva;
+}
 
-void agregarQuejaTablaQuejas(TablaQuejas tabla, TQueja queja) {
+void agregarQuejaTablaQuejas(TablaQuejas tabla, TQueja queja)
+{
   int i = funcionHash(fechaTQueja(queja), tabla->cantEstimadas);
-  tabla->queja[i] = queja;
-  tabla->cant++;
+  insertarQuejaTListaQuejas(tabla->quejas[i], queja); 
+}
+void imprimirTListaQueja(TListaQueja lista)
+{
+  while (lista != NULL)
+  {
+    imprimirTQueja(lista->cabeza);
+    lista = lista->sig;
+  }
+}
+void imprimirTablaQuejas(TablaQuejas tabla)
+{
+  for (int i = 0; i < tabla->cantEstimadas; i++)
+  {
+    if (tabla->quejas[i] == NULL)
+    {
+      printf("No hay elementos guardados en la posicion %d de la tabla.\n", i);
+    }
+    else
+    {
+      printf("Elementos en la posicion %d de la tabla:\n", i);
+      imprimirTListaQueja(tabla->quejas[i]);
+    }
+  }
 }
 
-void imprimirTablaQuejas(TablaQuejas tabla) { }
-
-bool perteneceQuejaTablaQuejas(TablaQuejas tabla, TFecha fecha) {
-  return false;
+bool perteneceQuejaTablaQuejas(TablaQuejas tabla, TFecha fecha)
+{
+  return tabla->quejas[funcionHash(fecha, tabla->cantEstimadas)] != NULL;
 }
 
-TQueja obtenerQuejaTablaQuejas(TablaQuejas tabla, TFecha fecha) {
-  return NULL;
+TQueja ObtenerQuejaTlistaQuejas(TListaQueja lista, TFecha fecha)
+{
+  if (lista == NULL)
+  {
+    return NULL;
+  }
+  if (compararTFechas(fecha, fechaTQueja(lista->cabeza)) == 0)
+  {
+    return lista->cabeza;
+  }
+  return ObtenerQuejaTlistaQuejas(lista->sig, fecha);
 }
 
-void liberarTablaQuejas(TablaQuejas &tabla) {}
+TQueja obtenerQuejaTablaQuejas(TablaQuejas tabla, TFecha fecha)
+{
+  return ObtenerQuejaTlistaQuejas(tabla->quejas[funcionHash(fecha, tabla->cantEstimadas)], fecha);
+}
+
+
+void liberarTListaQueja(TListaQueja &lista){
+  while (lista != NULL)
+  {
+    TListaQueja aux = lista;
+    lista = lista->sig;
+    liberarTQueja(aux->cabeza);
+    delete aux;
+  }
+}
+void liberarTablaQuejas(TablaQuejas &tabla)
+{
+  for (int i = 0; i <= tabla->cantEstimadas; i++)
+  {
+    if (tabla->quejas[i] != NULL)
+    {
+      liberarTListaQueja(tabla->quejas[i]);
+    }
+  }
+  delete[] tabla->quejas;
+  delete tabla;
+  tabla = NULL;
+}
