@@ -77,7 +77,16 @@ void imprimirTablaQuejas(TablaQuejas tabla)
 
 bool perteneceQuejaTablaQuejas(TablaQuejas tabla, TFecha fecha)
 {
-  return tabla->quejas[funcionHash(fecha, tabla->cantEstimadas)] != NULL;
+  TListaQueja lista =  tabla->quejas[funcionHash(fecha, tabla->cantEstimadas)];
+  while (lista != NULL)
+  {
+    if (compararTFechas(fecha, fechaTQueja(lista->cabeza)) == 0)
+    {
+      return true;
+    }
+    lista = lista->sig;
+  }
+  return false;
 }
 
 TQueja ObtenerQuejaTlistaQuejas(TListaQueja lista, TFecha fecha)
