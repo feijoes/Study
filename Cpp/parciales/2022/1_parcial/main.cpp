@@ -1,4 +1,4 @@
-typedef nodoLista *Lista;
+float recuperar (typedef nodoLista *Lista;
 struct nodoLista
 {
     int dato;
