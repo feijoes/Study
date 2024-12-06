@@ -5,8 +5,16 @@
 
 use std::thread;
 
-pub fn sum(v: Vec<i32>) -> i32 {
-    todo!()
+pub fn sum(slice: Vec<i32>) -> i32 {
+    let slice = slice.leak();
+    let (a, b) = slice.split_at(slice.len() / 2);
+    let handler1: thread::JoinHandle<i32> = thread::spawn(move || -> i32 {
+        a.into_iter().sum()
+    });
+    let handler2: thread::JoinHandle<i32> = thread::spawn(move || -> i32 {
+        b.into_iter().sum()
+    });
+    handler2.join().unwrap() + handler1.join().unwrap()
 }
 
 #[cfg(test)]

@@ -57,6 +57,24 @@ impl TicketStore {
         self.tickets.iter().find(|&t| t.id == id)
     }
 }
+impl std::ops::Index<TicketId> for TicketStore
+{
+    type Output = Ticket;
+
+    fn index(&self, id: TicketId) -> &Self::Output{
+        self.tickets.iter().find(|&t| t.id == id).unwrap()
+    }
+}
+
+impl std::ops::Index<&TicketId> for TicketStore
+{
+    type Output = Ticket;
+
+    // Required method
+    fn index(&self, index: &TicketId) -> &Self::Output{
+        &self[*index]
+    }
+}
 
 #[cfg(test)]
 mod tests {

@@ -6,8 +6,8 @@ pub mod store;
 
 // Refer to the tests to understand the expected schema.
 pub enum Command {
-    Insert { todo!() },
-    Get { todo!() }
+    Insert { draft: data::TicketDraft, response_sender: Sender<store::TicketId> },
+    Get { id: store::TicketId, response_sender : Sender<Option<data::Ticket>> }
 }
 
 pub fn launch() -> Sender<Command> {
@@ -21,13 +21,14 @@ pub fn server(receiver: Receiver<Command>) {
     let mut store = TicketStore::new();
     loop {
         match receiver.recv() {
-            Ok(Command::Insert {}) => {
-                todo!()
+            Ok(Command::Insert { draft, response_sender}) => {
+                let id = store.add_ticket(draft);
+                let _ = response_sender.send(id);
             }
             Ok(Command::Get {
-                todo!()
+                id, response_sender
             }) => {
-                todo!()
+                let _ = response_sender.send(store.get(id).cloned());
             }
             Err(_) => {
                 // There are no more senders, so we can safely break
