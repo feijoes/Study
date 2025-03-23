@@ -6,11 +6,16 @@ This repository is dedicated to organizing and storing C++ projects, exercises, 
 
 The repository is organized into the following folders:
 
-- **laboratorio_1, laboratorio_2, laboratorio_3, laboratorio_4**  
-  These directories contain lab exercises and assignments. Each folder corresponds to a specific lab session from the course.
+### p2_fing:
+This folder contain all files related to the course "programacion 2"
 
-- **parciales**  
-  This folder holds practice problems or exams to prepare for assessments in the course.
-
-- **practico_0, practico_3**  
+- **laboratorio_1, laboratorio_2, laboratorio_3, laboratorio_4**
+These directories contain lab exercises and assignments. Each folder corresponds to a specific lab session from the course.
+- **parciales** This folder holds practice problems or exams to prepare for assessments in the course.
+- **practico_0, practico_3**
   These directories store practical exercises or projects. They are numbered to match the course's organization.
+
+### p4_fing
+This folder contain all files related to the course "programacion 4"
+-  **lab_0** 
+These directories contain lab exercises and assignments. Each folder corresponds to a specific lab session from the course.

@@ -10,7 +10,8 @@ public:
     nat dia;
     nat mes;
     nat anio;
-    Fecha(nat dia, nat mes, nat anio) : anio(anio), dia(dia), mes(mes) {}
+    Fecha(nat dia, nat mes, nat anio) : anio(anio), dia(dia), mes(mes) {};
+    Fecha() = default;
     bool isBisiesto(nat anio)
     {
         if (anio % 4 == 0)
@@ -39,7 +40,7 @@ public:
 
     bool operator==(Fecha &otra) const
     {
-        return this->anio == otra.dia && this->dia == otra.dia && this->mes == otra.mes;
+        return this->anio == otra.anio && this->dia == otra.dia && this->mes == otra.mes;
     }
 
     bool operator!=(Fecha &otra) const
